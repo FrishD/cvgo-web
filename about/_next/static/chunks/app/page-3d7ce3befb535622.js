@@ -1,10 +1,1104 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[974],{181:(e,t,o)=>{Promise.resolve().then(o.bind(o,6679)),Promise.resolve().then(o.t.bind(o,7690,23)),Promise.resolve().then(o.bind(o,9073)),Promise.resolve().then(o.bind(o,9039)),Promise.resolve().then(o.bind(o,7352)),Promise.resolve().then(o.t.bind(o,4329,23)),Promise.resolve().then(o.t.bind(o,9635,23)),Promise.resolve().then(o.bind(o,3152)),Promise.resolve().then(o.t.bind(o,9928,23)),Promise.resolve().then(o.t.bind(o,4299,23))},747:(e,t,o)=>{"use strict";o.d(t,{v:()=>c});var l=o(5155),a=o(2115),i=o(2596);let r=(e,t)=>Object.keys(e).reduce((o,l)=>{if(!t.includes(l)){if(void 0===e[l])return o;o[l]=e[l]}return o},{});var n=o(9928),s=o.n(n);let c=(0,a.forwardRef)((e,t)=>{let{variant:o="primary"}=e,a=r(e,["variant"]);return(0,l.jsx)("a",{ref:t,...a,className:(0,i.$)(s().link,o&&s()[o],e.className),children:e.children})});c.displayName="ButtonLink"},992:(e,t,o)=>{"use strict";o.d(t,{N:()=>s});var l=o(2115),a=o(9924);let i=new Set(["coarse","fine"]),r=e=>{if("mobile"===e){let e=a.LO.get("tablet");if(e)return`(max-width: ${e-1}px)`}let t=a.LO.get(e);return t?`(min-width: ${t}px)`:i.has(e)?`(pointer: ${e})`:e},n=new Map,s=(e,t)=>{let o=(0,l.useCallback)(()=>{let o=n.get(e);return o?o.matchMedia.matches:!!t&&"defaultValue"in t&&t.defaultValue},[t,e]),a=e=>t=>{let o=n.get(e);o&&o.existingListeners.forEach(e=>e(t))},i=(0,l.useCallback)((e,t)=>{let o=n.get(e);if(o)return o.existingListeners.push(t),o.matchMedia.matches;let l={matchMedia:window.matchMedia(e),existingListeners:[t],eventHandler:a(e)};n.set(e,l);let i=l.matchMedia;return i.addEventListener?i.addEventListener("change",l.eventHandler):i.addListener(l.eventHandler),l.matchMedia.matches},[]),s=(0,l.useCallback)((e,t)=>{let o=n.get(e);if(o&&(o.existingListeners=o.existingListeners.filter(e=>e!==t)),!o||o.existingListeners.length>0)return;let l=o.matchMedia;l.removeEventListener?l.removeEventListener("change",o.eventHandler):l.removeListener(o.eventHandler),n.delete(e)},[]),[c,p]=(0,l.useState)(o);return(0,l.useEffect)(()=>{if(t?.isEnabled??!0){let t=e=>{p(e.matches)};return p(i(r(e),t)),()=>s(e,t)}},[t?.isEnabled,e,i,s]),c}},2226:e=>{e.exports={icon:"icon_icon__XRrd8",small:"icon_small__mhoXN"}},2465:e=>{e.exports={tablet:"768","tablet-large":"1024",laptop:"1280","laptop-large":"1440",desktop:"1600",monitor:"1920",white:"#fff",black:"#000","ease-linear":"0,0,1,1","ease-out":".26,1,.48,1","typo-flow-text":"capabilities_typo-flow-text__eRByG","typo-flow-text-small":"capabilities_typo-flow-text-small__rrBrM","typo-flow-subtitle":"capabilities_typo-flow-subtitle__uLcch","typo-flow-tagline":"capabilities_typo-flow-tagline__v6TMt","typo-flow-title":"capabilities_typo-flow-title__m9lIG","typo-flow-banner":"capabilities_typo-flow-banner__HS203","typo-flow-description":"capabilities_typo-flow-description__FxroM","typo-flow-megatitle":"capabilities_typo-flow-megatitle__brStx","typo-flow-caption":"capabilities_typo-flow-caption__DbAt_","typo-flow-disclaimer":"capabilities_typo-flow-disclaimer__EMIrp","typo-material-body-small":"capabilities_typo-material-body-small___Ds_O","typo-small-details":"capabilities_typo-small-details__JE8yi","default-container":"capabilities_default-container__Oy9xR",capabilities:"capabilities_capabilities__YQVQ2",contentContainer:"capabilities_contentContainer___jHRx",topBorder:"capabilities_topBorder__DhkFv",titlesContainer:"capabilities_titlesContainer__Y64Dn",groupTitle:"capabilities_groupTitle__wozkx",selected:"capabilities_selected__ystUY",slideImageContainer:"capabilities_slideImageContainer__wEZyc",copyContainer:"capabilities_copyContainer__2F3_3",groupCopy:"capabilities_groupCopy__ljx_K",swiper:"capabilities_swiper__UfLWU",caption:"capabilities_caption__64tI3"}},2705:e=>{e.exports={tablet:"768","tablet-large":"1024",laptop:"1280","laptop-large":"1440",desktop:"1600",monitor:"1920",white:"#fff",black:"#000","ease-linear":"0,0,1,1","ease-out":".26,1,.48,1","typo-flow-text":"gallery_typo-flow-text___uKjl","typo-flow-text-small":"gallery_typo-flow-text-small__xWjGI","typo-flow-subtitle":"gallery_typo-flow-subtitle___rqK6","typo-flow-tagline":"gallery_typo-flow-tagline__gLkzP","typo-flow-title":"gallery_typo-flow-title__ZyQEE","typo-flow-banner":"gallery_typo-flow-banner___bRNy","typo-flow-description":"gallery_typo-flow-description__v0TP8","typo-flow-megatitle":"gallery_typo-flow-megatitle__9BUGK","typo-flow-caption":"gallery_typo-flow-caption__Oe9ie","typo-flow-disclaimer":"gallery_typo-flow-disclaimer__Ap3JQ","typo-material-body-small":"gallery_typo-material-body-small__qSZOx","typo-small-details":"gallery_typo-small-details__4Rxjc","default-container":"gallery_default-container__zBab0",gallery:"gallery_gallery__gccP0",items:"gallery_items__s42jn",column:"gallery_column__Q1Uug",columnInner:"gallery_columnInner__2mGXI",scroll:"gallery_scroll__pGt7y",item:"gallery_item__trquU",media:"gallery_media__EUyD3",videoWrapper:"gallery_videoWrapper__PpYIS",name:"gallery_name__phfqE",cta:"gallery_cta__ALJPI",gradientBlurTop:"gallery_gradientBlurTop__HpD_I",gradientBlurBottom:"gallery_gradientBlurBottom__JyOqD",gradientDarkenerTop:"gallery_gradientDarkenerTop__WB3Ck",gradientDarkenerBottom:"gallery_gradientDarkenerBottom__beJ_V"}},3152:(e,t,o)=>{"use strict";o.d(t,{VideoSection:()=>y});var l=o(5155),a=o(2115),i=o(6444),r=o(2596),n=o(9165),s=o(2942),c=o(4297),p=o(9017),d=o(836),_=o(5254),u=o(992),m=o(3232),f=o.n(m);let g={background:{src:"/video-section/background.webp",alt:"Background for section"},video:{src:"/video-section/video.mp4"},poster:{src:"/video-section/poster.webp"},embed:"A0VttaLy4sU"},y=e=>{let{bucketUrl:t}=e,[o,m]=(0,a.useState)(!1),[y,h]=(0,a.useState)(!0),w=(0,u.N)("(max-width: 767px)"),v=(0,a.useRef)(null),b=(0,a.useRef)(null),x=(0,a.useRef)(null),k=(0,a.useRef)(null),C=(0,a.useRef)(null);(0,a.useEffect)(()=>{if(!x.current)return;let e=x.current;return C.current=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting||v.current?.pauseVideo()})},{threshold:[0]}),C.current?.observe(e),()=>{e&&C.current?.unobserve(e)}},[]);let E=()=>{if(v?.current){let e=v.current.getIframe();e?.requestFullscreen?e.requestFullscreen():e?.mozRequestFullScreen?e.mozRequestFullScreen():e?.webkitRequestFullscreen?e.webkitRequestFullscreen():e?.msRequestFullscreen&&e.msRequestFullscreen()}},S=(0,s.d)(300),j=(0,c.G)(S,e=>`radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) ${e}%)`);(0,a.useEffect)(()=>y?(0,n.i)(S,300,{duration:1.5}).stop:(0,n.i)(S,0,{duration:1.5}).stop,[y,S]);let{setShowJumpLinks:I}=(0,_.f)();(0,a.useEffect)(()=>{let e=()=>{let e=b.current?.offsetTop??0;b.current&&window.scrollY>e&&I(!0)};return window.addEventListener("scroll",e,{passive:!0}),()=>{window.removeEventListener("scroll",e)}},[I]);let N=(0,p.W)(b,{once:!0,margin:"10% 0px 10% 0px"});return(0,l.jsxs)("section",{className:f().videoSection,id:"overview",ref:b,"data-section":"overview",children:[(0,l.jsx)("div",{className:f().anchorTarget}),(0,l.jsx)(d.m.div,{className:(0,r.$)(f().backgroundImageContainer),style:{WebkitMaskImage:j,maskImage:j},children:(0,l.jsx)("img",{src:`${t}${g.background.src}`,alt:g.background.alt,loading:"lazy"})}),(0,l.jsx)("div",{ref:x,className:f().videoContainer,children:(0,l.jsx)("div",{className:f().videoWrapper,children:o?(0,l.jsx)(i.A,{onReady:e=>{v.current=e.target},onPause:()=>{h(!0)},onPlay:()=>{h(!1)},className:(0,r.$)(f().video,!o&&f().hidden),videoId:g.embed,opts:{width:"100%",height:"100%",playerVars:{autoplay:0,rel:0}}}):(0,l.jsxs)("button",{"aria-label":"Play Video",className:f().posterContainer,onClick:()=>{v.current&&v.current.playVideo(),m(!0),h(!1),w&&E()},children:[(0,l.jsx)("video",{ref:e=>{k.current=e},autoPlay:!0,loop:!0,muted:!0,playsInline:!0,preload:"auto",poster:`${t}${g.poster.src}`,children:N&&(0,l.jsx)(l.Fragment,{children:(0,l.jsx)("source",{src:`${t}${g.video.src}`,type:"video/mp4"})})}),(0,l.jsx)("div",{className:f().playIcon})]})})})]})}},3232:e=>{e.exports={tablet:"768","tablet-large":"1024",laptop:"1280","laptop-large":"1440",desktop:"1600",monitor:"1920",white:"#fff",black:"#000","ease-linear":"0,0,1,1","ease-out":".26,1,.48,1","typo-flow-text":"video-section_typo-flow-text__ODP4_","typo-flow-text-small":"video-section_typo-flow-text-small__FS79F","typo-flow-subtitle":"video-section_typo-flow-subtitle___YBKW","typo-flow-tagline":"video-section_typo-flow-tagline__dThJG","typo-flow-title":"video-section_typo-flow-title__mf1hr","typo-flow-banner":"video-section_typo-flow-banner__gLVa1","typo-flow-description":"video-section_typo-flow-description__SgoVA","typo-flow-megatitle":"video-section_typo-flow-megatitle__m1RfH","typo-flow-caption":"video-section_typo-flow-caption__nJKqT","typo-flow-disclaimer":"video-section_typo-flow-disclaimer__VwipV","typo-material-body-small":"video-section_typo-material-body-small__nOk8_","typo-small-details":"video-section_typo-small-details__pmXv8","default-container":"video-section_default-container__1_yQE",videoSection:"video-section_videoSection__6jyFo",anchorTarget:"video-section_anchorTarget__l9XXo",backgroundImageContainer:"video-section_backgroundImageContainer__Y9vhy",title:"video-section_title__QKoEG",videoContainer:"video-section_videoContainer__HZbTJ",videoWrapper:"video-section_videoWrapper__ZvPtc",video:"video-section_video__2Hd5r",hidden:"video-section_hidden__UCDgr",posterContainer:"video-section_posterContainer__bV7a3",playIcon:"video-section_playIcon__2PHQo"}},4299:e=>{e.exports={tablet:"768","tablet-large":"1024",laptop:"1280","laptop-large":"1440",desktop:"1600",monitor:"1920",white:"#fff",black:"#000","ease-linear":"0,0,1,1","ease-out":".26,1,.48,1","typo-flow-text":"page-home_typo-flow-text__X79r2","typo-flow-text-small":"page-home_typo-flow-text-small__kvbBg","typo-flow-subtitle":"page-home_typo-flow-subtitle__xAtGI","typo-flow-tagline":"page-home_typo-flow-tagline__Lt1zy","typo-flow-title":"page-home_typo-flow-title__l3dWG","typo-flow-banner":"page-home_typo-flow-banner__Aw0iL","typo-flow-description":"page-home_typo-flow-description__Px_E4","typo-flow-megatitle":"page-home_typo-flow-megatitle__UDyy_","typo-flow-caption":"page-home_typo-flow-caption__MPwB_","typo-flow-disclaimer":"page-home_typo-flow-disclaimer__T2zR4","typo-material-body-small":"page-home_typo-material-body-small__FUcTX","typo-small-details":"page-home_typo-small-details___xSOJ","default-container":"page-home_default-container__7ulFp"}},4329:e=>{e.exports={tablet:"768","tablet-large":"1024",laptop:"1280","laptop-large":"1440",desktop:"1600",monitor:"1920",white:"#fff",black:"#000","ease-linear":"0,0,1,1","ease-out":".26,1,.48,1","typo-flow-text":"pricing_typo-flow-text__jdB0w","typo-flow-text-small":"pricing_typo-flow-text-small__uN4CX","typo-flow-subtitle":"pricing_typo-flow-subtitle__CSzgn","typo-flow-tagline":"pricing_typo-flow-tagline__j_lm_","typo-flow-title":"pricing_typo-flow-title__MqEiR","typo-flow-banner":"pricing_typo-flow-banner__bppAI","typo-flow-description":"pricing_typo-flow-description___ci1g","typo-flow-megatitle":"pricing_typo-flow-megatitle__0eHew","typo-flow-caption":"pricing_typo-flow-caption__FBJdq","typo-flow-disclaimer":"pricing_typo-flow-disclaimer__B_fyf","typo-material-body-small":"pricing_typo-material-body-small__8yMze","typo-small-details":"pricing_typo-small-details__432Ob","default-container":"pricing_default-container__Sf6Qx",pricing:"pricing_pricing__VxSwp",anchorTarget:"pricing_anchorTarget___qPkO",headline:"pricing_headline__E4nOu",subhead:"pricing_subhead__Vt7WR",listContainer:"pricing_listContainer__ZFxbt",option:"pricing_option__ynX61",optionTitle:"pricing_optionTitle__Qvk5P",titleBorder:"pricing_titleBorder__mbl55",optionPriceContainer:"pricing_optionPriceContainer__lWnBi",optionCompareAtPrice:"pricing_optionCompareAtPrice__7E_rE",optionPrice:"pricing_optionPrice__kKPRL",optionPriceMode:"pricing_optionPriceMode__guGA9",optionFeatures:"pricing_optionFeatures__omSbb",optionAlsoIncluded:"pricing_optionAlsoIncluded__tptR7",borderBottomElement:"pricing_borderBottomElement___MYn_",ctaContainer:"pricing_ctaContainer__bp6_Y",bottomLabel:"pricing_bottomLabel__xaJkN",unavailableContainer:"pricing_unavailableContainer__NOzP8",unavailableCopy:"pricing_unavailableCopy__MvBz_"}},4354:e=>{e.exports={tablet:"768","tablet-large":"1024",laptop:"1280","laptop-large":"1440",desktop:"1600",monitor:"1920",white:"#fff",black:"#000","ease-linear":"0,0,1,1","ease-out":".26,1,.48,1","typo-flow-text":"partners_typo-flow-text__IUgQ_","typo-flow-text-small":"partners_typo-flow-text-small__RtDIo","typo-flow-subtitle":"partners_typo-flow-subtitle__2zOP3","typo-flow-tagline":"partners_typo-flow-tagline__jVdxU","typo-flow-title":"partners_typo-flow-title__5ihKs","typo-flow-banner":"partners_typo-flow-banner__3aRYa","typo-flow-description":"partners_typo-flow-description__mS5P1","typo-flow-megatitle":"partners_typo-flow-megatitle__1slXj","typo-flow-caption":"partners_typo-flow-caption__VhwBB","typo-flow-disclaimer":"partners_typo-flow-disclaimer__HAGwx","typo-material-body-small":"partners_typo-material-body-small__pz9IR","typo-small-details":"partners_typo-small-details__DBQ5n","default-container":"partners_default-container__zd0w3",partners:"partners_partners__5saVP",anchorTarget:"partners_anchorTarget__THPSM",title:"partners_title__PBSU8",cta:"partners_cta__JPsEl",backgroundContainer:"partners_backgroundContainer__aqQds",backgroundImage:"partners_backgroundImage__bNuhq",list:"partners_list__U3BnC",partner:"partners_partner__gl06I",name:"partners_name__ocH6T",imageWrapper:"partners_imageWrapper__b5w0d",topRight:"partners_topRight__daqCi",topLeft:"partners_topLeft__JzprB",bottomRight:"partners_bottomRight__2_EXf",bottomLeft:"partners_bottomLeft__qBq_u",image:"partners_image__iSGzs",gradientBlurContainer:"partners_gradientBlurContainer__9A_8N",show:"partners_show__LEdAL",gradientBlurTop:"partners_gradientBlurTop__MlcUz",gradientBlurBottom:"partners_gradientBlurBottom__sDxqX",gradientDarkenerTop:"partners_gradientDarkenerTop__vErBf",gradientDarkenerBottom:"partners_gradientDarkenerBottom__7YXCU"}},4944:e=>{e.exports={"ease-linear":"0,0,1,1","ease-out":".26,1,.48,1"}},5254:(e,t,o)=>{"use strict";o.d(t,{JumpLinksProvider:()=>r,f:()=>n});var l=o(5155),a=o(2115);let i=(0,a.createContext)(void 0),r=e=>{let{children:t}=e,[o,r]=(0,a.useState)(!1),[n,s]=(0,a.useState)(!1),c=(0,a.useRef)(0);return(0,a.useEffect)(()=>{let e=null,t=()=>{if(n){c.current=window.scrollY;return}let t=window.scrollY<c.current?"down":"up";c.current=window.scrollY,"down"===t&&(e&&clearTimeout(e),s(!0),e=window.setTimeout(()=>{s(!1)},3e3))};return window.addEventListener("scroll",t,{passive:!0}),()=>{window.removeEventListener("scroll",t),e&&clearTimeout(e)}},[n]),(0,l.jsx)(i.Provider,{value:{showJumpLinks:o,setShowJumpLinks:r,jumplinksActive:n},children:t})},n=()=>{let e=(0,a.useContext)(i);if(!e)throw Error("useJumpLinks must be used within a JumpLinksProvider");return e}},6489:e=>{e.exports={tablet:"768","tablet-large":"1024",laptop:"1280","laptop-large":"1440",desktop:"1600",monitor:"1920"}},6581:(e,t,o)=>{"use strict";o.d(t,{o2:()=>a});let l=(e,t)=>{if(void 0===e)throw Error(`Missing environment variable: '${t}'`);return e};l("https://labs.google","NEXT_PUBLIC_BASE_URL");let a=l("/flow/about","NEXT_PUBLIC_BASE_PATH")},6679:(e,t,o)=>{"use strict";o.d(t,{Capabilities:()=>_});var l=o(5155),a=o(2115),i=o(2596),r=o(9017),n=o(7269),s=o(7677),c=o(2465),p=o.n(c);o(2252);let d={groups:[{label:"Consistent",firstSlide:0,scrollIntoViewOnSelection:!0,copy:"Bring your own assets, or generate them in Flow. Then easily manage and reference them as you start to generate clips."},{label:"Seamless",firstSlide:3,scrollIntoViewOnSelection:!1,copy:"An interface designed for the creative story-building process from ideation to iteration."},{label:"Cinematic",firstSlide:6,scrollIntoViewOnSelection:!0,copy:"State-of-the-art video quality made possible by Google DeepMind’s most advanced models."}],slideToTitleMap:[0,0,0,1,1,1,2,2],slides:[{id:"s1",desktop:"/Consistent/16x9/01_Ingredients_Edit%201%2016x9_250516d.mp4",mobile:"/Consistent/1_1/01_Ingredients_Edit%201%201x1_250516d.mp4",alt:""},{id:"s2",desktop:"/Consistent/16x9/02_Ingredients%20to%20video_Edit03_16x9_250516e.mp4",mobile:"/Consistent/1_1/02_Ingredients%20to%20video_Edit03_1x1_250516e.mp4",alt:""},{id:"s3",desktop:"/Consistent/16x9/03%20Frames%20to%20Video_250516a.mp4",mobile:"/Consistent/1_1/03%20Frames%20to%20Video_1x1_250516a.mp4",alt:""},{id:"s4",desktop:"/Seamless/16x9/04%20Scene%20Builder_250513c_1.mp4",mobile:"/Seamless/1_1/04%20Scene%20Builder_1x1_250513b_1.mp4",alt:""},{id:"s5",desktop:"/Seamless/16x9/05_JumpTo_250516a.mp4",mobile:"/Seamless/1_1/05_JumpTo_1x1_250516a.mp4",alt:""},{id:"s6",desktop:"/Seamless/16x9/06_Extend_5mb_250519a.mp4",mobile:"/Seamless/1_1/06_Extend_1x1_5mb_250519a.mp4",alt:""},{id:"s7",desktop:"/Cinematic/16x9/07_CameraControls_Edit02%2016x9_250516e.mp4",mobile:"/Cinematic/1_1/07_CameraControls_Edit02%201X1_250516e.mp4",alt:""},{id:"s8",desktop:"/Cinematic/16x9/08_VEO_Cinematic_Edit01_16x9_250516e.mp4",mobile:"/Cinematic/1_1/08_VEO_Cinematic_Edit01_1x1_250516e.mp4",alt:""}]},_=e=>{let{bucketUrl:t}=e,o=(0,a.useRef)(null),c=(0,a.useRef)(null),_=(0,a.useRef)(null),u=(0,a.useRef)([]),m=(0,a.useRef)([]),[f,g]=(0,a.useState)(0),y=(0,r.W)(c,{once:!0,margin:"10% 0px 10% 0px"});(0,a.useEffect)(()=>{if(d.groups[f]?.scrollIntoViewOnSelection){let e=u.current[f],t=_.current;if(e&&t){let o=t.offsetWidth,l=e.offsetLeft-(o-e.offsetWidth)/2;t.scrollTo({left:l,behavior:"smooth"})}}},[f]);let h=(0,a.useRef)(null);return(0,a.useEffect)(()=>{if(!m.current)return;let e=m.current;return h.current=new IntersectionObserver(e=>{e.forEach(e=>{let t=e.target;1===e.intersectionRatio?t.play():t.pause()})},{threshold:1}),e.forEach(e=>{e&&h.current?.observe(e)}),()=>{e.forEach(e=>{e&&h.current?.unobserve(e)})}},[m]),(0,l.jsx)("section",{className:p().capabilities,id:"capabilities","data-section":"capabilities",children:(0,l.jsxs)("div",{className:p().contentContainer,children:[(0,l.jsx)("div",{className:p().topBorder}),(0,l.jsx)("div",{className:p().titlesContainer,ref:_,children:d.groups.map((e,t)=>(0,l.jsx)("div",{className:(0,i.A)(p().groupTitle,"typo-flow-subtitle",f===t&&p().selected),ref:e=>{u.current[t]=e},children:(0,l.jsx)("button",{onClick:()=>(function(e){let t=d.groups[e]?.firstSlide;void 0!==t&&o.current&&o.current.slideTo(t)})(t),children:e.label})},e.label))}),(0,l.jsx)("div",{className:(0,i.A)(p().copyContainer,"typo-flow-text"),children:d.groups.map((e,t)=>(0,l.jsx)("div",{className:(0,i.A)(p().groupCopy,t===f&&p().selected),"aria-hidden":t!==f,children:e.copy},e.copy))}),(0,l.jsx)("div",{ref:c,className:p().slidesContainer,children:(0,l.jsx)(s.RC,{modules:[n.Jq,n.FJ],mousewheel:{forceToAxis:!0,invert:!1},onSwiper:e=>{o.current=e},onSlideChange:e=>{let t=d.slideToTitleMap[e.activeIndex];void 0!==t&&g(t)},spaceBetween:21,slidesPerView:1.3,breakpoints:{768:{slidesPerView:1.535,spaceBetween:21},1024:{slidesPerView:1.54,spaceBetween:28},1440:{slidesPerView:1.699,spaceBetween:0}},className:p().swiper,children:d.slides.map((e,a)=>(0,l.jsx)(s.qr,{onClick:()=>{o.current?.slideTo(a)},className:p().slide,children:(0,l.jsx)("div",{className:p().slideImageContainer,children:(0,l.jsx)("video",{ref:e=>{m.current[a]=e},autoPlay:!0,loop:!0,muted:!0,playsInline:!0,preload:"auto",className:p().desktopAsset,children:y&&(0,l.jsx)("source",{src:`${t}${e.desktop}`,type:"video/mp4"})})})},e.id))})})]})})}},6991:e=>{e.exports={tablet:"768","tablet-large":"1024",laptop:"1280","laptop-large":"1440",desktop:"1600",monitor:"1920",white:"#fff",black:"#000","ease-linear":"0,0,1,1","ease-out":".26,1,.48,1","typo-flow-text":"hero_typo-flow-text__xtegX","typo-flow-text-small":"hero_typo-flow-text-small__Kjsh0","typo-flow-subtitle":"hero_typo-flow-subtitle__6HFIr","typo-flow-tagline":"hero_typo-flow-tagline__Nc0sz","typo-flow-title":"hero_typo-flow-title__IqQBF","typo-flow-banner":"hero_typo-flow-banner__dXaEl","typo-flow-description":"hero_typo-flow-description__efw5a","typo-flow-megatitle":"hero_typo-flow-megatitle__EuaN3","typo-flow-caption":"hero_typo-flow-caption__QSvmd","typo-flow-disclaimer":"hero_typo-flow-disclaimer__UnksQ","typo-material-body-small":"hero_typo-material-body-small__r0etc","typo-small-details":"hero_typo-small-details__NoJ2a","default-container":"hero_default-container___fwtJ",hero:"hero_hero__Q3Rx9",fadeIn:"hero_fadeIn__4Ffqh",heroContent:"hero_heroContent__RP_uf",flowEffect:"hero_flowEffect__OYVu0",flowEffectImgAnimation:"hero_flowEffectImgAnimation__F9m_F",animationDone:"hero_animationDone__kGJX_",flowContainer:"hero_flowContainer__ZB1dA",flowEffectImg:"hero_flowEffectImg__shTxw",descriptionAndCta:"hero_descriptionAndCta__SI8HO",cta:"hero_cta__osRfk",headline:"hero_headline__mAEP_",banner:"hero_banner__3c_V_",description:"hero_description__CV5zL",ctaPlaceholder:"hero_ctaPlaceholder__BautN",disclaimer:"hero_disclaimer__F2rMf",videoBackground:"hero_videoBackground__IiktF",video:"hero_video__tIR0w"}},7352:(e,t,o)=>{"use strict";o.d(t,{Partners:()=>g});var l=o(5155),a=o(2115),i=o(6766),r=o(2596),n=o(836),s=o(5084),c=o(747),p=o(8734),d=o(6581),_=o(4354),u=o.n(_);let m=[{name:"Junie Lau",color:"#FFDDFC",image:`${d.o2}/partners/junie-lau.jpg`,background:`${d.o2}/partners/junie-lau.jpg`,imagePosition:"bottomLeft",width:1440,height:810},{name:"Dave Clark",color:"#C5E7FF",image:`${d.o2}/partners/dave-clark.jpg`,background:`${d.o2}/partners/dave-clark.jpg`,imagePosition:"topRight",width:1440,height:810},{name:"Henry Daubrez",color:"#AAB2FF",image:`${d.o2}/partners/henry-daubrez.jpg`,background:`${d.o2}/partners/henry-daubrez.jpg`,imagePosition:"topLeft",width:1024,height:575}],f={title:"See how filmmakers are using Flow",partners:m,buttonText:"Watch Short Films",watchShortFilmsUrl:"https://labs.google/flow/tv/short-films?utm_source=flow-about&utm_medium=web&utm_campaign=launch"},g=()=>{let[e,t]=(0,a.useState)(null),[o,d]=(0,a.useState)(!1),_=(0,a.useRef)(null),g=(0,a.useRef)([]),y=Array.from({length:6}).map((e,t)=>(0,l.jsx)("div",{},t)),h=(e,t)=>null===t||e===t?1:.25;return(0,a.useEffect)(()=>{d("ontouchstart"in window||navigator.maxTouchPoints>0||navigator.msMaxTouchPoints>0)},[]),(0,a.useEffect)(()=>{if(null!==e&&_.current&&g.current[e]){let t=g.current[e],o=_.current.parentElement;if(t&&o){let e=t.getBoundingClientRect(),l=o.getBoundingClientRect(),a=e.top+e.height/2-l.top;_.current.style.top=`${a}px`}}},[e]),(0,l.jsxs)("section",{id:"partners",className:u().partners,children:[(0,l.jsx)("div",{className:u().anchorTarget}),(0,l.jsx)("h2",{className:(0,r.$)(u().title,"typo-flow-text-small"),children:f.title}),(0,l.jsxs)("div",{ref:_,className:(0,r.$)(u().gradientBlurContainer,null!==e&&u().show),children:[(0,l.jsx)("div",{className:u().gradientBlurTop,children:y}),(0,l.jsx)("div",{className:u().gradientBlurBottom,children:y})]}),(0,l.jsx)("div",{className:u().gradientDarkenerTop}),(0,l.jsx)("div",{className:u().gradientDarkenerBottom}),(0,l.jsx)("div",{className:u().list,children:f.partners.map((a,c)=>{let p=h(c,e);return(0,l.jsx)("div",{className:u().partner,ref:e=>{g.current[c]=e},onMouseEnter:()=>t(c),onMouseLeave:()=>t(null),children:(0,l.jsxs)("a",{href:f.watchShortFilmsUrl,target:"_blank",rel:"noopener",onClick:l=>{o&&(e!==c?(l.preventDefault(),t(c)):(window.open(f.watchShortFilmsUrl,"_blank","noopener"),l.preventDefault()))},children:[(0,l.jsx)(n.m.h2,{initial:!1,animate:{color:e===c?a.color:"#ffffff",opacity:p},transition:{duration:.25},className:u().name,children:(0,l.jsx)("span",{className:"typo-flow-megatitle",children:a.name})}),(0,l.jsx)(s.N,{children:e===c&&(0,l.jsx)(n.m.div,{className:(0,r.$)(u().imageWrapper,a.imagePosition&&u()[a.imagePosition]),initial:{opacity:0,scale:.95},animate:{opacity:1,scale:1},exit:{opacity:0,scale:.95},transition:{duration:.4,ease:"easeInOut"},children:(0,l.jsx)(i.default,{src:a.image,alt:a.name,width:a.width,height:a.height,className:u().image})})})]})},a.name)})}),(0,l.jsxs)(c.v,{href:f.watchShortFilmsUrl,className:u().cta,target:"_blank",rel:"noreferrer",children:[(0,l.jsx)(p.I,{name:"tv",size:"small",className:u().ctaIcon}),(0,l.jsx)("span",{children:f.buttonText})]}),(0,l.jsx)("div",{className:u().backgroundContainer,children:(0,l.jsx)(s.N,{children:null!==e&&(0,l.jsx)(n.m.div,{className:u().backgroundImage,initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{duration:.5},children:m[e]?.background&&(0,l.jsx)(i.default,{src:m[e].background,alt:"",fill:!0,style:{objectFit:"cover"},priority:!0})},m[e]?.name||"no-background-key")})})]})}},7561:e=>{e.exports={white:"#fff",black:"#000"}},7690:e=>{e.exports={tablet:"768","tablet-large":"1024",laptop:"1280","laptop-large":"1440",desktop:"1600",monitor:"1920",white:"#fff",black:"#000","ease-linear":"0,0,1,1","ease-out":".26,1,.48,1","typo-flow-text":"footer_typo-flow-text__1UVA7","typo-flow-text-small":"footer_typo-flow-text-small__zSCEf","typo-flow-subtitle":"footer_typo-flow-subtitle__6PkYy","typo-flow-tagline":"footer_typo-flow-tagline__7Vs6d","typo-flow-title":"footer_typo-flow-title__Qao08","typo-flow-banner":"footer_typo-flow-banner__5SpgT","typo-flow-description":"footer_typo-flow-description__sBQMo","typo-flow-megatitle":"footer_typo-flow-megatitle__nuW4H","typo-flow-caption":"footer_typo-flow-caption__j1pDV","typo-flow-disclaimer":"footer_typo-flow-disclaimer__vxVAV","typo-material-body-small":"footer_typo-material-body-small__OcGbe","typo-small-details":"footer_typo-small-details__wfSte","default-container":"footer_default-container__ANF5J",footer:"footer_footer__FiYd5",contentContainer:"footer_contentContainer__MjiW5",linksSection:"footer_linksSection__Op_1g",disclaimer:"footer_disclaimer__AKlKh",link:"footer_link__Tlx14",cta:"footer_cta__nmLuL"}},8734:(e,t,o)=>{"use strict";o.d(t,{I:()=>c});var l=o(5155),a=o(2596),i=o(6581),r=o(2226),n=o.n(r);let s=["discord"];[...s];let c=e=>{let{name:t,className:o="",ariaHidden:r=!1,size:c="default"}=e,p=s.includes(t);return(0,l.jsx)(l.Fragment,{children:p?(0,l.jsx)("svg",{className:(0,a.$)(n().icon,n()[c],o),"aria-hidden":!0,children:(0,l.jsx)("use",{href:`${i.o2}/icons.svg#${t}`})}):(0,l.jsx)("span",{className:(0,a.$)(n().icon,n()[c],o),...r?{"aria-hidden":"true"}:{},children:t})})}},9039:(e,t,o)=>{"use strict";o.d(t,{Hero:()=>S});var l=o(5155),a=o(2115),i=o(2596),r=o(9165),n=o(9017),s=o(747),c=o(5254),p=o(6581),d=o(7431),_=o(3264);let u=`
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+    [974], {
+        181: (e, t, o) => {
+            Promise.resolve().then(o.bind(o, 6679)), Promise.resolve().then(o.t.bind(o, 7690, 23)), Promise.resolve().then(o.bind(o, 9073)), Promise.resolve().then(o.bind(o, 9039)), Promise.resolve().then(o.bind(o, 7352)), Promise.resolve().then(o.t.bind(o, 4329, 23)), Promise.resolve().then(o.t.bind(o, 9635, 23)), Promise.resolve().then(o.bind(o, 3152)), Promise.resolve().then(o.t.bind(o, 9928, 23)), Promise.resolve().then(o.t.bind(o, 4299, 23))
+        },
+        747: (e, t, o) => {
+            "use strict";
+            o.d(t, {
+                v: () => c
+            });
+            var l = o(5155),
+                a = o(2115),
+                i = o(2596);
+            let r = (e, t) => Object.keys(e).reduce((o, l) => {
+                if (!t.includes(l)) {
+                    if (void 0 === e[l]) return o;
+                    o[l] = e[l]
+                }
+                return o
+            }, {});
+            var n = o(9928),
+                s = o.n(n);
+            let c = (0, a.forwardRef)((e, t) => {
+                let {
+                    variant: o = "primary"
+                } = e, a = r(e, ["variant"]);
+                return (0, l.jsx)("a", {
+                    ref: t,
+                    ...a,
+                    className: (0, i.$)(s().link, o && s()[o], e.className),
+                    children: e.children
+                })
+            });
+            c.displayName = "ButtonLink"
+        },
+        992: (e, t, o) => {
+            "use strict";
+            o.d(t, {
+                N: () => s
+            });
+            var l = o(2115),
+                a = o(9924);
+            let i = new Set(["coarse", "fine"]),
+                r = e => {
+                    if ("mobile" === e) {
+                        let e = a.LO.get("tablet");
+                        if (e) return `(max-width: ${e-1}px)`
+                    }
+                    let t = a.LO.get(e);
+                    return t ? `(min-width: ${t}px)` : i.has(e) ? `(pointer: ${e})` : e
+                },
+                n = new Map,
+                s = (e, t) => {
+                    let o = (0, l.useCallback)(() => {
+                            let o = n.get(e);
+                            return o ? o.matchMedia.matches : !!t && "defaultValue" in t && t.defaultValue
+                        }, [t, e]),
+                        a = e => t => {
+                            let o = n.get(e);
+                            o && o.existingListeners.forEach(e => e(t))
+                        },
+                        i = (0, l.useCallback)((e, t) => {
+                            let o = n.get(e);
+                            if (o) return o.existingListeners.push(t), o.matchMedia.matches;
+                            let l = {
+                                matchMedia: window.matchMedia(e),
+                                existingListeners: [t],
+                                eventHandler: a(e)
+                            };
+                            n.set(e, l);
+                            let i = l.matchMedia;
+                            return i.addEventListener ? i.addEventListener("change", l.eventHandler) : i.addListener(l.eventHandler), l.matchMedia.matches
+                        }, []),
+                        s = (0, l.useCallback)((e, t) => {
+                            let o = n.get(e);
+                            if (o && (o.existingListeners = o.existingListeners.filter(e => e !== t)), !o || o.existingListeners.length > 0) return;
+                            let l = o.matchMedia;
+                            l.removeEventListener ? l.removeEventListener("change", o.eventHandler) : l.removeListener(o.eventHandler), n.delete(e)
+                        }, []),
+                        [c, p] = (0, l.useState)(o);
+                    return (0, l.useEffect)(() => {
+                        if (t?.isEnabled ?? !0) {
+                            let t = e => {
+                                p(e.matches)
+                            };
+                            return p(i(r(e), t)), () => s(e, t)
+                        }
+                    }, [t?.isEnabled, e, i, s]), c
+                }
+        },
+        2226: e => {
+            e.exports = {
+                icon: "icon_icon__XRrd8",
+                small: "icon_small__mhoXN"
+            }
+        },
+        2465: e => {
+            e.exports = {
+                tablet: "768",
+                "tablet-large": "1024",
+                laptop: "1280",
+                "laptop-large": "1440",
+                desktop: "1600",
+                monitor: "1920",
+                white: "#fff",
+                black: "#000",
+                "ease-linear": "0,0,1,1",
+                "ease-out": ".26,1,.48,1",
+                "typo-flow-text": "capabilities_typo-flow-text__eRByG",
+                "typo-flow-text-small": "capabilities_typo-flow-text-small__rrBrM",
+                "typo-flow-subtitle": "capabilities_typo-flow-subtitle__uLcch",
+                "typo-flow-tagline": "capabilities_typo-flow-tagline__v6TMt",
+                "typo-flow-title": "capabilities_typo-flow-title__m9lIG",
+                "typo-flow-banner": "capabilities_typo-flow-banner__HS203",
+                "typo-flow-description": "capabilities_typo-flow-description__FxroM",
+                "typo-flow-megatitle": "capabilities_typo-flow-megatitle__brStx",
+                "typo-flow-caption": "capabilities_typo-flow-caption__DbAt_",
+                "typo-flow-disclaimer": "capabilities_typo-flow-disclaimer__EMIrp",
+                "typo-material-body-small": "capabilities_typo-material-body-small___Ds_O",
+                "typo-small-details": "capabilities_typo-small-details__JE8yi",
+                "default-container": "capabilities_default-container__Oy9xR",
+                capabilities: "capabilities_capabilities__YQVQ2",
+                contentContainer: "capabilities_contentContainer___jHRx",
+                topBorder: "capabilities_topBorder__DhkFv",
+                titlesContainer: "capabilities_titlesContainer__Y64Dn",
+                groupTitle: "capabilities_groupTitle__wozkx",
+                selected: "capabilities_selected__ystUY",
+                slideImageContainer: "capabilities_slideImageContainer__wEZyc",
+                copyContainer: "capabilities_copyContainer__2F3_3",
+                groupCopy: "capabilities_groupCopy__ljx_K",
+                swiper: "capabilities_swiper__UfLWU",
+                caption: "capabilities_caption__64tI3"
+            }
+        },
+        2705: e => {
+            e.exports = {
+                tablet: "768",
+                "tablet-large": "1024",
+                laptop: "1280",
+                "laptop-large": "1440",
+                desktop: "1600",
+                monitor: "1920",
+                white: "#fff",
+                black: "#000",
+                "ease-linear": "0,0,1,1",
+                "ease-out": ".26,1,.48,1",
+                "typo-flow-text": "gallery_typo-flow-text___uKjl",
+                "typo-flow-text-small": "gallery_typo-flow-text-small__xWjGI",
+                "typo-flow-subtitle": "gallery_typo-flow-subtitle___rqK6",
+                "typo-flow-tagline": "gallery_typo-flow-tagline__gLkzP",
+                "typo-flow-title": "gallery_typo-flow-title__ZyQEE",
+                "typo-flow-banner": "gallery_typo-flow-banner___bRNy",
+                "typo-flow-description": "gallery_typo-flow-description__v0TP8",
+                "typo-flow-megatitle": "gallery_typo-flow-megatitle__9BUGK",
+                "typo-flow-caption": "gallery_typo-flow-caption__Oe9ie",
+                "typo-flow-disclaimer": "gallery_typo-flow-disclaimer__Ap3JQ",
+                "typo-material-body-small": "gallery_typo-material-body-small__qSZOx",
+                "typo-small-details": "gallery_typo-small-details__4Rxjc",
+                "default-container": "gallery_default-container__zBab0",
+                gallery: "gallery_gallery__gccP0",
+                items: "gallery_items__s42jn",
+                column: "gallery_column__Q1Uug",
+                columnInner: "gallery_columnInner__2mGXI",
+                scroll: "gallery_scroll__pGt7y",
+                item: "gallery_item__trquU",
+                media: "gallery_media__EUyD3",
+                videoWrapper: "gallery_videoWrapper__PpYIS",
+                name: "gallery_name__phfqE",
+                cta: "gallery_cta__ALJPI",
+                gradientBlurTop: "gallery_gradientBlurTop__HpD_I",
+                gradientBlurBottom: "gallery_gradientBlurBottom__JyOqD",
+                gradientDarkenerTop: "gallery_gradientDarkenerTop__WB3Ck",
+                gradientDarkenerBottom: "gallery_gradientDarkenerBottom__beJ_V"
+            }
+        },
+        3152: (e, t, o) => {
+            "use strict";
+            o.d(t, {
+                VideoSection: () => y
+            });
+            var l = o(5155),
+                a = o(2115),
+                i = o(6444),
+                r = o(2596),
+                n = o(9165),
+                s = o(2942),
+                c = o(4297),
+                p = o(9017),
+                d = o(836),
+                _ = o(5254),
+                u = o(992),
+                m = o(3232),
+                f = o.n(m);
+            let g = {
+                    background: {
+                        src: "/video-section/background.webp",
+                        alt: "Background for section"
+                    },
+                    video: {
+                        src: "/video-section/video.mp4"
+                    },
+                    poster: {
+                        src: "/video-section/poster.webp"
+                    },
+                    embed: "A0VttaLy4sU"
+                },
+                y = e => {
+                    let {
+                        bucketUrl: t
+                    } = e, [o, m] = (0, a.useState)(!1), [y, h] = (0, a.useState)(!0), w = (0, u.N)("(max-width: 767px)"), v = (0, a.useRef)(null), b = (0, a.useRef)(null), x = (0, a.useRef)(null), k = (0, a.useRef)(null), C = (0, a.useRef)(null);
+                    (0, a.useEffect)(() => {
+                        if (!x.current) return;
+                        let e = x.current;
+                        return C.current = new IntersectionObserver(e => {
+                            e.forEach(e => {
+                                e.isIntersecting || v.current?.pauseVideo()
+                            })
+                        }, {
+                            threshold: [0]
+                        }), C.current?.observe(e), () => {
+                            e && C.current?.unobserve(e)
+                        }
+                    }, []);
+                    let E = () => {
+                            if (v?.current) {
+                                let e = v.current.getIframe();
+                                e?.requestFullscreen ? e.requestFullscreen() : e?.mozRequestFullScreen ? e.mozRequestFullScreen() : e?.webkitRequestFullscreen ? e.webkitRequestFullscreen() : e?.msRequestFullscreen && e.msRequestFullscreen()
+                            }
+                        },
+                        S = (0, s.d)(300),
+                        j = (0, c.G)(S, e => `radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) ${e}%)`);
+                    (0, a.useEffect)(() => y ? (0, n.i)(S, 300, {
+                        duration: 1.5
+                    }).stop : (0, n.i)(S, 0, {
+                        duration: 1.5
+                    }).stop, [y, S]);
+                    let {
+                        setShowJumpLinks: I
+                    } = (0, _.f)();
+                    (0, a.useEffect)(() => {
+                        let e = () => {
+                            let e = b.current?.offsetTop ?? 0;
+                            b.current && window.scrollY > e && I(!0)
+                        };
+                        return window.addEventListener("scroll", e, {
+                            passive: !0
+                        }), () => {
+                            window.removeEventListener("scroll", e)
+                        }
+                    }, [I]);
+                    let N = (0, p.W)(b, {
+                        once: !0,
+                        margin: "10% 0px 10% 0px"
+                    });
+                    return (0, l.jsxs)("section", {
+                        className: f().videoSection,
+                        id: "overview",
+                        ref: b,
+                        "data-section": "overview",
+                        children: [(0, l.jsx)("div", {
+                            className: f().anchorTarget
+                        }), (0, l.jsx)(d.m.div, {
+                            className: (0, r.$)(f().backgroundImageContainer),
+                            style: {
+                                WebkitMaskImage: j,
+                                maskImage: j
+                            },
+                            children: (0, l.jsx)("img", {
+                                src: `${t}${g.background.src}`,
+                                alt: g.background.alt,
+                                loading: "lazy"
+                            })
+                        }), (0, l.jsx)("div", {
+                            ref: x,
+                            className: f().videoContainer,
+                            children: (0, l.jsx)("div", {
+                                className: f().videoWrapper,
+                                children: o ? (0, l.jsx)(i.A, {
+                                    onReady: e => {
+                                        v.current = e.target
+                                    },
+                                    onPause: () => {
+                                        h(!0)
+                                    },
+                                    onPlay: () => {
+                                        h(!1)
+                                    },
+                                    className: (0, r.$)(f().video, !o && f().hidden),
+                                    videoId: g.embed,
+                                    opts: {
+                                        width: "100%",
+                                        height: "100%",
+                                        playerVars: {
+                                            autoplay: 0,
+                                            rel: 0
+                                        }
+                                    }
+                                }) : (0, l.jsxs)("button", {
+                                    "aria-label": "Play Video",
+                                    className: f().posterContainer,
+                                    onClick: () => {
+                                        v.current && v.current.playVideo(), m(!0), h(!1), w && E()
+                                    },
+                                    children: [(0, l.jsx)("video", {
+                                        ref: e => {
+                                            k.current = e
+                                        },
+                                        autoPlay: !0,
+                                        loop: !0,
+                                        muted: !0,
+                                        playsInline: !0,
+                                        preload: "auto",
+                                        poster: `${t}${g.poster.src}`,
+                                        children: N && (0, l.jsx)(l.Fragment, {
+                                            children: (0, l.jsx)("source", {
+                                                src: `${t}${g.video.src}`,
+                                                type: "video/mp4"
+                                            })
+                                        })
+                                    }), (0, l.jsx)("div", {
+                                        className: f().playIcon
+                                    })]
+                                })
+                            })
+                        })]
+                    })
+                }
+        },
+        3232: e => {
+            e.exports = {
+                tablet: "768",
+                "tablet-large": "1024",
+                laptop: "1280",
+                "laptop-large": "1440",
+                desktop: "1600",
+                monitor: "1920",
+                white: "#fff",
+                black: "#000",
+                "ease-linear": "0,0,1,1",
+                "ease-out": ".26,1,.48,1",
+                "typo-flow-text": "video-section_typo-flow-text__ODP4_",
+                "typo-flow-text-small": "video-section_typo-flow-text-small__FS79F",
+                "typo-flow-subtitle": "video-section_typo-flow-subtitle___YBKW",
+                "typo-flow-tagline": "video-section_typo-flow-tagline__dThJG",
+                "typo-flow-title": "video-section_typo-flow-title__mf1hr",
+                "typo-flow-banner": "video-section_typo-flow-banner__gLVa1",
+                "typo-flow-description": "video-section_typo-flow-description__SgoVA",
+                "typo-flow-megatitle": "video-section_typo-flow-megatitle__m1RfH",
+                "typo-flow-caption": "video-section_typo-flow-caption__nJKqT",
+                "typo-flow-disclaimer": "video-section_typo-flow-disclaimer__VwipV",
+                "typo-material-body-small": "video-section_typo-material-body-small__nOk8_",
+                "typo-small-details": "video-section_typo-small-details__pmXv8",
+                "default-container": "video-section_default-container__1_yQE",
+                videoSection: "video-section_videoSection__6jyFo",
+                anchorTarget: "video-section_anchorTarget__l9XXo",
+                backgroundImageContainer: "video-section_backgroundImageContainer__Y9vhy",
+                title: "video-section_title__QKoEG",
+                videoContainer: "video-section_videoContainer__HZbTJ",
+                videoWrapper: "video-section_videoWrapper__ZvPtc",
+                video: "video-section_video__2Hd5r",
+                hidden: "video-section_hidden__UCDgr",
+                posterContainer: "video-section_posterContainer__bV7a3",
+                playIcon: "video-section_playIcon__2PHQo"
+            }
+        },
+        4299: e => {
+            e.exports = {
+                tablet: "768",
+                "tablet-large": "1024",
+                laptop: "1280",
+                "laptop-large": "1440",
+                desktop: "1600",
+                monitor: "1920",
+                white: "#fff",
+                black: "#000",
+                "ease-linear": "0,0,1,1",
+                "ease-out": ".26,1,.48,1",
+                "typo-flow-text": "page-home_typo-flow-text__X79r2",
+                "typo-flow-text-small": "page-home_typo-flow-text-small__kvbBg",
+                "typo-flow-subtitle": "page-home_typo-flow-subtitle__xAtGI",
+                "typo-flow-tagline": "page-home_typo-flow-tagline__Lt1zy",
+                "typo-flow-title": "page-home_typo-flow-title__l3dWG",
+                "typo-flow-banner": "page-home_typo-flow-banner__Aw0iL",
+                "typo-flow-description": "page-home_typo-flow-description__Px_E4",
+                "typo-flow-megatitle": "page-home_typo-flow-megatitle__UDyy_",
+                "typo-flow-caption": "page-home_typo-flow-caption__MPwB_",
+                "typo-flow-disclaimer": "page-home_typo-flow-disclaimer__T2zR4",
+                "typo-material-body-small": "page-home_typo-material-body-small__FUcTX",
+                "typo-small-details": "page-home_typo-small-details___xSOJ",
+                "default-container": "page-home_default-container__7ulFp"
+            }
+        },
+        4329: e => {
+            e.exports = {
+                tablet: "768",
+                "tablet-large": "1024",
+                laptop: "1280",
+                "laptop-large": "1440",
+                desktop: "1600",
+                monitor: "1920",
+                white: "#fff",
+                black: "#000",
+                "ease-linear": "0,0,1,1",
+                "ease-out": ".26,1,.48,1",
+                "typo-flow-text": "pricing_typo-flow-text__jdB0w",
+                "typo-flow-text-small": "pricing_typo-flow-text-small__uN4CX",
+                "typo-flow-subtitle": "pricing_typo-flow-subtitle__CSzgn",
+                "typo-flow-tagline": "pricing_typo-flow-tagline__j_lm_",
+                "typo-flow-title": "pricing_typo-flow-title__MqEiR",
+                "typo-flow-banner": "pricing_typo-flow-banner__bppAI",
+                "typo-flow-description": "pricing_typo-flow-description___ci1g",
+                "typo-flow-megatitle": "pricing_typo-flow-megatitle__0eHew",
+                "typo-flow-caption": "pricing_typo-flow-caption__FBJdq",
+                "typo-flow-disclaimer": "pricing_typo-flow-disclaimer__B_fyf",
+                "typo-material-body-small": "pricing_typo-material-body-small__8yMze",
+                "typo-small-details": "pricing_typo-small-details__432Ob",
+                "default-container": "pricing_default-container__Sf6Qx",
+                pricing: "pricing_pricing__VxSwp",
+                anchorTarget: "pricing_anchorTarget___qPkO",
+                headline: "pricing_headline__E4nOu",
+                subhead: "pricing_subhead__Vt7WR",
+                listContainer: "pricing_listContainer__ZFxbt",
+                option: "pricing_option__ynX61",
+                optionTitle: "pricing_optionTitle__Qvk5P",
+                titleBorder: "pricing_titleBorder__mbl55",
+                optionPriceContainer: "pricing_optionPriceContainer__lWnBi",
+                optionCompareAtPrice: "pricing_optionCompareAtPrice__7E_rE",
+                optionPrice: "pricing_optionPrice__kKPRL",
+                optionPriceMode: "pricing_optionPriceMode__guGA9",
+                optionFeatures: "pricing_optionFeatures__omSbb",
+                optionAlsoIncluded: "pricing_optionAlsoIncluded__tptR7",
+                borderBottomElement: "pricing_borderBottomElement___MYn_",
+                ctaContainer: "pricing_ctaContainer__bp6_Y",
+                bottomLabel: "pricing_bottomLabel__xaJkN",
+                unavailableContainer: "pricing_unavailableContainer__NOzP8",
+                unavailableCopy: "pricing_unavailableCopy__MvBz_"
+            }
+        },
+        4354: e => {
+            e.exports = {
+                tablet: "768",
+                "tablet-large": "1024",
+                laptop: "1280",
+                "laptop-large": "1440",
+                desktop: "1600",
+                monitor: "1920",
+                white: "#fff",
+                black: "#000",
+                "ease-linear": "0,0,1,1",
+                "ease-out": ".26,1,.48,1",
+                "typo-flow-text": "partners_typo-flow-text__IUgQ_",
+                "typo-flow-text-small": "partners_typo-flow-text-small__RtDIo",
+                "typo-flow-subtitle": "partners_typo-flow-subtitle__2zOP3",
+                "typo-flow-tagline": "partners_typo-flow-tagline__jVdxU",
+                "typo-flow-title": "partners_typo-flow-title__5ihKs",
+                "typo-flow-banner": "partners_typo-flow-banner__3aRYa",
+                "typo-flow-description": "partners_typo-flow-description__mS5P1",
+                "typo-flow-megatitle": "partners_typo-flow-megatitle__1slXj",
+                "typo-flow-caption": "partners_typo-flow-caption__VhwBB",
+                "typo-flow-disclaimer": "partners_typo-flow-disclaimer__HAGwx",
+                "typo-material-body-small": "partners_typo-material-body-small__pz9IR",
+                "typo-small-details": "partners_typo-small-details__DBQ5n",
+                "default-container": "partners_default-container__zd0w3",
+                partners: "partners_partners__5saVP",
+                anchorTarget: "partners_anchorTarget__THPSM",
+                title: "partners_title__PBSU8",
+                cta: "partners_cta__JPsEl",
+                backgroundContainer: "partners_backgroundContainer__aqQds",
+                backgroundImage: "partners_backgroundImage__bNuhq",
+                list: "partners_list__U3BnC",
+                partner: "partners_partner__gl06I",
+                name: "partners_name__ocH6T",
+                imageWrapper: "partners_imageWrapper__b5w0d",
+                topRight: "partners_topRight__daqCi",
+                topLeft: "partners_topLeft__JzprB",
+                bottomRight: "partners_bottomRight__2_EXf",
+                bottomLeft: "partners_bottomLeft__qBq_u",
+                image: "partners_image__iSGzs",
+                gradientBlurContainer: "partners_gradientBlurContainer__9A_8N",
+                show: "partners_show__LEdAL",
+                gradientBlurTop: "partners_gradientBlurTop__MlcUz",
+                gradientBlurBottom: "partners_gradientBlurBottom__sDxqX",
+                gradientDarkenerTop: "partners_gradientDarkenerTop__vErBf",
+                gradientDarkenerBottom: "partners_gradientDarkenerBottom__7YXCU"
+            }
+        },
+        4944: e => {
+            e.exports = {
+                "ease-linear": "0,0,1,1",
+                "ease-out": ".26,1,.48,1"
+            }
+        },
+        5254: (e, t, o) => {
+            "use strict";
+            o.d(t, {
+                JumpLinksProvider: () => r,
+                f: () => n
+            });
+            var l = o(5155),
+                a = o(2115);
+            let i = (0, a.createContext)(void 0),
+                r = e => {
+                    let {
+                        children: t
+                    } = e, [o, r] = (0, a.useState)(!1), [n, s] = (0, a.useState)(!1), c = (0, a.useRef)(0);
+                    return (0, a.useEffect)(() => {
+                        let e = null,
+                            t = () => {
+                                if (n) {
+                                    c.current = window.scrollY;
+                                    return
+                                }
+                                let t = window.scrollY < c.current ? "down" : "up";
+                                c.current = window.scrollY, "down" === t && (e && clearTimeout(e), s(!0), e = window.setTimeout(() => {
+                                    s(!1)
+                                }, 3e3))
+                            };
+                        return window.addEventListener("scroll", t, {
+                            passive: !0
+                        }), () => {
+                            window.removeEventListener("scroll", t), e && clearTimeout(e)
+                        }
+                    }, [n]), (0, l.jsx)(i.Provider, {
+                        value: {
+                            showJumpLinks: o,
+                            setShowJumpLinks: r,
+                            jumplinksActive: n
+                        },
+                        children: t
+                    })
+                },
+                n = () => {
+                    let e = (0, a.useContext)(i);
+                    if (!e) throw Error("useJumpLinks must be used within a JumpLinksProvider");
+                    return e
+                }
+        },
+        6489: e => {
+            e.exports = {
+                tablet: "768",
+                "tablet-large": "1024",
+                laptop: "1280",
+                "laptop-large": "1440",
+                desktop: "1600",
+                monitor: "1920"
+            }
+        },
+        6581: (e, t, o) => {
+            "use strict";
+            o.d(t, {
+                o2: () => a
+            });
+            let l = (e, t) => {
+                if (void 0 === e) throw Error(`Missing environment variable: '${t}'`);
+                return e
+            };
+            l("https://labs.google", "NEXT_PUBLIC_BASE_URL");
+            let a = l("/flow/about", "NEXT_PUBLIC_BASE_PATH")
+        },
+        6679: (e, t, o) => {
+            "use strict";
+            o.d(t, {
+                Capabilities: () => _
+            });
+            var l = o(5155),
+                a = o(2115),
+                i = o(2596),
+                r = o(9017),
+                n = o(7269),
+                s = o(7677),
+                c = o(2465),
+                p = o.n(c);
+            o(2252);
+            let d = {
+                    groups: [{
+                        label: "Consistent",
+                        firstSlide: 0,
+                        scrollIntoViewOnSelection: !0,
+                        copy: "Bring your own assets, or generate them in Flow. Then easily manage and reference them as you start to generate clips."
+                    }, {
+                        label: "Seamless",
+                        firstSlide: 3,
+                        scrollIntoViewOnSelection: !1,
+                        copy: "An interface designed for the creative story-building process from ideation to iteration."
+                    }, {
+                        label: "Cinematic",
+                        firstSlide: 6,
+                        scrollIntoViewOnSelection: !0,
+                        copy: "State-of-the-art video quality made possible by Google DeepMind’s most advanced models."
+                    }],
+                    slideToTitleMap: [0, 0, 0, 1, 1, 1, 2, 2],
+                    slides: [{
+                        id: "s1",
+                        desktop: "/Consistent/16x9/01_Ingredients_Edit%201%2016x9_250516d.mp4",
+                        mobile: "/Consistent/1_1/01_Ingredients_Edit%201%201x1_250516d.mp4",
+                        alt: ""
+                    }, {
+                        id: "s2",
+                        desktop: "/Consistent/16x9/02_Ingredients%20to%20video_Edit03_16x9_250516e.mp4",
+                        mobile: "/Consistent/1_1/02_Ingredients%20to%20video_Edit03_1x1_250516e.mp4",
+                        alt: ""
+                    }, {
+                        id: "s3",
+                        desktop: "/Consistent/16x9/03%20Frames%20to%20Video_250516a.mp4",
+                        mobile: "/Consistent/1_1/03%20Frames%20to%20Video_1x1_250516a.mp4",
+                        alt: ""
+                    }, {
+                        id: "s4",
+                        desktop: "/Seamless/16x9/04%20Scene%20Builder_250513c_1.mp4",
+                        mobile: "/Seamless/1_1/04%20Scene%20Builder_1x1_250513b_1.mp4",
+                        alt: ""
+                    }, {
+                        id: "s5",
+                        desktop: "/Seamless/16x9/05_JumpTo_250516a.mp4",
+                        mobile: "/Seamless/1_1/05_JumpTo_1x1_250516a.mp4",
+                        alt: ""
+                    }, {
+                        id: "s6",
+                        desktop: "/Seamless/16x9/06_Extend_5mb_250519a.mp4",
+                        mobile: "/Seamless/1_1/06_Extend_1x1_5mb_250519a.mp4",
+                        alt: ""
+                    }, {
+                        id: "s7",
+                        desktop: "/Cinematic/16x9/07_CameraControls_Edit02%2016x9_250516e.mp4",
+                        mobile: "/Cinematic/1_1/07_CameraControls_Edit02%201X1_250516e.mp4",
+                        alt: ""
+                    }, {
+                        id: "s8",
+                        desktop: "/Cinematic/16x9/08_VEO_Cinematic_Edit01_16x9_250516e.mp4",
+                        mobile: "/Cinematic/1_1/08_VEO_Cinematic_Edit01_1x1_250516e.mp4",
+                        alt: ""
+                    }]
+                },
+                _ = e => {
+                    let {
+                        bucketUrl: t
+                    } = e, o = (0, a.useRef)(null), c = (0, a.useRef)(null), _ = (0, a.useRef)(null), u = (0, a.useRef)([]), m = (0, a.useRef)([]), [f, g] = (0, a.useState)(0), y = (0, r.W)(c, {
+                        once: !0,
+                        margin: "10% 0px 10% 0px"
+                    });
+                    (0, a.useEffect)(() => {
+                        if (d.groups[f]?.scrollIntoViewOnSelection) {
+                            let e = u.current[f],
+                                t = _.current;
+                            if (e && t) {
+                                let o = t.offsetWidth,
+                                    l = e.offsetLeft - (o - e.offsetWidth) / 2;
+                                t.scrollTo({
+                                    left: l,
+                                    behavior: "smooth"
+                                })
+                            }
+                        }
+                    }, [f]);
+                    let h = (0, a.useRef)(null);
+                    return (0, a.useEffect)(() => {
+                        if (!m.current) return;
+                        let e = m.current;
+                        return h.current = new IntersectionObserver(e => {
+                            e.forEach(e => {
+                                let t = e.target;
+                                1 === e.intersectionRatio ? t.play() : t.pause()
+                            })
+                        }, {
+                            threshold: 1
+                        }), e.forEach(e => {
+                            e && h.current?.observe(e)
+                        }), () => {
+                            e.forEach(e => {
+                                e && h.current?.unobserve(e)
+                            })
+                        }
+                    }, [m]), (0, l.jsx)("section", {
+                        className: p().capabilities,
+                        id: "capabilities",
+                        "data-section": "capabilities",
+                        children: (0, l.jsxs)("div", {
+                            className: p().contentContainer,
+                            children: [(0, l.jsx)("div", {
+                                className: p().topBorder
+                            }), (0, l.jsx)("div", {
+                                className: p().titlesContainer,
+                                ref: _,
+                                children: d.groups.map((e, t) => (0, l.jsx)("div", {
+                                    className: (0, i.A)(p().groupTitle, "typo-flow-subtitle", f === t && p().selected),
+                                    ref: e => {
+                                        u.current[t] = e
+                                    },
+                                    children: (0, l.jsx)("button", {
+                                        onClick: () => (function(e) {
+                                            let t = d.groups[e]?.firstSlide;
+                                            void 0 !== t && o.current && o.current.slideTo(t)
+                                        })(t),
+                                        children: e.label
+                                    })
+                                }, e.label))
+                            }), (0, l.jsx)("div", {
+                                className: (0, i.A)(p().copyContainer, "typo-flow-text"),
+                                children: d.groups.map((e, t) => (0, l.jsx)("div", {
+                                    className: (0, i.A)(p().groupCopy, t === f && p().selected),
+                                    "aria-hidden": t !== f,
+                                    children: e.copy
+                                }, e.copy))
+                            }), (0, l.jsx)("div", {
+                                ref: c,
+                                className: p().slidesContainer,
+                                children: (0, l.jsx)(s.RC, {
+                                    modules: [n.Jq, n.FJ],
+                                    mousewheel: {
+                                        forceToAxis: !0,
+                                        invert: !1
+                                    },
+                                    onSwiper: e => {
+                                        o.current = e
+                                    },
+                                    onSlideChange: e => {
+                                        let t = d.slideToTitleMap[e.activeIndex];
+                                        void 0 !== t && g(t)
+                                    },
+                                    spaceBetween: 21,
+                                    slidesPerView: 1.3,
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 1.535,
+                                            spaceBetween: 21
+                                        },
+                                        1024: {
+                                            slidesPerView: 1.54,
+                                            spaceBetween: 28
+                                        },
+                                        1440: {
+                                            slidesPerView: 1.699,
+                                            spaceBetween: 0
+                                        }
+                                    },
+                                    className: p().swiper,
+                                    children: d.slides.map((e, a) => (0, l.jsx)(s.qr, {
+                                        onClick: () => {
+                                            o.current?.slideTo(a)
+                                        },
+                                        className: p().slide,
+                                        children: (0, l.jsx)("div", {
+                                            className: p().slideImageContainer,
+                                            children: (0, l.jsx)("video", {
+                                                ref: e => {
+                                                    m.current[a] = e
+                                                },
+                                                autoPlay: !0,
+                                                loop: !0,
+                                                muted: !0,
+                                                playsInline: !0,
+                                                preload: "auto",
+                                                className: p().desktopAsset,
+                                                children: y && (0, l.jsx)("source", {
+                                                    src: `${t}${e.desktop}`,
+                                                    type: "video/mp4"
+                                                })
+                                            })
+                                        })
+                                    }, e.id))
+                                })
+                            })]
+                        })
+                    })
+                }
+        },
+        6991: e => {
+            e.exports = {
+                tablet: "768",
+                "tablet-large": "1024",
+                laptop: "1280",
+                "laptop-large": "1440",
+                desktop: "1600",
+                monitor: "1920",
+                white: "#fff",
+                black: "#000",
+                "ease-linear": "0,0,1,1",
+                "ease-out": ".26,1,.48,1",
+                "typo-flow-text": "hero_typo-flow-text__xtegX",
+                "typo-flow-text-small": "hero_typo-flow-text-small__Kjsh0",
+                "typo-flow-subtitle": "hero_typo-flow-subtitle__6HFIr",
+                "typo-flow-tagline": "hero_typo-flow-tagline__Nc0sz",
+                "typo-flow-title": "hero_typo-flow-title__IqQBF",
+                "typo-flow-banner": "hero_typo-flow-banner__dXaEl",
+                "typo-flow-description": "hero_typo-flow-description__efw5a",
+                "typo-flow-megatitle": "hero_typo-flow-megatitle__EuaN3",
+                "typo-flow-caption": "hero_typo-flow-caption__QSvmd",
+                "typo-flow-disclaimer": "hero_typo-flow-disclaimer__UnksQ",
+                "typo-material-body-small": "hero_typo-material-body-small__r0etc",
+                "typo-small-details": "hero_typo-small-details__NoJ2a",
+                "default-container": "hero_default-container___fwtJ",
+                hero: "hero_hero__Q3Rx9",
+                fadeIn: "hero_fadeIn__4Ffqh",
+                heroContent: "hero_heroContent__RP_uf",
+                flowEffect: "hero_flowEffect__OYVu0",
+                flowEffectImgAnimation: "hero_flowEffectImgAnimation__F9m_F",
+                animationDone: "hero_animationDone__kGJX_",
+                flowContainer: "hero_flowContainer__ZB1dA",
+                flowEffectImg: "hero_flowEffectImg__shTxw",
+                descriptionAndCta: "hero_descriptionAndCta__SI8HO",
+                cta: "hero_cta__osRfk",
+                headline: "hero_headline__mAEP_",
+                banner: "hero_banner__3c_V_",
+                description: "hero_description__CV5zL",
+                ctaPlaceholder: "hero_ctaPlaceholder__BautN",
+                disclaimer: "hero_disclaimer__F2rMf",
+                videoBackground: "hero_videoBackground__IiktF",
+                video: "hero_video__tIR0w"
+            }
+        },
+        7352: (e, t, o) => {
+            "use strict";
+            o.d(t, {
+                Partners: () => g
+            });
+            var l = o(5155),
+                a = o(2115),
+                i = o(6766),
+                r = o(2596),
+                n = o(836),
+                s = o(5084),
+                c = o(747),
+                p = o(8734),
+                d = o(6581),
+                _ = o(4354),
+                u = o.n(_);
+            let m = [{
+                    name: "Junie Lau",
+                    color: "#FFDDFC",
+                    image: `${d.o2}/partners/junie-lau.jpg`,
+                    background: `${d.o2}/partners/junie-lau.jpg`,
+                    imagePosition: "bottomLeft",
+                    width: 1440,
+                    height: 810
+                }, {
+                    name: "Dave Clark",
+                    color: "#C5E7FF",
+                    image: `${d.o2}/partners/dave-clark.jpg`,
+                    background: `${d.o2}/partners/dave-clark.jpg`,
+                    imagePosition: "topRight",
+                    width: 1440,
+                    height: 810
+                }, {
+                    name: "Henry Daubrez",
+                    color: "#AAB2FF",
+                    image: `${d.o2}/partners/henry-daubrez.jpg`,
+                    background: `${d.o2}/partners/henry-daubrez.jpg`,
+                    imagePosition: "topLeft",
+                    width: 1024,
+                    height: 575
+                }],
+                f = {
+                    title: "See how filmmakers are using Flow",
+                    partners: m,
+                    buttonText: "Watch Short Films",
+                    watchShortFilmsUrl: "https://labs.google/flow/tv/short-films?utm_source=flow-about&utm_medium=web&utm_campaign=launch"
+                },
+                g = () => {
+                    let [e, t] = (0, a.useState)(null), [o, d] = (0, a.useState)(!1), _ = (0, a.useRef)(null), g = (0, a.useRef)([]), y = Array.from({
+                        length: 6
+                    }).map((e, t) => (0, l.jsx)("div", {}, t)), h = (e, t) => null === t || e === t ? 1 : .25;
+                    return (0, a.useEffect)(() => {
+                        d("ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)
+                    }, []), (0, a.useEffect)(() => {
+                        if (null !== e && _.current && g.current[e]) {
+                            let t = g.current[e],
+                                o = _.current.parentElement;
+                            if (t && o) {
+                                let e = t.getBoundingClientRect(),
+                                    l = o.getBoundingClientRect(),
+                                    a = e.top + e.height / 2 - l.top;
+                                _.current.style.top = `${a}px`
+                            }
+                        }
+                    }, [e]), (0, l.jsxs)("section", {
+                        id: "partners",
+                        className: u().partners,
+                        children: [(0, l.jsx)("div", {
+                            className: u().anchorTarget
+                        }), (0, l.jsx)("h2", {
+                            className: (0, r.$)(u().title, "typo-flow-text-small"),
+                            children: f.title
+                        }), (0, l.jsxs)("div", {
+                            ref: _,
+                            className: (0, r.$)(u().gradientBlurContainer, null !== e && u().show),
+                            children: [(0, l.jsx)("div", {
+                                className: u().gradientBlurTop,
+                                children: y
+                            }), (0, l.jsx)("div", {
+                                className: u().gradientBlurBottom,
+                                children: y
+                            })]
+                        }), (0, l.jsx)("div", {
+                            className: u().gradientDarkenerTop
+                        }), (0, l.jsx)("div", {
+                            className: u().gradientDarkenerBottom
+                        }), (0, l.jsx)("div", {
+                            className: u().list,
+                            children: f.partners.map((a, c) => {
+                                let p = h(c, e);
+                                return (0, l.jsx)("div", {
+                                    className: u().partner,
+                                    ref: e => {
+                                        g.current[c] = e
+                                    },
+                                    onMouseEnter: () => t(c),
+                                    onMouseLeave: () => t(null),
+                                    children: (0, l.jsxs)("a", {
+                                        href: f.watchShortFilmsUrl,
+                                        target: "_blank",
+                                        rel: "noopener",
+                                        onClick: l => {
+                                            o && (e !== c ? (l.preventDefault(), t(c)) : (window.open(f.watchShortFilmsUrl, "_blank", "noopener"), l.preventDefault()))
+                                        },
+                                        children: [(0, l.jsx)(n.m.h2, {
+                                            initial: !1,
+                                            animate: {
+                                                color: e === c ? a.color : "#ffffff",
+                                                opacity: p
+                                            },
+                                            transition: {
+                                                duration: .25
+                                            },
+                                            className: u().name,
+                                            children: (0, l.jsx)("span", {
+                                                className: "typo-flow-megatitle",
+                                                children: a.name
+                                            })
+                                        }), (0, l.jsx)(s.N, {
+                                            children: e === c && (0, l.jsx)(n.m.div, {
+                                                className: (0, r.$)(u().imageWrapper, a.imagePosition && u()[a.imagePosition]),
+                                                initial: {
+                                                    opacity: 0,
+                                                    scale: .95
+                                                },
+                                                animate: {
+                                                    opacity: 1,
+                                                    scale: 1
+                                                },
+                                                exit: {
+                                                    opacity: 0,
+                                                    scale: .95
+                                                },
+                                                transition: {
+                                                    duration: .4,
+                                                    ease: "easeInOut"
+                                                },
+                                                children: (0, l.jsx)(i.default, {
+                                                    src: a.image,
+                                                    alt: a.name,
+                                                    width: a.width,
+                                                    height: a.height,
+                                                    className: u().image
+                                                })
+                                            })
+                                        })]
+                                    })
+                                }, a.name)
+                            })
+                        }), (0, l.jsxs)(c.v, {
+                            href: f.watchShortFilmsUrl,
+                            className: u().cta,
+                            target: "_blank",
+                            rel: "noreferrer",
+                            children: [(0, l.jsx)(p.I, {
+                                name: "tv",
+                                size: "small",
+                                className: u().ctaIcon
+                            }), (0, l.jsx)("span", {
+                                children: f.buttonText
+                            })]
+                        }), (0, l.jsx)("div", {
+                            className: u().backgroundContainer,
+                            children: (0, l.jsx)(s.N, {
+                                children: null !== e && (0, l.jsx)(n.m.div, {
+                                    className: u().backgroundImage,
+                                    initial: {
+                                        opacity: 0
+                                    },
+                                    animate: {
+                                        opacity: 1
+                                    },
+                                    exit: {
+                                        opacity: 0
+                                    },
+                                    transition: {
+                                        duration: .5
+                                    },
+                                    children: m[e]?.background && (0, l.jsx)(i.default, {
+                                        src: m[e].background,
+                                        alt: "",
+                                        fill: !0,
+                                        style: {
+                                            objectFit: "cover"
+                                        },
+                                        priority: !0
+                                    })
+                                }, m[e]?.name || "no-background-key")
+                            })
+                        })]
+                    })
+                }
+        },
+        7561: e => {
+            e.exports = {
+                white: "#fff",
+                black: "#000"
+            }
+        },
+        7690: e => {
+            e.exports = {
+                tablet: "768",
+                "tablet-large": "1024",
+                laptop: "1280",
+                "laptop-large": "1440",
+                desktop: "1600",
+                monitor: "1920",
+                white: "#fff",
+                black: "#000",
+                "ease-linear": "0,0,1,1",
+                "ease-out": ".26,1,.48,1",
+                "typo-flow-text": "footer_typo-flow-text__1UVA7",
+                "typo-flow-text-small": "footer_typo-flow-text-small__zSCEf",
+                "typo-flow-subtitle": "footer_typo-flow-subtitle__6PkYy",
+                "typo-flow-tagline": "footer_typo-flow-tagline__7Vs6d",
+                "typo-flow-title": "footer_typo-flow-title__Qao08",
+                "typo-flow-banner": "footer_typo-flow-banner__5SpgT",
+                "typo-flow-description": "footer_typo-flow-description__sBQMo",
+                "typo-flow-megatitle": "footer_typo-flow-megatitle__nuW4H",
+                "typo-flow-caption": "footer_typo-flow-caption__j1pDV",
+                "typo-flow-disclaimer": "footer_typo-flow-disclaimer__vxVAV",
+                "typo-material-body-small": "footer_typo-material-body-small__OcGbe",
+                "typo-small-details": "footer_typo-small-details__wfSte",
+                "default-container": "footer_default-container__ANF5J",
+                footer: "footer_footer__FiYd5",
+                contentContainer: "footer_contentContainer__MjiW5",
+                linksSection: "footer_linksSection__Op_1g",
+                disclaimer: "footer_disclaimer__AKlKh",
+                link: "footer_link__Tlx14",
+                cta: "footer_cta__nmLuL"
+            }
+        },
+        8734: (e, t, o) => {
+            "use strict";
+            o.d(t, {
+                I: () => c
+            });
+            var l = o(5155),
+                a = o(2596),
+                i = o(6581),
+                r = o(2226),
+                n = o.n(r);
+            let s = ["discord"];
+            [...s];
+            let c = e => {
+                let {
+                    name: t,
+                    className: o = "",
+                    ariaHidden: r = !1,
+                    size: c = "default"
+                } = e, p = s.includes(t);
+                return (0, l.jsx)(l.Fragment, {
+                    children: p ? (0, l.jsx)("svg", {
+                        className: (0, a.$)(n().icon, n()[c], o),
+                        "aria-hidden": !0,
+                        children: (0, l.jsx)("use", {
+                            href: `${i.o2}/icons.svg#${t}`
+                        })
+                    }) : (0, l.jsx)("span", {
+                        className: (0, a.$)(n().icon, n()[c], o),
+                        ...r ? {
+                            "aria-hidden": "true"
+                        } : {},
+                        children: t
+                    })
+                })
+            }
+        },
+        9039: (e, t, o) => {
+            "use strict";
+            o.d(t, {
+                Hero: () => S
+            });
+            var l = o(5155),
+                a = o(2115),
+                i = o(2596),
+                r = o(9165),
+                n = o(9017),
+                s = o(747),
+                c = o(5254),
+                p = o(6581),
+                d = o(7431),
+                _ = o(3264);
+            let u = `
             varying vec2 vUv;
             void main() {
                 vUv = uv;
                 gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
             }
-`,m=`
+`,
+                m = `
 precision highp float;
 uniform sampler2D uTexture;
 uniform sampler2D uOriginalTexture;
@@ -110,7 +1204,8 @@ void main() {
 	
 	gl_FragColor = plusLighter(blurredColor, vec4(0.0, 0.0, 0.0, 0.0));
 }
-`,f=`
+`,
+                f = `
 precision highp float;
 uniform sampler2D uTexture;
 uniform sampler2D uOriginalTexture;
@@ -218,4 +1313,744 @@ void main() {
 	gl_FragColor = blurredColor;
 	//plusLighter(blurredColor, vec4(0.0, 0.0, 0.0, 0.0));
 }
-`,g=null,y=!1,h=0,w=!1;async function v(e){let t,o=Math.min(window.devicePixelRatio||1,2),l=e?.parentElement;if(!e||!l)return;"img"===e.tagName.toLowerCase()&&await new Promise(t=>{e.complete?t(e):e.onload=t}),g=e;let a=e.offsetWidth,i=e.offsetHeight,r=document.createElement("canvas"),n=r.getContext("2d");if(!n)return;r.width=2048,r.height=r.width*(i/a),n.drawImage(e,0,0,r.width,r.height);let s=r.toDataURL();h=.3*Math.min(a,i);let c=document.createElement("canvas");c.style.display="block",c.style.position="relative",c.style.width=a+"px",c.style.height=i+"px",c.style.maxWidth="100%",c.style.maxHeight="100%";let p=l.querySelector("canvas");p&&p.remove(),l.append(c);let v=new d.JeP({canvas:c,alpha:!0,antialias:!0});v.setPixelRatio(o);let k=new _.qUd(-1,1,1,-1,0,1),C=new _.bdM(2,2),E=new _.Tap,S=await new Promise(e=>E.load(s,e));S.minFilter=_.k6q,S.magFilter=_.k6q;let j={uTexture:{value:S},uOriginalTexture:{value:S},uBlurAmount:{value:10},uBlurSize:{value:.75},uMouse:{value:new _.I9Y(0,0)},uMouseVelocity:{value:new _.I9Y(0,0)},uResolution:{value:new _.I9Y(a*o,i*o)},uMaxVelocity:{value:2},uVelocityStrength:{value:.001},uAlpha:{value:1.2}},I=new _.nWS(a*o,i*o,{minFilter:_.k6q,magFilter:_.k6q,format:_.GWd,type:_.OUM}),N=new _.nWS(a*o,i*o,{minFilter:_.k6q,magFilter:_.k6q,format:_.GWd,type:_.OUM}),R=new _.BKk({uniforms:j,vertexShader:u,fragmentShader:m}),T=new _.BKk({uniforms:{...j,uTexture:{value:I.texture}},vertexShader:u,fragmentShader:f}),M=new _.eaF(C,R),B=new _.eaF(C,T),P=new _.Z58;P.add(M);let A=new _.Z58;function V(){y&&g&&(document?.querySelector(".js-flowContainer")?.append(g),a=g.offsetWidth,i=g.offsetHeight);let e=window.innerWidth,t=window.innerHeight,l=Math.min(e/a,t/i,1),r=a*l,n=i*l;h=.3*Math.min(r,n),c.width=r*o,c.height=n*o,c.style.width=r+"px",c.style.height=n+"px",v.setSize(r,n,!1),j.uResolution.value.set(r*o,n*o),I.setSize(r*o,n*o),N.setSize(r*o,n*o),y||(y=!0)}A.add(B),V(),window.addEventListener("resize",()=>{clearTimeout(t),t=setTimeout(V,10)});let F=new _.I9Y(0,0),L=new _.I9Y(window.innerWidth/2,window.innerHeight/2),D=new _.I9Y(0,0),O=new _.I9Y(0,0),$=performance.now(),W=!0,U=0,z=[],q=!1;for(let e=0;e<10;e++)z.push(new _.I9Y(0,0));let H=null;function Y(){W=!1,H&&clearTimeout(H),H=setTimeout(()=>{W=!0,L.set(c.width/2,c.height/2)},5e3)}function J(){if(!w)return;let e=performance.now(),t=Math.max((e-$)/1e4,1e-4);if($=e,W){(U+=15*t)>2*Math.PI&&(U-=2*Math.PI);let e=c.width/2,o=c.height/2,l=.4*Math.min(c.width,c.height);L.set(e+Math.cos(U)*l,o-Math.sin(U)*l/2)}F.x+=(L.x-F.x)*.02,F.y+=(L.y-F.y)*.02,j.uMouse.value.copy(F);let o=new _.I9Y(Math.abs(F.x-O.x)/t,Math.abs(F.y-O.y)/t);z.push(o),z.length>10&&z.shift();let l=new _.I9Y(0,0);for(let e of z)l.add(e);l.divideScalar(z.length),D.x+=(l.x-D.x)*.95,D.y+=(l.y-D.y)*.95,q||(q=!0,D.set(.001,.001)),j.uMouseVelocity.value.copy(D),O.copy(F),v.setRenderTarget(I),v.render(P,k),v.setRenderTarget(null),v.render(A,k),requestAnimationFrame(J)}return w=!0,J(),window.addEventListener("mousemove",e=>{Y();let t=x(e,c),o=b(t.x,h,c.width-h),l=b(c.height-t.y,h,c.height-h);L.set(o,l)}),window.addEventListener("touchmove",e=>{Y();let t=e.touches[0];if(!t)return;let o=x(t,c),l=b(o.x,h,c.width-h),a=b(c.height-o.y,h,c.height-h);L.set(l,a)},{passive:!0}),window.addEventListener("touchstart",e=>{Y();let t=e.touches[0];if(!t)return;let o=x(t,c),l=b(o.x,h,c.width-h),a=b(c.height-o.y,h,c.height-h);L.set(l,a)},{passive:!0}),window.addEventListener("touchend",()=>{}),{stop:()=>{w=!1},start:()=>{w||(w=!0,J())}}}function b(e,t,o){return Math.min(Math.max(e,t),o)}function x(e,t){let o=t.getBoundingClientRect(),l=Math.min(window.devicePixelRatio||1,2);return{x:(e.clientX-o.left)*l,y:(e.clientY-o.top)*l}}var k=o(6991),C=o.n(k);let E={banner:"New users can now try Flow free asdasd charge\nwith 100 monthly credits.",description:"Where the next wave of storytelling\nhappens with Veo",video:{src420:"/RNDR_TunnelVidoes_stretched_005_420x1118.mp4",src1440:"/RNDR_TunnelVidoes_stretched_005_1440x1080.mp4",src1920:"/RNDR_TunnelVidoes_stretched_005_1920x1296.mp4"}},S=e=>{let{bucketUrl:t}=e,[o,d]=(0,a.useState)(!1),_=(0,a.useRef)(null),u=(0,a.useRef)(null),m=(0,a.useRef)(null),f=(0,a.useRef)(null),g=(0,a.useRef)(null),y=(0,a.useRef)(null),h=(0,a.useRef)(null),w=(0,a.useRef)(null),b=(0,a.useRef)(null),x=(0,a.useRef)(null),k=(0,a.useRef)(null),S=(0,a.useRef)(null),{setShowJumpLinks:j}=(0,c.f)(),I=(0,n.W)(_,{once:!1}),N=(0,n.W)(f,{once:!1});return(0,a.useEffect)(()=>{j(!I)},[I,j]),(0,a.useEffect)(()=>{if(!f.current)return;N?f.current.play():f.current.pause();let e=null,t=()=>{f.current&&(document.hidden?f.current.pause():N&&(e=window.setTimeout(()=>{f.current?.play()},100)))};return document.addEventListener("visibilitychange",t),()=>{document.removeEventListener("visibilitychange",t),e&&window.clearTimeout(e)}},[N]),(0,a.useEffect)(()=>{I?w.current?.start():w.current?.stop()},[I]),(0,a.useEffect)(()=>{let e=()=>{let e=f.current;if(e){let o={small:`${t}${E.video.src420}`,medium:`${t}${E.video.src1440}`,large:`${t}${E.video.src1920}`},l=e.src;(l=window.matchMedia("(max-width: 768px)").matches?o.small:window.matchMedia("(max-width: 1920px)").matches?o.medium:o.large)!==e.src&&(e.src=l)}if(u.current&&f.current){let e=window.innerWidth,t=window.innerHeight,o=e<768?4/3:16/9,l=Math.max(e,t*o),a=1/o*l;f.current.style.width=`${l}px`,f.current.style.transform=`translate(-50%, -${e<768?.6*a:.5*a}px)`,f.current.style.opacity="0.8"}};return window.addEventListener("resize",e),e(),()=>{window.removeEventListener("resize",e)}},[t]),(0,a.useEffect)(()=>{(async()=>{let e=.01*window.innerHeight;document.documentElement.style.setProperty("--vh",`${e}px`),y.current&&(w.current=await v(y.current)||null)})();let e=[h.current,b.current,x.current,k.current,S.current];(0,r.i)(e,{opacity:[0,1],filter:["blur(100px)","blur(0px)"]},{duration:.5,ease:"linear"}).finished.then(()=>{d(!0)})},[]),(0,l.jsxs)("section",{id:"hero",ref:_,className:C().hero,children:[(0,l.jsxs)("div",{className:C().heroContent,children:[(0,l.jsxs)("p",{ref:S,className:(0,i.$)(C().banner,C().fadeIn,"typo-flow-banner"),children:[(0,l.jsx)("b",{children:"* UPDATE *"})," ",E.banner]}),(0,l.jsx)("div",{ref:u,className:(0,i.$)(C().flowEffect,o&&C().animationDone),children:(0,l.jsxs)("div",{className:(0,i.$)("js-flowContainer",C().flowContainer),children:[!o&&(0,l.jsx)("img",{ref:h,className:(0,i.$)(C().fadeIn,C().flowEffectImgAnimation),src:`${p.o2}/hero/wordmark.svg`,alt:"Flow Effect for Animation","aria-hidden":"true"}),(0,l.jsx)("img",{ref:y,className:(0,i.$)(C().flowEffectImg),src:`${p.o2}/hero/wordmark.svg`,alt:"Flow Effect"})]})}),(0,l.jsxs)("div",{ref:m,className:C().descriptionAndCta,children:[(0,l.jsx)("p",{ref:b,className:(0,i.$)(C().description,C().fadeIn,"typo-flow-description"),children:E.description}),(0,l.jsx)(s.v,{href:"https://labs.google/fx/flow",ref:x,className:(0,i.$)(C().cta,C().fadeIn),target:"_blank",rel:"noreferrer",children:(0,l.jsx)("span",{children:"Create with Flow"})}),(0,l.jsxs)("p",{ref:k,className:(0,i.$)(C().disclaimer,"typo-flow-disclaimer"),children:[(0,l.jsxs)("span",{children:["Explore"," ",(0,l.jsx)("a",{href:"https://one.google.com/ai?utm_source=flow&utm_medium=web&utm_campaign=vfx_landing_page_offer",target:"_blank",children:"Google AI Subscriptions."})]})," ",(0,l.jsxs)("span",{children:["See"," ",(0,l.jsx)("a",{target:"_blank",rel:"noreferrer",href:"https://labs.google/fx/tools/flow/faq",children:"FAQ"}),"."]})]})]})]}),(0,l.jsx)("div",{ref:g,className:C().videoBackground,children:(0,l.jsxs)("video",{ref:f,className:C().video,autoPlay:!0,muted:!0,loop:!0,playsInline:!0,children:[(0,l.jsx)("source",{src:`${t}${E.video.src420}`,type:"video/mp4",media:"(max-width: 639px)"}),(0,l.jsx)("source",{src:`${t}${E.video.src1440}`,type:"video/mp4",media:"(min-width: 640px) and (max-width: 1919px)"}),(0,l.jsx)("source",{src:`${t}${E.video.src1920}`,type:"video/mp4",media:"(min-width: 1920px)"}),"Your browser does not support the video tag."]})})]})}},9073:(e,t,o)=>{"use strict";o.d(t,{Gallery:()=>f});var l=o(5155),a=o(2115),i=o(6766),r=o(2596),n=o(9017),s=o(747),c=o(8734),p=o(992),d=o(2705),_=o.n(d);let u={cta:{label:"Watch Flow TV",href:"https://labs.google/flow/tv?utm_source=flow-about&utm_medium=web&utm_campaign=launch"},items:[[{name:"FIT CHECK",video:{src:"/gallery/Impossible-Fashion.mp4",poster:"/gallery/Impossible-Fashion.webp"}},{name:"THE DEGENERATES",video:{src:"/gallery/3D-Cartoon.mp4",poster:"/gallery/3D-Cartoon.webp"}},{name:"Alt Spectrum",video:{src:"/gallery/Alt-Spectrum.mp4",poster:"/gallery/Alt-Spectrum.webp"}},{name:"ZOO BREAK",video:{src:"/gallery/Animals-in-Random-Places.mp4",poster:"/gallery/Animals-in-Random-Places.webp"}}],[{name:"PASSENGERS",video:{src:"/gallery/Backseat-Moments.mp4",poster:"/gallery/Backseat-Moments.webp"}},{name:"It's all yarn",video:{src:"/gallery/It_sAll-Yarn.mp4",poster:"/gallery/It_sAll-Yarn.webp"}},{name:"MICROVERSE",video:{src:"/gallery/Under-the-Microscope.mp4",poster:"/gallery/Under-the-Microscope.webp"}},{name:"Mobile Homes",video:{src:"/gallery/Mobile-Homes.mp4",poster:"/gallery/Mobile-Homes.webp"}}],[{name:"Off season Santa",video:{src:"/gallery/Off-Season-Santa.mp4",poster:"/gallery/Off-Season-Santa.webp"}},{name:"MUNDO QUESO",video:{src:"/gallery/Queso-Mundo.mp4",poster:"/gallery/Queso-Mundo.webp"}},{name:"ULTRA WIDE",video:{src:"/gallery/Tiny-Planet-Big-People.mp4",poster:"/gallery/Tiny-Planet-Big-People.webp"}},{name:"WINDOW SEAT",video:{src:"/gallery/View-from-Train.mp4",poster:"/gallery/View-from-Train.webp"}}]],itemsMobile:[[{name:"FIT CHECK",video:{src:"/gallery/Impossible-Fashion.mp4",poster:"/gallery/Impossible-Fashion.webp"}},{name:"THE DEGENERATES",video:{src:"/gallery/3D-Cartoon.mp4",poster:"/gallery/3D-Cartoon.webp"}},{name:"SPECTRAMATIC",video:{src:"/gallery/Alt-Spectrum.mp4",poster:"/gallery/Alt-Spectrum.webp"}},{name:"ZOO BREAK",video:{src:"/gallery/Animals-in-Random-Places.mp4",poster:"/gallery/Animals-in-Random-Places.webp"}},{name:"Off season Santa",video:{src:"/gallery/Off-Season-Santa.mp4",poster:"/gallery/Off-Season-Santa.webp"}},{name:"MUNDO QUESO",video:{src:"/gallery/Queso-Mundo.mp4",poster:"/gallery/Queso-Mundo.webp"}}],[{name:"PASSENGERS",video:{src:"/gallery/Backseat-Moments.mp4",poster:"/gallery/Backseat-Moments.webp"}},{name:"It's all yarn",video:{src:"/gallery/It_sAll-Yarn.mp4",poster:"/gallery/It_sAll-Yarn.webp"}},{name:"MICROVERSE",video:{src:"/gallery/Under-the-Microscope.mp4",poster:"/gallery/Under-the-Microscope.webp"}},{name:"Mobile Homes",video:{src:"/gallery/Mobile-Homes.mp4",poster:"/gallery/Mobile-Homes.webp"}},{name:"ULTRA WIDE",video:{src:"/gallery/Tiny-Planet-Big-People.mp4",poster:"/gallery/Tiny-Planet-Big-People.webp"}},{name:"WINDOW SEAT",video:{src:"/gallery/View-from-Train.mp4",poster:"/gallery/View-from-Train.webp"}}]]},m=Array.from({length:4}).map((e,t)=>(0,l.jsx)("div",{},t)),f=e=>{let{bucketUrl:t}=e,o=(0,a.useRef)(null),d=(0,a.useRef)([]),f=(0,p.N)("(max-width: 767px)"),[g,y]=(0,a.useState)(f?u.itemsMobile:u.items),h=(0,n.W)(o,{once:!1,margin:"10% 0px 10% 0px"}),[w,v]=(0,a.useState)(h);return(0,a.useEffect)(()=>{v(h)},[h]),(0,a.useEffect)(()=>{let e=!1;(async()=>{if(!d.current.length)return;if(!h)return d.current.forEach(e=>e?.pause());let t=0;await Promise.all(d.current.map(async e=>{if(e)try{await e.play()}catch(e){t++}})),t>5&&!e&&(d.current.forEach(e=>e?.pause()),e=!0)})()},[h]),(0,a.useEffect)(()=>{y(f?u.itemsMobile:u.items)},[f]),(0,l.jsxs)("section",{className:_().gallery,ref:o,id:"gallery",children:[(0,l.jsx)("div",{className:_().gradientBlurTop,children:m}),(0,l.jsx)("div",{className:_().gradientBlurBottom,children:m}),(0,l.jsx)("div",{className:_().gradientDarkenerTop}),(0,l.jsx)("div",{className:_().gradientDarkenerBottom}),(0,l.jsx)("div",{className:_().items,children:g.map((e,o)=>(0,l.jsx)("div",{className:_().column,children:(0,l.jsx)("div",{"data-direction":1===o?"up":"down",className:_().columnInner,children:[...e,...e].map((e,o)=>(0,l.jsxs)("div",{className:_().item,children:[(0,l.jsx)("div",{className:_().media,children:e.video?(0,l.jsx)("div",{className:_().videoWrapper,children:(0,l.jsx)("video",{ref:e=>{d.current[o]=e},className:_().video,autoPlay:!0,loop:!0,muted:!0,playsInline:!0,preload:"auto",poster:`${t}${e.video.poster}`,children:w&&(0,l.jsx)("source",{src:`${t}${e.video.src}`,type:"video/mp4"})})}):e?.poster?(0,l.jsx)(i.default,{src:e.poster.src,width:e.poster.width,height:e.poster.height,alt:"Gallery item",className:_().image}):null}),(0,l.jsx)("span",{className:(0,r.$)(_().name),children:e.name})]},o))})},o))}),(0,l.jsxs)(s.v,{href:u.cta.href,className:_().cta,target:"_blank",rel:"noreferrer",children:[(0,l.jsx)(c.I,{name:"tv",size:"small",className:_().ctaIcon}),(0,l.jsx)("span",{children:u.cta.label})]})]})}},9635:e=>{e.exports={tablet:"768","tablet-large":"1024",laptop:"1280","laptop-large":"1440",desktop:"1600",monitor:"1920",white:"#fff",black:"#000","ease-linear":"0,0,1,1","ease-out":".26,1,.48,1","typo-flow-text":"spacer-text_typo-flow-text__Q9j_d","typo-flow-text-small":"spacer-text_typo-flow-text-small__0LU_I","typo-flow-subtitle":"spacer-text_typo-flow-subtitle__AIM10","typo-flow-tagline":"spacer-text_typo-flow-tagline__bbAuy","typo-flow-title":"spacer-text_typo-flow-title__JiACr","typo-flow-banner":"spacer-text_typo-flow-banner__nJJta","typo-flow-description":"spacer-text_typo-flow-description__Cu8Td","typo-flow-megatitle":"spacer-text_typo-flow-megatitle__2aStm","typo-flow-caption":"spacer-text_typo-flow-caption__HKoex","typo-flow-disclaimer":"spacer-text_typo-flow-disclaimer__RDRYu","typo-material-body-small":"spacer-text_typo-material-body-small__pNFSU","typo-small-details":"spacer-text_typo-small-details__vrntt","default-container":"spacer-text_default-container__XP_E3",spacerText:"spacer-text_spacerText__rY6HY",title:"spacer-text_title__GJYuW",copy:"spacer-text_copy__cK_qp"}},9924:(e,t,o)=>{"use strict";o.d(t,{LO:()=>_,sp:()=>m,vP:()=>u});var l=o(6489),a=o.n(l),i=o(7561),r=o.n(i),n=o(4944),s=o.n(n);let c=e=>{if(!e)throw Error("No value provided to 'validateString'.");return e},p=e=>{if(!e)throw Error("No value provided to 'toNumber'.");return Number(e)},d=e=>{if(!e)throw Error("No value provided to 'toBezier'.");let t=e.split(",").map(Number);if(4!==t.length)throw Error("Invalid Bezier definition. Expected 4 values.");return t},_=new Map([["mobile",void 0],["tablet",p(a().tablet)],["laptop",p(a().laptop)],["desktop",p(a().desktop)]]);c(r().white),c(r().black);let u=d(s()["ease-linear"]),m=d(s()["ease-out"])},9928:e=>{e.exports={tablet:"768","tablet-large":"1024",laptop:"1280","laptop-large":"1440",desktop:"1600",monitor:"1920",white:"button-link_white__cMMvJ",black:"#000","ease-linear":"0,0,1,1","ease-out":".26,1,.48,1","typo-flow-text":"button-link_typo-flow-text__knnxc","typo-flow-text-small":"button-link_typo-flow-text-small__IE47R","typo-flow-subtitle":"button-link_typo-flow-subtitle__5CzYX","typo-flow-tagline":"button-link_typo-flow-tagline__SDzn_","typo-flow-title":"button-link_typo-flow-title__eHSla","typo-flow-banner":"button-link_typo-flow-banner___g3JI","typo-flow-description":"button-link_typo-flow-description___zbRp","typo-flow-megatitle":"button-link_typo-flow-megatitle__q5Uy8","typo-flow-caption":"button-link_typo-flow-caption__4Sjma","typo-flow-disclaimer":"button-link_typo-flow-disclaimer__rvWEK","typo-material-body-small":"button-link_typo-material-body-small__FochC","typo-small-details":"button-link_typo-small-details__jQhav","default-container":"button-link_default-container___14oK",link:"button-link_link__eTf8F"}}},e=>{var t=t=>e(e.s=t);e.O(0,[200,896,367,831,821,897,441,684,358],()=>t(181)),_N_E=e.O()}]);
+`,
+                g = null,
+                y = !1,
+                h = 0,
+                w = !1;
+            async function v(e) {
+                let t, o = Math.min(window.devicePixelRatio || 1, 2),
+                    l = e?.parentElement;
+                if (!e || !l) return;
+                "img" === e.tagName.toLowerCase() && await new Promise(t => {
+                    e.complete ? t(e) : e.onload = t
+                }), g = e;
+                let a = e.offsetWidth,
+                    i = e.offsetHeight,
+                    r = document.createElement("canvas"),
+                    n = r.getContext("2d");
+                if (!n) return;
+                r.width = 2048, r.height = r.width * (i / a), n.drawImage(e, 0, 0, r.width, r.height);
+                let s = r.toDataURL();
+                h = .3 * Math.min(a, i);
+                let c = document.createElement("canvas");
+                c.style.display = "block", c.style.position = "relative", c.style.width = a + "px", c.style.height = i + "px", c.style.maxWidth = "100%", c.style.maxHeight = "100%";
+                let p = l.querySelector("canvas");
+                p && p.remove(), l.append(c);
+                let v = new d.JeP({
+                    canvas: c,
+                    alpha: !0,
+                    antialias: !0
+                });
+                v.setPixelRatio(o);
+                let k = new _.qUd(-1, 1, 1, -1, 0, 1),
+                    C = new _.bdM(2, 2),
+                    E = new _.Tap,
+                    S = await new Promise(e => E.load(s, e));
+                S.minFilter = _.k6q, S.magFilter = _.k6q;
+                let j = {
+                        uTexture: {
+                            value: S
+                        },
+                        uOriginalTexture: {
+                            value: S
+                        },
+                        uBlurAmount: {
+                            value: 10
+                        },
+                        uBlurSize: {
+                            value: .75
+                        },
+                        uMouse: {
+                            value: new _.I9Y(0, 0)
+                        },
+                        uMouseVelocity: {
+                            value: new _.I9Y(0, 0)
+                        },
+                        uResolution: {
+                            value: new _.I9Y(a * o, i * o)
+                        },
+                        uMaxVelocity: {
+                            value: 2
+                        },
+                        uVelocityStrength: {
+                            value: .001
+                        },
+                        uAlpha: {
+                            value: 1.2
+                        }
+                    },
+                    I = new _.nWS(a * o, i * o, {
+                        minFilter: _.k6q,
+                        magFilter: _.k6q,
+                        format: _.GWd,
+                        type: _.OUM
+                    }),
+                    N = new _.nWS(a * o, i * o, {
+                        minFilter: _.k6q,
+                        magFilter: _.k6q,
+                        format: _.GWd,
+                        type: _.OUM
+                    }),
+                    R = new _.BKk({
+                        uniforms: j,
+                        vertexShader: u,
+                        fragmentShader: m
+                    }),
+                    T = new _.BKk({
+                        uniforms: {
+                            ...j,
+                            uTexture: {
+                                value: I.texture
+                            }
+                        },
+                        vertexShader: u,
+                        fragmentShader: f
+                    }),
+                    M = new _.eaF(C, R),
+                    B = new _.eaF(C, T),
+                    P = new _.Z58;
+                P.add(M);
+                let A = new _.Z58;
+
+                function V() {
+                    y && g && (document?.querySelector(".js-flowContainer")?.append(g), a = g.offsetWidth, i = g.offsetHeight);
+                    let e = window.innerWidth,
+                        t = window.innerHeight,
+                        l = Math.min(e / a, t / i, 1),
+                        r = a * l,
+                        n = i * l;
+                    h = .3 * Math.min(r, n), c.width = r * o, c.height = n * o, c.style.width = r + "px", c.style.height = n + "px", v.setSize(r, n, !1), j.uResolution.value.set(r * o, n * o), I.setSize(r * o, n * o), N.setSize(r * o, n * o), y || (y = !0)
+                }
+                A.add(B), V(), window.addEventListener("resize", () => {
+                    clearTimeout(t), t = setTimeout(V, 10)
+                });
+                let F = new _.I9Y(0, 0),
+                    L = new _.I9Y(window.innerWidth / 2, window.innerHeight / 2),
+                    D = new _.I9Y(0, 0),
+                    O = new _.I9Y(0, 0),
+                    $ = performance.now(),
+                    W = !0,
+                    U = 0,
+                    z = [],
+                    q = !1;
+                for (let e = 0; e < 10; e++) z.push(new _.I9Y(0, 0));
+                let H = null;
+
+                function Y() {
+                    W = !1, H && clearTimeout(H), H = setTimeout(() => {
+                        W = !0, L.set(c.width / 2, c.height / 2)
+                    }, 5e3)
+                }
+
+                function J() {
+                    if (!w) return;
+                    let e = performance.now(),
+                        t = Math.max((e - $) / 1e4, 1e-4);
+                    if ($ = e, W) {
+                        (U += 15 * t) > 2 * Math.PI && (U -= 2 * Math.PI);
+                        let e = c.width / 2,
+                            o = c.height / 2,
+                            l = .4 * Math.min(c.width, c.height);
+                        L.set(e + Math.cos(U) * l, o - Math.sin(U) * l / 2)
+                    }
+                    F.x += (L.x - F.x) * .02, F.y += (L.y - F.y) * .02, j.uMouse.value.copy(F);
+                    let o = new _.I9Y(Math.abs(F.x - O.x) / t, Math.abs(F.y - O.y) / t);
+                    z.push(o), z.length > 10 && z.shift();
+                    let l = new _.I9Y(0, 0);
+                    for (let e of z) l.add(e);
+                    l.divideScalar(z.length), D.x += (l.x - D.x) * .95, D.y += (l.y - D.y) * .95, q || (q = !0, D.set(.001, .001)), j.uMouseVelocity.value.copy(D), O.copy(F), v.setRenderTarget(I), v.render(P, k), v.setRenderTarget(null), v.render(A, k), requestAnimationFrame(J)
+                }
+                return w = !0, J(), window.addEventListener("mousemove", e => {
+                    Y();
+                    let t = x(e, c),
+                        o = b(t.x, h, c.width - h),
+                        l = b(c.height - t.y, h, c.height - h);
+                    L.set(o, l)
+                }), window.addEventListener("touchmove", e => {
+                    Y();
+                    let t = e.touches[0];
+                    if (!t) return;
+                    let o = x(t, c),
+                        l = b(o.x, h, c.width - h),
+                        a = b(c.height - o.y, h, c.height - h);
+                    L.set(l, a)
+                }, {
+                    passive: !0
+                }), window.addEventListener("touchstart", e => {
+                    Y();
+                    let t = e.touches[0];
+                    if (!t) return;
+                    let o = x(t, c),
+                        l = b(o.x, h, c.width - h),
+                        a = b(c.height - o.y, h, c.height - h);
+                    L.set(l, a)
+                }, {
+                    passive: !0
+                }), window.addEventListener("touchend", () => {}), {
+                    stop: () => {
+                        w = !1
+                    },
+                    start: () => {
+                        w || (w = !0, J())
+                    }
+                }
+            }
+
+            function b(e, t, o) {
+                return Math.min(Math.max(e, t), o)
+            }
+
+            function x(e, t) {
+                let o = t.getBoundingClientRect(),
+                    l = Math.min(window.devicePixelRatio || 1, 2);
+                return {
+                    x: (e.clientX - o.left) * l,
+                    y: (e.clientY - o.top) * l
+                }
+            }
+            var k = o(6991),
+                C = o.n(k);
+            let E = {
+                    banner: "New users can now try Flow free asdasd charge\nwith 100 monthly credits.",
+                    description: "Where the next wave of storytelling\nhappens with Veo",
+                    video: {
+                        src420: "/RNDR_TunnelVidoes_stretched_005_420x1118.mp4",
+                        src1440: "/RNDR_TunnelVidoes_stretched_005_1440x1080.mp4",
+                        src1920: "/RNDR_TunnelVidoes_stretched_005_1920x1296.mp4"
+                    }
+                },
+                S = e => {
+                    let {
+                        bucketUrl: t
+                    } = e, [o, d] = (0, a.useState)(!1), _ = (0, a.useRef)(null), u = (0, a.useRef)(null), m = (0, a.useRef)(null), f = (0, a.useRef)(null), g = (0, a.useRef)(null), y = (0, a.useRef)(null), h = (0, a.useRef)(null), w = (0, a.useRef)(null), b = (0, a.useRef)(null), x = (0, a.useRef)(null), k = (0, a.useRef)(null), S = (0, a.useRef)(null), {
+                        setShowJumpLinks: j
+                    } = (0, c.f)(), I = (0, n.W)(_, {
+                        once: !1
+                    }), N = (0, n.W)(f, {
+                        once: !1
+                    });
+                    return (0, a.useEffect)(() => {
+                        j(!I)
+                    }, [I, j]), (0, a.useEffect)(() => {
+                        if (!f.current) return;
+                        N ? f.current.play() : f.current.pause();
+                        let e = null,
+                            t = () => {
+                                f.current && (document.hidden ? f.current.pause() : N && (e = window.setTimeout(() => {
+                                    f.current?.play()
+                                }, 100)))
+                            };
+                        return document.addEventListener("visibilitychange", t), () => {
+                            document.removeEventListener("visibilitychange", t), e && window.clearTimeout(e)
+                        }
+                    }, [N]), (0, a.useEffect)(() => {
+                        I ? w.current?.start() : w.current?.stop()
+                    }, [I]), (0, a.useEffect)(() => {
+                        let e = () => {
+                            let e = f.current;
+                            if (e) {
+                                let o = {
+                                        small: `${t}${E.video.src420}`,
+                                        medium: `${t}${E.video.src1440}`,
+                                        large: `${t}${E.video.src1920}`
+                                    },
+                                    l = e.src;
+                                (l = window.matchMedia("(max-width: 768px)").matches ? o.small : window.matchMedia("(max-width: 1920px)").matches ? o.medium : o.large) !== e.src && (e.src = l)
+                            }
+                            if (u.current && f.current) {
+                                let e = window.innerWidth,
+                                    t = window.innerHeight,
+                                    o = e < 768 ? 4 / 3 : 16 / 9,
+                                    l = Math.max(e, t * o),
+                                    a = 1 / o * l;
+                                f.current.style.width = `${l}px`, f.current.style.transform = `translate(-50%, -${e<768?.6*a:.5*a}px)`, f.current.style.opacity = "0.8"
+                            }
+                        };
+                        return window.addEventListener("resize", e), e(), () => {
+                            window.removeEventListener("resize", e)
+                        }
+                    }, [t]), (0, a.useEffect)(() => {
+                        (async () => {
+                            let e = .01 * window.innerHeight;
+                            document.documentElement.style.setProperty("--vh", `${e}px`), y.current && (w.current = await v(y.current) || null)
+                        })();
+                        let e = [h.current, b.current, x.current, k.current, S.current];
+                        (0, r.i)(e, {
+                            opacity: [0, 1],
+                            filter: ["blur(100px)", "blur(0px)"]
+                        }, {
+                            duration: .5,
+                            ease: "linear"
+                        }).finished.then(() => {
+                            d(!0)
+                        })
+                    }, []), (0, l.jsxs)("section", {
+                        id: "hero",
+                        ref: _,
+                        className: C().hero,
+                        children: [(0, l.jsxs)("div", {
+                            className: C().heroContent,
+                            children: [(0, l.jsxs)("p", {
+                                ref: S,
+                                className: (0, i.$)(C().banner, C().fadeIn, "typo-flow-banner"),
+                                children: [(0, l.jsx)("b", {
+                                    children: "* UPDATE *"
+                                }), " ", E.banner]
+                            }), (0, l.jsx)("div", {
+                                ref: u,
+                                className: (0, i.$)(C().flowEffect, o && C().animationDone),
+                                children: (0, l.jsxs)("div", {
+                                    className: (0, i.$)("js-flowContainer", C().flowContainer),
+                                    children: [!o && (0, l.jsx)("img", {
+                                        ref: h,
+                                        className: (0, i.$)(C().fadeIn, C().flowEffectImgAnimation),
+                                        src: `${p.o2}/hero/wordmark.svg`,
+                                        alt: "Flow Effect for Animation",
+                                        "aria-hidden": "true"
+                                    }), (0, l.jsx)("img", {
+                                        ref: y,
+                                        className: (0, i.$)(C().flowEffectImg),
+                                        src: `${p.o2}/hero/wordmark.svg`,
+                                        alt: "Flow Effect"
+                                    })]
+                                })
+                            }), (0, l.jsxs)("div", {
+                                ref: m,
+                                className: C().descriptionAndCta,
+                                children: [(0, l.jsx)("p", {
+                                    ref: b,
+                                    className: (0, i.$)(C().description, C().fadeIn, "typo-flow-description"),
+                                    children: E.description
+                                }), (0, l.jsx)(s.v, {
+                                    href: "https://labs.google/fx/flow",
+                                    ref: x,
+                                    className: (0, i.$)(C().cta, C().fadeIn),
+                                    target: "_blank",
+                                    rel: "noreferrer",
+                                    children: (0, l.jsx)("span", {
+                                        children: "Create with Flow"
+                                    })
+                                }), (0, l.jsxs)("p", {
+                                    ref: k,
+                                    className: (0, i.$)(C().disclaimer, "typo-flow-disclaimer"),
+                                    children: [(0, l.jsxs)("span", {
+                                        children: ["Explore", " ", (0, l.jsx)("a", {
+                                            href: "https://one.google.com/ai?utm_source=flow&utm_medium=web&utm_campaign=vfx_landing_page_offer",
+                                            target: "_blank",
+                                            children: "Google AI Subscriptions."
+                                        })]
+                                    }), " ", (0, l.jsxs)("span", {
+                                        children: ["See", " ", (0, l.jsx)("a", {
+                                            target: "_blank",
+                                            rel: "noreferrer",
+                                            href: "https://labs.google/fx/tools/flow/faq",
+                                            children: "FAQ"
+                                        }), "."]
+                                    })]
+                                })]
+                            })]
+                        }), (0, l.jsx)("div", {
+                            ref: g,
+                            className: C().videoBackground,
+                            children: (0, l.jsxs)("video", {
+                                ref: f,
+                                className: C().video,
+                                autoPlay: !0,
+                                muted: !0,
+                                loop: !0,
+                                playsInline: !0,
+                                children: [(0, l.jsx)("source", {
+                                    src: `${t}${E.video.src420}`,
+                                    type: "video/mp4",
+                                    media: "(max-width: 639px)"
+                                }), (0, l.jsx)("source", {
+                                    src: `${t}${E.video.src1440}`,
+                                    type: "video/mp4",
+                                    media: "(min-width: 640px) and (max-width: 1919px)"
+                                }), (0, l.jsx)("source", {
+                                    src: `${t}${E.video.src1920}`,
+                                    type: "video/mp4",
+                                    media: "(min-width: 1920px)"
+                                }), "Your browser does not support the video tag."]
+                            })
+                        })]
+                    })
+                }
+        },
+        9073: (e, t, o) => {
+            "use strict";
+            o.d(t, {
+                Gallery: () => f
+            });
+            var l = o(5155),
+                a = o(2115),
+                i = o(6766),
+                r = o(2596),
+                n = o(9017),
+                s = o(747),
+                c = o(8734),
+                p = o(992),
+                d = o(2705),
+                _ = o.n(d);
+            let u = {
+                    cta: {
+                        label: "Watch Flow TV",
+                        href: "https://labs.google/flow/tv?utm_source=flow-about&utm_medium=web&utm_campaign=launch"
+                    },
+                    items: [
+                        [{
+                            name: "FIT CHECK",
+                            video: {
+                                src: "/gallery/Impossible-Fashion.mp4",
+                                poster: "/gallery/Impossible-Fashion.webp"
+                            }
+                        }, {
+                            name: "THE DEGENERATES",
+                            video: {
+                                src: "/gallery/3D-Cartoon.mp4",
+                                poster: "/gallery/3D-Cartoon.webp"
+                            }
+                        }, {
+                            name: "Alt Spectrum",
+                            video: {
+                                src: "/gallery/Alt-Spectrum.mp4",
+                                poster: "/gallery/Alt-Spectrum.webp"
+                            }
+                        }, {
+                            name: "ZOO BREAK",
+                            video: {
+                                src: "/gallery/Animals-in-Random-Places.mp4",
+                                poster: "/gallery/Animals-in-Random-Places.webp"
+                            }
+                        }],
+                        [{
+                            name: "PASSENGERS",
+                            video: {
+                                src: "/gallery/Backseat-Moments.mp4",
+                                poster: "/gallery/Backseat-Moments.webp"
+                            }
+                        }, {
+                            name: "It's all yarn",
+                            video: {
+                                src: "/gallery/It_sAll-Yarn.mp4",
+                                poster: "/gallery/It_sAll-Yarn.webp"
+                            }
+                        }, {
+                            name: "MICROVERSE",
+                            video: {
+                                src: "/gallery/Under-the-Microscope.mp4",
+                                poster: "/gallery/Under-the-Microscope.webp"
+                            }
+                        }, {
+                            name: "Mobile Homes",
+                            video: {
+                                src: "/gallery/Mobile-Homes.mp4",
+                                poster: "/gallery/Mobile-Homes.webp"
+                            }
+                        }],
+                        [{
+                            name: "Off season Santa",
+                            video: {
+                                src: "/gallery/Off-Season-Santa.mp4",
+                                poster: "/gallery/Off-Season-Santa.webp"
+                            }
+                        }, {
+                            name: "MUNDO QUESO",
+                            video: {
+                                src: "/gallery/Queso-Mundo.mp4",
+                                poster: "/gallery/Queso-Mundo.webp"
+                            }
+                        }, {
+                            name: "ULTRA WIDE",
+                            video: {
+                                src: "/gallery/Tiny-Planet-Big-People.mp4",
+                                poster: "/gallery/Tiny-Planet-Big-People.webp"
+                            }
+                        }, {
+                            name: "WINDOW SEAT",
+                            video: {
+                                src: "/gallery/View-from-Train.mp4",
+                                poster: "/gallery/View-from-Train.webp"
+                            }
+                        }]
+                    ],
+                    itemsMobile: [
+                        [{
+                            name: "FIT CHECK",
+                            video: {
+                                src: "/gallery/Impossible-Fashion.mp4",
+                                poster: "/gallery/Impossible-Fashion.webp"
+                            }
+                        }, {
+                            name: "THE DEGENERATES",
+                            video: {
+                                src: "/gallery/3D-Cartoon.mp4",
+                                poster: "/gallery/3D-Cartoon.webp"
+                            }
+                        }, {
+                            name: "SPECTRAMATIC",
+                            video: {
+                                src: "/gallery/Alt-Spectrum.mp4",
+                                poster: "/gallery/Alt-Spectrum.webp"
+                            }
+                        }, {
+                            name: "ZOO BREAK",
+                            video: {
+                                src: "/gallery/Animals-in-Random-Places.mp4",
+                                poster: "/gallery/Animals-in-Random-Places.webp"
+                            }
+                        }, {
+                            name: "Off season Santa",
+                            video: {
+                                src: "/gallery/Off-Season-Santa.mp4",
+                                poster: "/gallery/Off-Season-Santa.webp"
+                            }
+                        }, {
+                            name: "MUNDO QUESO",
+                            video: {
+                                src: "/gallery/Queso-Mundo.mp4",
+                                poster: "/gallery/Queso-Mundo.webp"
+                            }
+                        }],
+                        [{
+                            name: "PASSENGERS",
+                            video: {
+                                src: "/gallery/Backseat-Moments.mp4",
+                                poster: "/gallery/Backseat-Moments.webp"
+                            }
+                        }, {
+                            name: "It's all yarn",
+                            video: {
+                                src: "/gallery/It_sAll-Yarn.mp4",
+                                poster: "/gallery/It_sAll-Yarn.webp"
+                            }
+                        }, {
+                            name: "MICROVERSE",
+                            video: {
+                                src: "/gallery/Under-the-Microscope.mp4",
+                                poster: "/gallery/Under-the-Microscope.webp"
+                            }
+                        }, {
+                            name: "Mobile Homes",
+                            video: {
+                                src: "/gallery/Mobile-Homes.mp4",
+                                poster: "/gallery/Mobile-Homes.webp"
+                            }
+                        }, {
+                            name: "ULTRA WIDE",
+                            video: {
+                                src: "/gallery/Tiny-Planet-Big-People.mp4",
+                                poster: "/gallery/Tiny-Planet-Big-People.webp"
+                            }
+                        }, {
+                            name: "WINDOW SEAT",
+                            video: {
+                                src: "/gallery/View-from-Train.mp4",
+                                poster: "/gallery/View-from-Train.webp"
+                            }
+                        }]
+                    ]
+                },
+                m = Array.from({
+                    length: 4
+                }).map((e, t) => (0, l.jsx)("div", {}, t)),
+                f = e => {
+                    let {
+                        bucketUrl: t
+                    } = e, o = (0, a.useRef)(null), d = (0, a.useRef)([]), f = (0, p.N)("(max-width: 767px)"), [g, y] = (0, a.useState)(f ? u.itemsMobile : u.items), h = (0, n.W)(o, {
+                        once: !1,
+                        margin: "10% 0px 10% 0px"
+                    }), [w, v] = (0, a.useState)(h);
+                    return (0, a.useEffect)(() => {
+                        v(h)
+                    }, [h]), (0, a.useEffect)(() => {
+                        let e = !1;
+                        (async () => {
+                            if (!d.current.length) return;
+                            if (!h) return d.current.forEach(e => e?.pause());
+                            let t = 0;
+                            await Promise.all(d.current.map(async e => {
+                                if (e) try {
+                                    await e.play()
+                                } catch (e) {
+                                    t++
+                                }
+                            })), t > 5 && !e && (d.current.forEach(e => e?.pause()), e = !0)
+                        })()
+                    }, [h]), (0, a.useEffect)(() => {
+                        y(f ? u.itemsMobile : u.items)
+                    }, [f]), (0, l.jsxs)("section", {
+                        className: _().gallery,
+                        ref: o,
+                        id: "gallery",
+                        children: [(0, l.jsx)("div", {
+                            className: _().gradientBlurTop,
+                            children: m
+                        }), (0, l.jsx)("div", {
+                            className: _().gradientBlurBottom,
+                            children: m
+                        }), (0, l.jsx)("div", {
+                            className: _().gradientDarkenerTop
+                        }), (0, l.jsx)("div", {
+                            className: _().gradientDarkenerBottom
+                        }), (0, l.jsx)("div", {
+                            className: _().items,
+                            children: g.map((e, o) => (0, l.jsx)("div", {
+                                className: _().column,
+                                children: (0, l.jsx)("div", {
+                                    "data-direction": 1 === o ? "up" : "down",
+                                    className: _().columnInner,
+                                    children: [...e, ...e].map((e, o) => (0, l.jsxs)("div", {
+                                        className: _().item,
+                                        children: [(0, l.jsx)("div", {
+                                            className: _().media,
+                                            children: e.video ? (0, l.jsx)("div", {
+                                                className: _().videoWrapper,
+                                                children: (0, l.jsx)("video", {
+                                                    ref: e => {
+                                                        d.current[o] = e
+                                                    },
+                                                    className: _().video,
+                                                    autoPlay: !0,
+                                                    loop: !0,
+                                                    muted: !0,
+                                                    playsInline: !0,
+                                                    preload: "auto",
+                                                    poster: `${t}${e.video.poster}`,
+                                                    children: w && (0, l.jsx)("source", {
+                                                        src: `${t}${e.video.src}`,
+                                                        type: "video/mp4"
+                                                    })
+                                                })
+                                            }) : e?.poster ? (0, l.jsx)(i.default, {
+                                                src: e.poster.src,
+                                                width: e.poster.width,
+                                                height: e.poster.height,
+                                                alt: "Gallery item",
+                                                className: _().image
+                                            }) : null
+                                        }), (0, l.jsx)("span", {
+                                            className: (0, r.$)(_().name),
+                                            children: e.name
+                                        })]
+                                    }, o))
+                                })
+                            }, o))
+                        }), (0, l.jsxs)(s.v, {
+                            href: u.cta.href,
+                            className: _().cta,
+                            target: "_blank",
+                            rel: "noreferrer",
+                            children: [(0, l.jsx)(c.I, {
+                                name: "tv",
+                                size: "small",
+                                className: _().ctaIcon
+                            }), (0, l.jsx)("span", {
+                                children: u.cta.label
+                            })]
+                        })]
+                    })
+                }
+        },
+        9635: e => {
+            e.exports = {
+                tablet: "768",
+                "tablet-large": "1024",
+                laptop: "1280",
+                "laptop-large": "1440",
+                desktop: "1600",
+                monitor: "1920",
+                white: "#fff",
+                black: "#000",
+                "ease-linear": "0,0,1,1",
+                "ease-out": ".26,1,.48,1",
+                "typo-flow-text": "spacer-text_typo-flow-text__Q9j_d",
+                "typo-flow-text-small": "spacer-text_typo-flow-text-small__0LU_I",
+                "typo-flow-subtitle": "spacer-text_typo-flow-subtitle__AIM10",
+                "typo-flow-tagline": "spacer-text_typo-flow-tagline__bbAuy",
+                "typo-flow-title": "spacer-text_typo-flow-title__JiACr",
+                "typo-flow-banner": "spacer-text_typo-flow-banner__nJJta",
+                "typo-flow-description": "spacer-text_typo-flow-description__Cu8Td",
+                "typo-flow-megatitle": "spacer-text_typo-flow-megatitle__2aStm",
+                "typo-flow-caption": "spacer-text_typo-flow-caption__HKoex",
+                "typo-flow-disclaimer": "spacer-text_typo-flow-disclaimer__RDRYu",
+                "typo-material-body-small": "spacer-text_typo-material-body-small__pNFSU",
+                "typo-small-details": "spacer-text_typo-small-details__vrntt",
+                "default-container": "spacer-text_default-container__XP_E3",
+                spacerText: "spacer-text_spacerText__rY6HY",
+                title: "spacer-text_title__GJYuW",
+                copy: "spacer-text_copy__cK_qp"
+            }
+        },
+        9924: (e, t, o) => {
+            "use strict";
+            o.d(t, {
+                LO: () => _,
+                sp: () => m,
+                vP: () => u
+            });
+            var l = o(6489),
+                a = o.n(l),
+                i = o(7561),
+                r = o.n(i),
+                n = o(4944),
+                s = o.n(n);
+            let c = e => {
+                    if (!e) throw Error("No value provided to 'validateString'.");
+                    return e
+                },
+                p = e => {
+                    if (!e) throw Error("No value provided to 'toNumber'.");
+                    return Number(e)
+                },
+                d = e => {
+                    if (!e) throw Error("No value provided to 'toBezier'.");
+                    let t = e.split(",").map(Number);
+                    if (4 !== t.length) throw Error("Invalid Bezier definition. Expected 4 values.");
+                    return t
+                },
+                _ = new Map([
+                    ["mobile", void 0],
+                    ["tablet", p(a().tablet)],
+                    ["laptop", p(a().laptop)],
+                    ["desktop", p(a().desktop)]
+                ]);
+            c(r().white), c(r().black);
+            let u = d(s()["ease-linear"]),
+                m = d(s()["ease-out"])
+        },
+        9928: e => {
+            e.exports = {
+                tablet: "768",
+                "tablet-large": "1024",
+                laptop: "1280",
+                "laptop-large": "1440",
+                desktop: "1600",
+                monitor: "1920",
+                white: "button-link_white__cMMvJ",
+                black: "#000",
+                "ease-linear": "0,0,1,1",
+                "ease-out": ".26,1,.48,1",
+                "typo-flow-text": "button-link_typo-flow-text__knnxc",
+                "typo-flow-text-small": "button-link_typo-flow-text-small__IE47R",
+                "typo-flow-subtitle": "button-link_typo-flow-subtitle__5CzYX",
+                "typo-flow-tagline": "button-link_typo-flow-tagline__SDzn_",
+                "typo-flow-title": "button-link_typo-flow-title__eHSla",
+                "typo-flow-banner": "button-link_typo-flow-banner___g3JI",
+                "typo-flow-description": "button-link_typo-flow-description___zbRp",
+                "typo-flow-megatitle": "button-link_typo-flow-megatitle__q5Uy8",
+                "typo-flow-caption": "button-link_typo-flow-caption__4Sjma",
+                "typo-flow-disclaimer": "button-link_typo-flow-disclaimer__rvWEK",
+                "typo-material-body-small": "button-link_typo-material-body-small__FochC",
+                "typo-small-details": "button-link_typo-small-details__jQhav",
+                "default-container": "button-link_default-container___14oK",
+                link: "button-link_link__eTf8F"
+            }
+        }
+    },
+    e => {
+        var t = t => e(e.s = t);
+        e.O(0, [200, 896, 367, 831, 821, 897, 441, 684, 358], () => t(181)), _N_E = e.O()
+    }
+]);
