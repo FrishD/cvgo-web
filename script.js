@@ -116,27 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- TEXT ROTATOR ---
-  const textItems = document.querySelectorAll('.rotating-text-item');
-  let currentTextIndex = 0;
-
-  if (textItems.length > 0) {
-    // Set initial state
-    textItems.forEach(item => item.classList.remove('active'));
-    textItems[0].classList.add('active');
-
-    setInterval(() => {
-      const currentItem = textItems[currentTextIndex];
-      currentItem.classList.remove('active');
-
-      // Wait for the fade-out transition to complete before moving to the next
-      setTimeout(() => {
-          currentTextIndex = (currentTextIndex + 1) % textItems.length;
-          const nextItem = textItems[currentTextIndex];
-          nextItem.classList.add('active');
-      }, 1500); // This timeout should match the CSS transition duration
-    }, 5000); // Change text every 5 seconds
-  }
 
   // --- DRAG & DROP FILE UPLOAD ---
   const dropZone = document.getElementById('drop-zone');

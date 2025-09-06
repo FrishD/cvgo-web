@@ -2193,7 +2193,7 @@ dialog {
 .button-more-dropdown_dropdownContainer__s0SG9 {
   position: absolute;
   top: calc(100% + 11px);
-  right: 0;
+  left: 0;
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -3340,11 +3340,20 @@ dialog {
     place-self: start center;
   }
 }
+.hero_hero__Q3Rx9 .hero_cta_container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
 .hero_hero__Q3Rx9 .hero_cta__osRfk {
   position: relative;
   z-index: 1;
   -webkit-backdrop-filter: blur(80px);
   backdrop-filter: blur(80px);
+  padding: 1.2rem 3rem;
+  font-size: 1.8rem;
 }
 .hero_hero__Q3Rx9 .hero_cta__osRfk:after {
   position: absolute;
@@ -3683,6 +3692,12 @@ dialog {
 .partners_partners__5saVP .partners_name__ocH6T .typo-flow-megatitle {
     font-size: 12rem;
     font-weight: 600;
+}
+.font-weight-light {
+    font-weight: 300;
+}
+.font-weight-bold {
+    font-weight: 800;
 }
 .partners_partners__5saVP .partners_cta__JPsEl,
 .partners_partners__5saVP .partners_title__PBSU8 {
@@ -5333,18 +5348,19 @@ dialog {
 }
 .video-section_videoSection__6jyFo
   .video-section_backgroundImageContainer__Y9vhy {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  z-index: 0;
-  width: max(70rem, 100%);
-  aspect-ratio: 1920/1988;
-  opacity: 0.7;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+#file-drop-section .spacer-text_title__GJYuW,
+#file-drop-section .spacer-text_copy__cK_qp {
+    position: relative;
+    z-index: 1;
 }
 @media (min-width: 1025px),
   only screen and (min-width: 769px) and (min-aspect-ratio: 2254051613498933/2251799813685248) {
@@ -5452,27 +5468,6 @@ dialog {
 .video-section_videoSection__6jyFo
   .video-section_video__2Hd5r.video-section_hidden__UCDgr {
   visibility: hidden;
-}
-#text-rotator-container {
-  position: relative;
-  text-align: center;
-  min-height: 150px;
-}
-
-.rotating-text-item {
-  opacity: 0;
-  filter: blur(5px);
-  transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), filter 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.rotating-text-item.active {
-  opacity: 1;
-  filter: blur(0);
 }
 
 #drop-zone {
