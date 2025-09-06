@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="about/_next/static/css/a316f0e2d7ba1987.css" data-precedence="next" />
     <link rel="stylesheet" href="about/_next/static/css/7c3ee233ac21f8c3.css" data-precedence="next" />
     <link rel="stylesheet" href="about/_next/static/css/a1c267dea66c542a.css" data-precedence="next" />
+    <link rel="stylesheet" href="about/custom.css" />
     <link rel="preload" as="script" fetchPriority="low" href="about/_next/static/chunks/webpack-194ec1d501774c70.js" />
     <script src="about/_next/static/chunks/4bd1b696-1962bfe149af46cd.js" async=""></script>
     <script src="about/_next/static/chunks/684-bff2b4f0d7943a9b.js" async=""></script>
@@ -112,22 +113,29 @@
                 </div>
             </section>
             <section id="spacer-text" class="spacer-text_spacerText__rY6HY">
-                <div class="spacer-text_title__GJYuW">
-                    <h2 class="typo-flow-subtitle">CVGO היא מערכת חכמה לניהול קריירות ומשאבי אנוש.</h2></div>
-                <div class="spacer-text_copy__cK_qp">
-                    <p class="typo-flow-text">המערכת מרכזת מידע ומפשטת תהליכים, כדי ליצור התאמות מדויקות בין מועמדים להזדמנויות.</p>
+                <div id="text-rotator-container">
+                    <div class="text-rotator-item active">
+                        <h2 class="typo-flow-subtitle">חיפוש עבודה הפך לקל יותר מתמיד בזכות  CvGo</h2>
+                        <p class="typo-flow-text">אנחנו מחברים אתכם להזדמנויות הנכונות, בלי מאמץ.</p>
+                    </div>
+                    <div class="text-rotator-item">
+                        <h2 class="typo-flow-subtitle">רוצים שקורות החיים שלכם יבלטו? יש לנו פתרון</h2>
+                        <p class="typo-flow-text">CVGO מפיצה אתכם למקומות הנכונים בקלות.</p>
+                    </div>
+                    <div class="text-rotator-item">
+                        <h2 class="typo-flow-subtitle">חיפוש עבודה הוא משחק של מהירות.</h2>
+                        <p class="typo-flow-text">תנו ל-CVGO להקפיץ אתכם קדימה.</p>
+                    </div>
                 </div>
             </section>
-            <section class="video-section_videoSection__6jyFo" id="overview" data-section="overview">
-                <div class="video-section_anchorTarget__l9XXo"></div>
-                <div class="video-section_backgroundImageContainer__Y9vhy" style="-webkit-mask-image:radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 300%);mask-image:radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 300%)"><img src="https://storage.googleapis.com/pinhole-about-assets-prod-us/video-section/background.webp" alt="Background for section" loading="lazy" /></div>
-                <div class="video-section_videoContainer__HZbTJ">
-                    <div class="video-section_videoWrapper__ZvPtc">
-                        <button aria-label="Play Video" class="video-section_posterContainer__bV7a3">
-                            <video autoPlay="" loop="" muted="" playsInline="" preload="auto" poster="https://storage.googleapis.com/pinhole-about-assets-prod-us/video-section/poster.webp"></video>
-                            <div class="video-section_playIcon__2PHQo"></div>
-                        </button>
-                    </div>
+            <section id="upload-section" class="spacer-text_spacerText__rY6HY">
+                <div class="spacer-text_title__GJYuW">
+                    <h2 class="typo-flow-subtitle">בואו נמצא לכם את המשרה הבאה.</h2>
+                    <p class="typo-flow-text">גררו לכאן את קורות החיים שלכם ותנו לנו לעבוד בשבילכם.</p>
+                </div>
+                <div id="drop-zone">
+                    <p>גרור ושחרר את קובץ קורות החיים שלך כאן, או לחץ כדי לבחור קובץ</p>
+                    <input type="file" id="file-input" style="display: none;">
                 </div>
             </section>
             <section class="capabilities_capabilities__YQVQ2" id="capabilities" data-section="capabilities">
@@ -135,19 +143,19 @@
                     <div class="capabilities_topBorder__DhkFv"></div>
                     <div class="capabilities_titlesContainer__Y64Dn">
                         <div class="capabilities_groupTitle__wozkx typo-flow-subtitle capabilities_selected__ystUY">
-                            <button>Consistent</button>
+                            <button>סטודנטים</button>
                         </div>
                         <div class="capabilities_groupTitle__wozkx typo-flow-subtitle">
-                            <button>asdasdasd</button>
+                            <button>הפצת קו"ח</button>
                         </div>
                         <div class="capabilities_groupTitle__wozkx typo-flow-subtitle">
-                            <button>Cinematic</button>
+                            <button>השותפים שלך לגיוס</button>
                         </div>
                     </div>
                     <div class="capabilities_copyContainer__2F3_3 typo-flow-text">
-                        <div class="capabilities_groupCopy__ljx_K capabilities_selected__ystUY" aria-hidden="false">Bring your own assets, or generate them in Flow. Then easily manage and reference them as you start to generate clips.</div>
-                        <div class="capabilities_groupCopy__ljx_K" aria-hidden="true">An interface designed for the creative story-building process from ideation to iteration.</div>
-                        <div class="capabilities_groupCopy__ljx_K" aria-hidden="true">State-of-the-art video quality made possible by Google DeepMind’s most advanced models.</div>
+                        <div class="capabilities_groupCopy__ljx_K capabilities_selected__ystUY" aria-hidden="false">העלו את קורות החיים וגיליון הציונים, ואנחנו נשלח את הפרופיל שלכם ישירות לחברות השמה שמתמחות בתחום הלימודים שלכם. כל מה שצריך כדי להתחיל את הקריירה ברגל ימין, במקום אחד.</div>
+                        <div class="capabilities_groupCopy__ljx_K" aria-hidden="true">חסכו זמן יקר ומאמץ. העלו את קובץ קורות החיים שלכם ובחרו את יעדי ההפצה. אנחנו נדאג להפיץ את קורות החיים שלכם למאות חברות רלוונטיות, כדי שתוכלו להתמקד במה שחשוב באמת.</div>
+                        <div class="capabilities_groupCopy__ljx_K" aria-hidden="true">CVGO פועלת כגשר יעיל המחבר בין מחפשי עבודה מצוינים לחברות השמה מובילות. אנחנו מאפשרים לכם לצפות בפרופילים של מועמדים רלוונטיים וליצור איתם קשר ישיר, כדי למצוא את המועמדים הטובים ביותר במהירות.</div>
                     </div>
                     <div>
                         <div class="swiper capabilities_swiper__UfLWU">
@@ -199,36 +207,12 @@
             </section>
             <section id="partners" class="partners_partners__5saVP">
                 <div class="partners_anchorTarget__THPSM"></div>
-                <h2 class="partners_title__PBSU8 typo-flow-text-small">See how filmmakers are using Flow</h2>
-                <div class="partners_gradientBlurContainer__9A_8N">
-                    <div class="partners_gradientBlurTop__MlcUz">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="partners_gradientBlurBottom__sDxqX">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+                <div class="partners_newContent" style="text-align: center;">
+                    <p class="typo-flow-subtitle">ככה זה כשחיפוש עבודה הוא פשוט.</p>
+                    <p class="typo-flow-subtitle">בקליק 1.</p>
+                    <p class="typo-flow-subtitle">בלי מאמץ.</p>
+                    <p class="typo-flow-subtitle">במהירות שיא.</p>
                 </div>
-                <div class="partners_gradientDarkenerTop__vErBf"></div>
-                <div class="partners_gradientDarkenerBottom__7YXCU"></div>
-                <div class="partners_list__U3BnC">
-                    <div class="partners_partner__gl06I"><a href="tv/short-filmsbe90.html?utm_source=flow-about&amp;utm_medium=web&amp;utm_campaign=launch" target="_blank" rel="noopener"><h2 class="partners_name__ocH6T" style="color:#ffffff;opacity:1"><span class="typo-flow-megatitle">Junie Lau</span></h2></a></div>
-                    <div
-                    class="partners_partner__gl06I"><a href="tv/short-filmsbe90.html?utm_source=flow-about&amp;utm_medium=web&amp;utm_campaign=launch" target="_blank" rel="noopener"><h2 class="partners_name__ocH6T" style="color:#ffffff;opacity:1"><span class="typo-flow-megatitle">Dave Clark</span></h2></a></div>
-                <div
-                class="partners_partner__gl06I"><a href="tv/short-filmsbe90.html?utm_source=flow-about&amp;utm_medium=web&amp;utm_campaign=launch" target="_blank" rel="noopener"><h2 class="partners_name__ocH6T" style="color:#ffffff;opacity:1"><span class="typo-flow-megatitle">Henry Daubrez</span></h2></a></div>
-                    </div><a href="tv/short-filmsbe90.html?utm_source=flow-about&amp;utm_medium=web&amp;utm_campaign=launch" class="button-link_link__eTf8F partners_cta__JPsEl" target="_blank" rel="noreferrer"><span class="icon_icon__XRrd8 icon_small__mhoXN">tv</span><span>Watch Short Films</span></a>
-                    <div
-                    class="partners_backgroundContainer__aqQds"></div>
             </section>
             <section class="gallery_gallery__gccP0" id="gallery">
                 <div class="gallery_gradientBlurTop__HpD_I">
@@ -506,6 +490,7 @@
         <script>
             self.__next_f.push([1,"10:null\n14:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"2\",{\"name\":\"theme-color\",\"content\":\"rgb(#000)\"}]]\nf:null\n18:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Flow\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Where the next wave of storytelling happens with Veo.\"}],[\"$\",\"link\",\"2\",{\"rel\":\"manifest\",\"href\":\"/flow/about/site.webmanifest\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"3\",{\"rel\":\"canonical\",\"href\":\"https://labs.google/flow/about\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:title\",\"content\":\"Flow\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:description\",\"content\":\"Where the next wave of storytelling happens with Veo.\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:image\",\"content\":\"https://labs.google/flow/about/share_image.jpg\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:image:width\",\"content\":\"1286\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:image:height\",\"content\":\"675\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:image:alt\",\"content\":\"Flow Social Share Image\"}],[\"$\",\"meta\",\"10\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:title\",\"content\":\"Flow\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:description\",\"content\":\"Where the next wave of storytelling happens with Veo.\"}],[\"$\",\"meta\",\"13\",{\"name\":\"twitter:image\",\"content\":\"https://labs.google/flow/about/share_image.jpg\"}],[\"$\",\"meta\",\"14\",{\"name\":\"twitter:image:width\",\"content\":\"1286\"}],[\"$\",\"meta\",\"15\",{\"name\":\"twitter:image:height\",\"content\":\"675\"}],[\"$\",\"meta\",\"16\",{\"name\":\"twitter:image:alt\",\"content\":\"Flow Social Share Image\"}],[\"$\",\"link\",\"17\",{\"rel\":\"icon\",\"href\":\"/flow/about/favicon-96x96.png\",\"sizes\":\"96x96\",\"type\":\"image/png\"}],[\"$\",\"link\",\"18\",{\"rel\":\"icon\",\"href\":\"/flow/about/favicon.svg\",\"type\":\"image/svg+xml\"}],[\"$\",\"link\",\"19\",{\"rel\":\"icon\",\"href\":\"/flow/about/apple-touch-icon.png\",\"type\":\"image/png\",\"sizes\":\"180x180\"}]],\"error\":null,\"digest\":\"$undefined\"}\n12:{\"metadata\":\"$18:metadata\",\"error\":null,\"digest\":\"$undefined\"}\n"])
         </script>
+    <script src="about/custom.js"></script>
 </body>
 <!-- Mirrored from labs.google/flow/about by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Sep 2025 06:35:11 GMT -->
 
