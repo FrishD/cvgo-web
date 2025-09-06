@@ -234,6 +234,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  direction: rtl;
 }
 body,
 html {
@@ -1100,41 +1101,57 @@ dialog {
   margin-left: auto;
 }
 .footer_footer__FiYd5 {
-  padding: 2.4rem 2rem;
+  background-color: #111;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px solid #333;
 }
-@media only screen and (min-width: 768px) {
-  .footer_footer__FiYd5 {
-    padding: 1.2rem 2.4rem;
-  }
-}
+
 .footer_footer__FiYd5 .footer_contentContainer__MjiW5 {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  flex: row 1;
-  flex-wrap: wrap;
-  gap: 3.2rem;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
 }
+
+.footer_copyright__Y_F8_ {
+  font-size: 1.4rem;
+  color: #888;
+}
+
 .footer_footer__FiYd5 .footer_linksSection__Op_1g {
   display: flex;
-  flex-direction: row;
-  gap: 3.2rem;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  gap: 20px;
 }
-@media only screen and (min-width: 768px) {
-  .footer_footer__FiYd5 .footer_linksSection__Op_1g {
-    justify-content: flex-start;
-    width: auto;
-  }
-}
-.footer_footer__FiYd5 .footer_disclaimer__AKlKh,
+
 .footer_footer__FiYd5 .footer_link__Tlx14 {
-  opacity: 0.5;
+  font-size: 1.4rem;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
 }
-.footer_footer__FiYd5 .footer_cta__nmLuL {
-  padding: 1.2rem 2.4rem;
+
+.footer_footer__FiYd5 .footer_link__Tlx14:hover {
+  color: #fff;
+}
+
+.footer_socialIcons__2_3_4 {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_socialIcons__2_3_4 a {
+  color: #aaa;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+.footer_socialIcons__2_3_4 a:hover {
+  color: #fff;
 }
 .button-link_typo-flow-text__knnxc {
   font-family: Google Sans, sans-serif;
@@ -2423,6 +2440,7 @@ dialog {
     font-size: 1.4rem;
     pointer-events: none;
     opacity: 0.5;
+    text-align: right;
   }
   .header_jumpLinks__GASkm a:hover {
     opacity: 0.75;
@@ -2497,6 +2515,13 @@ dialog {
     var(--color-background-pressed),
     var(--color-background-pressed-alpha)
   );
+}
+
+.header_nav__G2Gk3 .button-link_link__eTf8F {
+  padding: 0.8rem 2rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  border-radius: 2.4rem;
 }
 .gallery_typo-flow-text___uKjl {
   font-family: Google Sans, sans-serif;
@@ -3216,7 +3241,7 @@ dialog {
 .hero_hero__Q3Rx9 .hero_heroContent__RP_uf {
   display: grid;
   grid-area: 1/1;
-  grid-template-rows: 0.4fr min-content 0.4fr 0.2fr;
+  grid-template-rows: 0.2fr min-content 0.2fr 0.1fr;
   grid-template-columns: 1fr;
   place-content: center;
   place-self: start;
@@ -3288,7 +3313,9 @@ dialog {
 .hero_hero__Q3Rx9 .hero_flowEffect__OYVu0 .hero_flowEffectImg__shTxw {
   position: absolute;
   top: 0;
-  left: -99999em;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -3649,6 +3676,12 @@ dialog {
 }
 .partners_partners__5saVP .partners_title__PBSU8 {
   line-height: 1;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.partners_partners__5saVP .partners_name__ocH6T .typo-flow-megatitle {
+    font-size: 12rem;
+    font-weight: 600;
 }
 .partners_partners__5saVP .partners_cta__JPsEl,
 .partners_partners__5saVP .partners_title__PBSU8 {
@@ -5063,6 +5096,7 @@ dialog {
 .spacer-text_spacerText__rY6HY .spacer-text_title__GJYuW h2 {
   font-size: 4rem;
   line-height: 100%;
+  white-space: nowrap;
 }
 @media only screen and (min-width: 1024px) {
   .spacer-text_spacerText__rY6HY .spacer-text_title__GJYuW h2 {
@@ -5421,12 +5455,13 @@ dialog {
 #text-rotator-container {
   position: relative;
   text-align: center;
+  min-height: 150px;
 }
 
 .rotating-text-item {
   opacity: 0;
   filter: blur(5px);
-  transition: opacity 1.5s ease-in-out, filter 1.5s ease-in-out;
+  transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), filter 1.5s cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   width: 100%;
   left: 0;
@@ -5437,7 +5472,6 @@ dialog {
 .rotating-text-item.active {
   opacity: 1;
   filter: blur(0);
-  position: relative; /* Take up space in the document flow */
 }
 
 #drop-zone {
