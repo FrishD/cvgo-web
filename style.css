@@ -4772,7 +4772,6 @@ div:nth-of-type(14) {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    width: 100%;
 }
 .pricing_pricing__VxSwp .pricing_listContainer__ZFxbt {
     display: grid;
@@ -5155,16 +5154,6 @@ only screen and (min-width: 769px) and (min-aspect-ratio: 2254051613498933/22517
     justify-content: center;
     text-align: center;
 
-}
-@media only screen and (min-width: 768px) {
-    .spacer-text_spacerText__rY6HY .spacer-text_title__GJYuW {
-        max-width: 60rem;
-    }
-}
-@media only screen and (min-width: 1024px) {
-    .spacer-text_spacerText__rY6HY .spacer-text_title__GJYuW {
-        max-width: 68rem;
-    }
 }
 .spacer-text_spacerText__rY6HY .spacer-text_title__GJYuW h2 {
     font-size: 4rem;
@@ -5576,6 +5565,10 @@ img {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .rotating-text-item.active {

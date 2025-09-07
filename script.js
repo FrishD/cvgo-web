@@ -177,7 +177,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- LOADER HIDING ---
     const loader = document.querySelector('.loader-wrapper');
-    if (loader) {
-        loader.classList.add('hidden');
-    }
+    window.onload = () => {
+        if (loader) {
+            loader.classList.add('hidden');
+        }
+    };
 });
