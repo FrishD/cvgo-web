@@ -2427,9 +2427,10 @@ video {
     display: inline-block;
 }
 .header_logoLink__HhzOO img {
-    margin: -4.5rem;
+    margin: 0;
     width: auto;
-    height: 12rem;
+    height: 4rem;
+    vertical-align: middle;
 }
 .header_jumpLinks__GASkm {
     display: none;
@@ -2440,6 +2441,9 @@ video {
         gap: 2.4rem;
         opacity: 0;
         transition: opacity 0.5s ease;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .header_jumpLinks__GASkm a {
         font-size: 1.4rem;
@@ -3442,7 +3446,6 @@ only screen and (min-width: 769px) and (min-aspect-ratio: 2254051613498933/22517
         max-width: none;
     }
 }
-
 .hero_hero__Q3Rx9 .hero_videoBackground__IiktF {
     position: absolute;
     top: 0;
@@ -3453,7 +3456,6 @@ only screen and (min-width: 769px) and (min-aspect-ratio: 2254051613498933/22517
     overflow-x: clip;
     opacity: 0.8;
 }
-
 .hero_hero__Q3Rx9 .hero_videoBackground__IiktF .hero_video__tIR0w {
     position: absolute;
     top: 50%;
@@ -3465,7 +3467,7 @@ only screen and (min-width: 769px) and (min-aspect-ratio: 2254051613498933/22517
     height: auto;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    opacity: 0.21;
+    opacity: 0.36;
     transition: opacity 9s ease-in-out;
     filter: blur(0px);
     -webkit-mask-image: linear-gradient(
@@ -3666,11 +3668,10 @@ only screen and (min-width: 769px) and (min-aspect-ratio: 2254051613498933/22517
     gap: 8rem;
     align-items: center;
     justify-content: center;
-    height: 100svh;
-    min-height: 38rem;
-    max-height: 62rem;
+    min-height: 30vh;
     overflow: hidden;
     text-align: center;
+    padding: 5rem 0;
 }
 @media (min-width: 1025px),
 only screen and (min-width: 769px) and (min-aspect-ratio: 2254051613498933/2251799813685248) {
@@ -5098,6 +5099,7 @@ div:nth-of-type(14) {
     text-align: center;
     min-height: 60vh; /* הקטנה מ-100vh */
     padding: 8rem 2rem; /* הקטנה דרסטית מ-30rem */
+    width: 100%;
 }
 
 
@@ -5442,7 +5444,7 @@ body {
 #capabilities {
     position: relative;
     z-index: 1;
-    padding: 36rem 2rem; /* הקטנה מ-36rem */
+    padding: 21rem 2rem; /* הקטנה מ-36rem */
     min-height: auto;
 }
 
@@ -5623,6 +5625,7 @@ img {
     font-weight: 700;
 }
 
+/* Starry background */
 body::before {
     content: '';
     position: fixed;
@@ -5633,8 +5636,13 @@ body::before {
     z-index: -2;
     animation: animate-stars 100s linear infinite;
     background-image:
-            radial-gradient(1px 1px at 20px 30px, #eee, rgba(0,0,0,0)),
-     background-size: 200px 200px;
+        radial-gradient(1px 1px at 20px 30px, #eee, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 50px 160px, #ddd, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+    background-size: 200px 200px;
 }
 
 @keyframes animate-stars {
