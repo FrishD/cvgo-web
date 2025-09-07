@@ -62,14 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
         column.innerHTML += content; // Duplicate the content for seamless scroll
     });
 
-    // --- HERO VIDEO FADE-IN ---
-    const heroVideo = document.querySelector('.hero_video__tIR0w');
-    if (heroVideo) {
-        // Let the video load a bit before fading it in
-        setTimeout(() => {
-            heroVideo.style.opacity = 1;
-        }, 1000); // Increased timeout for stability
-    }
 
     // Also ensure the hero content is not faded out by the animation classes
     const heroContent = document.querySelector('.hero_heroContent__RP_uf');
@@ -181,5 +173,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 dropZone.querySelector('p').textContent = `התקבלו הקבצים: ${fileNames}`;
             }
         }
+    }
+
+    // --- LOADER HIDING ---
+    const loader = document.querySelector('.loader-wrapper');
+    if (loader) {
+        loader.classList.add('hidden');
     }
 });
