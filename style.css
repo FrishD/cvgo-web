@@ -3442,6 +3442,7 @@ only screen and (min-width: 769px) and (min-aspect-ratio: 2254051613498933/22517
         max-width: none;
     }
 }
+
 .hero_hero__Q3Rx9 .hero_videoBackground__IiktF {
     position: absolute;
     top: 0;
@@ -3452,6 +3453,7 @@ only screen and (min-width: 769px) and (min-aspect-ratio: 2254051613498933/22517
     overflow-x: clip;
     opacity: 0.8;
 }
+
 .hero_hero__Q3Rx9 .hero_videoBackground__IiktF .hero_video__tIR0w {
     position: absolute;
     top: 50%;
@@ -3463,7 +3465,7 @@ only screen and (min-width: 769px) and (min-aspect-ratio: 2254051613498933/22517
     height: auto;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    opacity: 0.36;
+    opacity: 0.21;
     transition: opacity 9s ease-in-out;
     filter: blur(0px);
     -webkit-mask-image: linear-gradient(
@@ -5440,7 +5442,7 @@ body {
 #capabilities {
     position: relative;
     z-index: 1;
-    padding: 21rem 2rem; /* הקטנה מ-36rem */
+    padding: 36rem 2rem; /* הקטנה מ-36rem */
     min-height: auto;
 }
 
@@ -5621,7 +5623,6 @@ img {
     font-weight: 700;
 }
 
-/* Starry background */
 body::before {
     content: '';
     position: fixed;
@@ -5632,13 +5633,8 @@ body::before {
     z-index: -2;
     animation: animate-stars 100s linear infinite;
     background-image:
-        radial-gradient(1px 1px at 20px 30px, #eee, rgba(0,0,0,0)),
-        radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
-        radial-gradient(1px 1px at 50px 160px, #ddd, rgba(0,0,0,0)),
-        radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)),
-        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
-        radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
-    background-size: 200px 200px;
+            radial-gradient(1px 1px at 20px 30px, #eee, rgba(0,0,0,0)),
+     background-size: 200px 200px;
 }
 
 @keyframes animate-stars {
