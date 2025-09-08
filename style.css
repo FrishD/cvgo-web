@@ -238,6 +238,7 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+    direction: rtl;
 }
 body,
 html {
@@ -551,7 +552,7 @@ dialog {
 }
 .capabilities_capabilities__YQVQ2 .capabilities_topBorder__DhkFv {
     width: 100%;
-    border-top: 0.1rem solid hsla(0, 0%, 100%, 0.25);
+    border-top: 0.1rem solid var(--primary-light-blue);
 }
 .capabilities_capabilities__YQVQ2 .capabilities_titlesContainer__Y64Dn {
     display: flex;
@@ -3456,7 +3457,14 @@ only screen and (min-width: 769px) and (min-aspect-ratio: 2254051613498933/22517
 }
 
 .hero_hero__Q3Rx9 .hero_videoBackground__IiktF {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow-x: clip;
+    opacity: 0.1;
 }
 
 .hero_hero__Q3Rx9 .hero_videoBackground__IiktF .hero_video__tIR0w {
@@ -4819,7 +4827,7 @@ div:nth-of-type(14) {
     opacity: 0.75;
 }
 .pricing_pricing__VxSwp .pricing_titleBorder__mbl55 {
-    border-bottom: 0.1rem solid hsla(0, 0%, 100%, 0.25);
+    border-bottom: 0.1rem solid var(--primary-light-blue);
     opacity: 0.5;
 }
 .pricing_pricing__VxSwp .pricing_optionPriceContainer__lWnBi {
@@ -4878,13 +4886,13 @@ div:nth-of-type(14) {
 }
 .pricing_pricing__VxSwp .pricing_optionAlsoIncluded__tptR7 {
     padding-top: 3rem;
-    border-top: 0.1rem solid hsla(0, 0%, 100%, 0.25);
+    border-top: 0.1rem solid var(--primary-light-blue);
 }
 .pricing_pricing__VxSwp .pricing_optionAlsoIncluded__tptR7 p.slight-opacity {
     opacity: 0.75;
 }
 .pricing_pricing__VxSwp .pricing_borderBottomElement___MYn_ {
-    border-bottom: 0.1rem solid hsla(0, 0%, 100%, 0.25);
+    border-bottom: 0.1rem solid var(--primary-light-blue);
 }
 .pricing_pricing__VxSwp .pricing_ctaContainer__bp6_Y {
     padding-top: 8rem;
@@ -5786,9 +5794,9 @@ body::before {
 }
 
 .partners_title__PBSU8 {
-    color: var(--background-white);
+    color: var(--primary-dark-blue);
 }
 
 .partners_name__ocH6T span {
-    color: var(--background-white);
+    color: var(--primary-dark-blue);
 }
