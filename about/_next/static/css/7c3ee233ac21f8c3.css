@@ -188,8 +188,8 @@ html {
   box-sizing: border-box;
   min-height: 100dvh;
   font-size: 10px;
-  color: #fff;
-  background: #000;
+  color: var(--primary-dark-blue);
+  background: var(--background-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
