@@ -62,14 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
         column.innerHTML += content; // Duplicate the content for seamless scroll
     });
 
-    // --- HERO VIDEO FADE-IN ---
-    const heroVideo = document.querySelector('.hero_video__tIR0w');
-    if (heroVideo) {
-        // Let the video load a bit before fading it in
-        setTimeout(() => {
-            heroVideo.style.opacity = 1;
-        }, 1000); // Increased timeout for stability
-    }
 
     // Also ensure the hero content is not faded out by the animation classes
     const heroContent = document.querySelector('.hero_heroContent__RP_uf');
@@ -86,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const jumpLinksContainer = document.querySelector('.header_jumpLinks__GASkm');
     if (jumpLinksContainer) {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > window.innerHeight * 0.9) { // Show links after scrolling 90% of the viewport height
+            if (window.scrollY > window.innerHeight * 0.3) { // Show links after scrolling 90% of the viewport height
                 jumpLinksContainer.classList.add('header_visible__KjHPi');
             } else {
                 jumpLinksContainer.classList.remove('header_visible__KjHPi');
@@ -182,4 +174,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+
+    // --- LOADER HIDING ---
+    const loader = document.querySelector('.loader-wrapper');
+    window.onload = () => {
+        if (loader) {
+            loader.classList.add('hidden');
+        }
+    };
 });
