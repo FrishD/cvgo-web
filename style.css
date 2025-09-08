@@ -233,8 +233,8 @@ html {
     box-sizing: border-box;
     min-height: 100dvh;
     font-size: 10px;
-    color: #fff;
-    background: #000;
+    color: var(--background-white);
+    background: var(--primary-dark-blue);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
@@ -333,6 +333,15 @@ dialog {
     border: unset;
 }
 :root {
+    --primary-dark-blue: #1E3A8A;
+    --primary-medium-blue: #2563EB;
+    --primary-light-blue: #60A5FA;
+    --background-white: #FFFFFF;
+    --background-light-gray: #F3F4F6;
+    --text-gray: #4B5563;
+    --accent-turquoise: #14B8A6;
+    --accent-gold: #FACC15;
+
     --root-columns: 4;
     --columns: var(--root-columns);
     --gutter-outer: 20px;
@@ -1105,10 +1114,10 @@ video {
     margin-left: auto;
 }
 .footer_footer__FiYd5 {
-    background-color: #111;
+    background-color: var(--primary-dark-blue);
     padding: 40px 0;
     text-align: center;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--primary-medium-blue);
 }
 
 .footer_footer__FiYd5 .footer_contentContainer__MjiW5 {
@@ -1122,7 +1131,7 @@ video {
 
 .footer_copyright__Y_F8_ {
     font-size: 1.4rem;
-    color: #888;
+    color: var(--background-light-gray);
 }
 
 .footer_footer__FiYd5 .footer_linksSection__Op_1g {
@@ -1134,13 +1143,13 @@ video {
 
 .footer_footer__FiYd5 .footer_link__Tlx14 {
     font-size: 1.4rem;
-    color: #aaa;
+    color: var(--primary-light-blue);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer_footer__FiYd5 .footer_link__Tlx14:hover {
-    color: #fff;
+    color: var(--background-white);
 }
 
 .footer_socialIcons__2_3_4 {
@@ -1149,13 +1158,13 @@ video {
 }
 
 .footer_socialIcons__2_3_4 a {
-    color: #aaa;
+    color: var(--primary-light-blue);
     font-size: 2rem;
     transition: color 0.3s;
 }
 
 .footer_socialIcons__2_3_4 a:hover {
-    color: #fff;
+    color: var(--background-white);
 }
 .button-link_typo-flow-text__knnxc {
     font-family: Google Sans, sans-serif;
@@ -1333,29 +1342,32 @@ video {
     align-items: center;
     justify-content: center;
     padding: 0.9rem 2.4rem;
-    font-size: 6.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 2rem;
     cursor: pointer;
-    background: hsla(0, 0%, 100%, 0.05);
-    border: 2.1px solid hsla(0, 0%, 100%, 0.1);
+    background: transparent;
+    border: 2px solid var(--primary-light-blue);
     border-radius: 6rem;
-    -webkit-backdrop-filter: blur(120px);
-    backdrop-filter: blur(120px);
+    color: var(--primary-light-blue);
     transition: all 0.35s ease-in-out;
 }
 .button-link_link__eTf8F:hover {
-    background: hsla(0, 0%, 100%, 0.15);
+    background: var(--primary-light-blue);
+    color: var(--primary-dark-blue);
 }
 .button-link_link__eTf8F span {
     white-space: nowrap;
 }
 .button-link_link__eTf8F.button-link_white__cMMvJ {
-    color: #000;
-    background-color: hsla(0, 0%, 100%, 0.9);
+    color: var(--primary-dark-blue);
+    background-color: var(--accent-turquoise);
+    border-color: var(--accent-turquoise);
 }
 .button-link_link__eTf8F.button-link_white__cMMvJ:hover {
-    background: #fff;
+    background: var(--background-white);
+    border-color: var(--background-white);
+    color: var(--primary-dark-blue);
 }
 
 .grid_typo-flow-text__sqFLJ {
@@ -5588,18 +5600,19 @@ img {
     text-align: center;
     font-family: 'Google Sans', sans-serif;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.7);
-    border: 3px dashed rgba(255, 255, 255, 0.3);
+    color: var(--background-white);
+    border: 3px dashed var(--primary-light-blue);
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     position: relative;
     z-index: 10;
+    background-color: rgba(30, 58, 138, 0.3);
 }
 
 #drop-zone.drag-over {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(37, 99, 235, 0.5);
+    border-color: var(--accent-turquoise);
 }
 
 /* Custom styles for centering and font weight */
@@ -5757,4 +5770,24 @@ body::before {
         opacity: 0.7;
         transform: translateY(0);
     }
+}
+
+.typo-flow-subtitle, .typo-flow-text, .typo-flow-description {
+    color: var(--background-white);
+}
+
+.spacer-text_copy__cK_qp p {
+    color: var(--background-light-gray);
+}
+
+.header_jumpLinks__GASkm a {
+    color: var(--primary-light-blue);
+}
+
+.capabilities_groupTitle__wozkx button {
+    color: var(--primary-light-blue);
+}
+
+.capabilities_groupCopy__ljx_K {
+    color: var(--background-light-gray);
 }
