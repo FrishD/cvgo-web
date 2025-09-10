@@ -111,8 +111,8 @@ body {
     left: auto;
 }
 .button-more-dropdown_dropdownContainer__s0SG9 {
-    right: 0;
-    left: auto;
+    left: 0;
+    right: auto;
 }
 .swiper-lazy-preloader {
     margin-right: -21px;
@@ -178,6 +178,21 @@ body {
     display: block;
 }
 
+/* Updated Hero Button Styles */
+.hero_cta__osRfk {
+    background-color: rgba(15, 23, 42, 0.5); /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Center Hero Content */
+.hero_heroContent__RP_uf {
+    place-self: center;
+    padding-bottom: 0; /* Remove padding to allow true centering */
+}
+
 /* Speed CTA Section */
 #speed-cta {
     text-align: center;
@@ -199,12 +214,12 @@ body {
 
 /* Redesigned File Drop Section with Animated Background */
 #file-drop-section {
-    padding: 10rem 2rem;
+    padding: 8rem 2rem;
+    background-color: #0A192F; /* Match the primary dark blue background */
+    border-top: 1px solid var(--primary-medium-blue);
+    border-bottom: 1px solid var(--primary-medium-blue);
     position: relative;
     overflow: hidden; /* To contain the animated pseudo-element */
-    background-color: var(--background-light-gray);
-    border-top: 1px solid rgba(54, 124, 255, 0.2);
-    border-bottom: 1px solid rgba(54, 124, 255, 0.2);
 }
 
 #file-drop-section::before {
@@ -233,30 +248,54 @@ body {
     }
 }
 
+/* Improved Drop Zone Design */
 #drop-zone {
-    border: 2px dashed var(--primary-medium-blue);
-    background-color: rgba(10, 25, 47, 0.5);
-    backdrop-filter: blur(2px);
-    box-shadow: none;
-    margin-bottom: 5rem;
+    background-color: rgba(15, 23, 42, 0.7); /* Slightly more opaque */
+    border: 2px dashed var(--primary-light-blue);
+    border-radius: 15px;
+    padding: 4rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 4rem; /* Add space between text and drop-zone */
+}
+
+#drop-zone:hover {
+    background-color: var(--background-light-gray);
+    border-color: var(--accent-cyan);
+}
+
+#drop-zone::before {
+    content: '\f093'; /* Font Awesome upload icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 4rem;
+    color: var(--accent-cyan);
+    margin-bottom: 1rem;
 }
 
 /* Accordion Styles (Modern Redesign) */
 .faq-accordion {
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px; /* Increased max-width for row layout */
     margin: 4rem auto 0;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 1.5rem; /* Adjust gap */
+    flex-direction: row; /* Display items in a row */
+    justify-content: center; /* Center the items */
+    gap: 2rem; /* Adjust gap */
 }
 
 .accordion-item {
     background: transparent;
     border-radius: 10px;
-    border: 1px solid var(--primary-medium-blue); /* Use theme color for border */
+    border: 1px solid var(--primary-medium-blue);
     transition: background-color 0.3s ease;
     overflow: hidden;
+    flex-basis: 300px; /* Set a base width for each item */
+    flex-grow: 0; /* Prevent items from growing */
 }
 
 .accordion-item:hover {
