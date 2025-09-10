@@ -126,21 +126,28 @@ body {
 }
 
 /* Animation for the partners section */
+.partners_partner__gl06I {
+    /* Base styles for the container */
+    opacity: 1; /* Make sure container is visible */
+}
+
 .partners_partner__gl06I .typo-flow-megatitle {
+    display: inline-block; /* Necessary for transform to work correctly */
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.5);
     animation: pulseAndFade 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
-.partners_partner__gl06I:nth-child(2) .typo-flow-megatitle { animation-delay: 0.3s; }
-.partners_partner__gl06I:nth-child(3) .typo-flow-megatitle { animation-delay: 0.6s; }
-.partners_partner__gl06I:nth-child(4) .typo-flow-megatitle { animation-delay: 0.9s; }
+.partners_list__U3BnC .partners_partner__gl06I:nth-child(2) .typo-flow-megatitle { animation-delay: 0.2s; }
+.partners_list__U3BnC .partners_partner__gl06I:nth-child(3) .typo-flow-megatitle { animation-delay: 0.4s; }
+.partners_list__U3BnC .partners_partner__gl06I:nth-child(4) .typo-flow-megatitle { animation-delay: 0.6s; }
+
 
 @keyframes pulseAndFade {
     0% {
         opacity: 0;
-        transform: scale(0.8);
+        transform: scale(0.5);
     }
-    50% {
+    60% {
         opacity: 1;
         transform: scale(1.1);
     }
@@ -153,6 +160,25 @@ body {
 .hero_hero__Q3Rx9 .hero_videoBackground__IiktF {
     display: block;
 }
+
+/* Speed CTA Section */
+#speed-cta {
+    text-align: center;
+    padding: 6rem 2rem;
+    background-color: transparent;
+}
+
+#speed-cta .typo-flow-subtitle {
+    font-size: 3.5rem; /* Larger font size */
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+#speed-cta .typo-flow-text {
+    font-size: 1.8rem;
+    color: var(--text-gray);
+}
+
 
 /* Redesigned File Drop Section */
 #file-drop-section {
@@ -173,18 +199,17 @@ body {
 /* Accordion Styles */
 .faq-accordion {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px; /* Increased max-width for horizontal layout */
     margin: 4rem auto 0;
+    display: flex;
+    gap: 2rem; /* Add gap between items */
 }
 .accordion-item {
     background-color: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(54, 124, 255, 0.2);
-    border-radius: 0;
-    margin-bottom: 0;
-}
-.accordion-item:last-child {
-    border-bottom: none;
+    border: 1px solid rgba(54, 124, 255, 0.2);
+    border-radius: 10px;
+    flex: 1; /* Allow items to grow and shrink */
+    overflow: hidden; /* Keep this for the content animation */
 }
 .accordion-button {
     width: 100%;
@@ -234,4 +259,41 @@ body {
 .accordion-item.active .accordion-content {
     max-height: 200px; /* Adjust as needed */
     padding: 0 1rem 2rem 1rem;
+}
+
+/* Moving Blur Effect on Hero SVG */
+.hero_flowEffect__OYVu0 {
+    position: relative;
+    overflow: hidden; /* To contain the blur effect */
+}
+
+.hero_flowEffect__OYVu0::after {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: 0;
+    width: 50px; /* Width of the blur effect */
+    height: 150%;
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(40px);
+    opacity: 0.8;
+    transform: translateX(-100px) rotate(-20deg);
+    animation: movingBlur 6s ease-in-out infinite 2s; /* Start after a 2s delay */
+}
+
+@keyframes movingBlur {
+    0% {
+        transform: translateX(-100px) rotate(-20deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(1000px) rotate(20deg); /* Adjust end position based on element width */
+        opacity: 0;
+    }
 }
