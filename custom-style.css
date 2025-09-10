@@ -9,7 +9,7 @@
     --text-gray: #94A3B8; /* Lighter gray for text on dark bg */
     --accent-cyan: #67E8F9; /* A vibrant cyan for accents */
     --accent-gold: #FACC15;
-    --text-light: #E2E8F0; /* Main light text color */
+    --text-light: #ffffff; /* Main light text color */
     --text-dark: #0A192F;
 }
 
@@ -52,6 +52,7 @@ body {
 }
 .partners_title__PBSU8, .partners_name__ocH6T span {
     color: var(--background-white);
+    margin: 0.9rem;
 }
 
 /* Footer */
@@ -302,25 +303,6 @@ body {
     opacity: 0.8;
 }
 
-
-/* Moving Blur Effect on Hero SVG */
-.hero_flowEffect__OYVu0 {
-    position: relative;
-    overflow: hidden; /* To contain the blur effect */
-}
-
-.hero_flowEffect__OYVu0::after {
-    content: '';
-    position: absolute;
-    top: -25%;
-    left: 0;
-    width: 300px; /* Wider blur area */
-    height: 150%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%); /* Soft-edged circle */
-    filter: blur(35px); /* A strong blur */
-    transform: translateX(-150px) rotate(-20deg); /* Start off-screen (half its width) */
-    animation: movingBlur 6s ease-in-out infinite 2s;
-}
 
 @keyframes movingBlur {
     0% {
