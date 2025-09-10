@@ -177,6 +177,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // --- FAQ ACCORDION ---
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    accordionItems.forEach(item => {
+        const button = item.querySelector('.accordion-button');
+        button.addEventListener('click', () => {
+            // Close other open items
+            accordionItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            // Toggle current item
+            item.classList.toggle('active');
+        });
+    });
+
     // --- LOADER HIDING ---
     const loader = document.querySelector('.loader-wrapper');
     window.onload = () => {
