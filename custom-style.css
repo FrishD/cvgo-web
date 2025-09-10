@@ -157,56 +157,41 @@ body {
 /* Redesigned File Drop Section */
 #file-drop-section {
     padding: 10rem 2rem;
-    background: linear-gradient(180deg, var(--primary-dark-blue) 0%, #0B1A3A 100%);
-    position: relative;
-    overflow: hidden;
+    background-color: var(--background-light-gray);
+    border-top: 1px solid rgba(54, 124, 255, 0.2);
+    border-bottom: 1px solid rgba(54, 124, 255, 0.2);
 }
-
-#file-drop-section::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(54, 124, 255, 0.1), transparent 40%);
-    animation: rotateGlow 15s linear infinite;
-}
-
-@keyframes rotateGlow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
 
 #drop-zone {
-    border: 3px dashed var(--primary-medium-blue);
-    background-color: rgba(15, 23, 42, 0.7);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 15px rgba(54, 124, 255, 0.3), 0 0 30px rgba(54, 124, 255, 0.2);
+    border: 2px dashed var(--primary-medium-blue);
+    background-color: rgba(10, 25, 47, 0.5);
+    backdrop-filter: blur(2px);
+    box-shadow: none;
     margin-bottom: 5rem;
 }
 
 /* Accordion Styles */
 .faq-accordion {
     width: 100%;
-    max-width: 700px;
-    margin-top: 4rem;
+    max-width: 800px;
+    margin: 4rem auto 0;
 }
 .accordion-item {
-    background-color: rgba(15, 23, 42, 0.7);
-    border: 1px solid var(--primary-medium-blue);
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    overflow: hidden;
-    backdrop-filter: blur(5px);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(54, 124, 255, 0.2);
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.accordion-item:last-child {
+    border-bottom: none;
 }
 .accordion-button {
     width: 100%;
     background-color: transparent;
     border: none;
-    padding: 1.5rem 2rem;
-    font-size: 1.8rem;
+    padding: 2rem 1rem;
+    font-size: 2rem;
     font-weight: 500;
     color: var(--text-light);
     text-align: right;
@@ -217,35 +202,36 @@ body {
 
 .accordion-button::after {
     content: '+';
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     color: var(--accent-cyan);
     position: absolute;
-    left: 2rem;
+    left: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .accordion-item.active .accordion-button::after {
-    content: '-';
-    transform: translateY(-50%) rotate(180deg);
+    content: '−'; /* Using a proper minus sign */
+    transform: translateY(-50%);
+    color: var(--text-light);
 }
 
 .accordion-button:hover {
-    background-color: rgba(54, 124, 255, 0.1);
+    background-color: rgba(54, 124, 255, 0.05);
 }
 
 .accordion-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out, padding 0.4s ease-out;
-    padding: 0 2rem;
+    padding: 0 1rem;
     color: var(--text-gray);
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .accordion-item.active .accordion-content {
     max-height: 200px; /* Adjust as needed */
-    padding: 1.5rem 2rem;
+    padding: 0 1rem 2rem 1rem;
 }
