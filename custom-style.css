@@ -111,8 +111,8 @@ body {
     left: auto;
 }
 .button-more-dropdown_dropdownContainer__s0SG9 {
-    left: 0;
-    right: auto;
+    right: 0;
+    left: auto;
 }
 .swiper-lazy-preloader {
     margin-right: -21px;
@@ -180,11 +180,12 @@ body {
 
 /* Updated Hero Button Styles */
 .hero_cta__osRfk {
-    background-color: rgba(15, 23, 42, 0.5); /* Semi-transparent background */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(15, 23, 42, 0.3); /* More transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* thinner border */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.5));
 }
 
 /* Center Hero Content */
@@ -309,6 +310,7 @@ body {
     flex-direction: row; /* Display items in a row */
     justify-content: center; /* Center the items */
     gap: 2rem; /* Adjust gap */
+    flex-wrap: wrap;
 }
 
 .accordion-item {
