@@ -1,0 +1,136 @@
+/* Custom Styles for Flow Website Redesign */
+
+:root {
+    --primary-dark-blue: #0A192F; /* Richer Navy Blue */
+    --primary-medium-blue: #367CFF; /* Brighter, more vibrant blue */
+    --primary-light-blue: #5691FF; /* A lighter, friendly blue */
+    --background-white: #FFFFFF;
+    --background-light-gray: #0F172A; /* Dark Slate Blue for backgrounds */
+    --text-gray: #94A3B8; /* Lighter gray for text on dark bg */
+    --accent-cyan: #67E8F9; /* A vibrant cyan for accents */
+    --accent-gold: #FACC15;
+    --text-light: #E2E8F0; /* Main light text color */
+    --text-dark: #0A192F;
+}
+
+html {
+    direction: rtl;
+    text-align: right;
+}
+
+body {
+    background-color: var(--primary-dark-blue);
+    color: var(--text-light);
+    font-family: 'Google Sans', 'Assistant', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Invert Logo for dark background */
+.header_logoLink__HhzOO img {
+    filter: brightness(0) invert(1);
+}
+
+/* General Text Color Changes */
+.typo-flow-subtitle, .typo-flow-text, .typo-flow-description, .typo-flow-title, .typo-flow-megatitle {
+    color: var(--text-light);
+}
+.spacer-text_copy__cK_qp p {
+    color: var(--text-gray);
+}
+.header_jumpLinks__GASkm a {
+    color: var(--text-light);
+    opacity: 0.7;
+}
+.header_jumpLinks__GASkm a:hover {
+    opacity: 1;
+}
+.capabilities_groupTitle__wozkx button {
+    color: var(--text-light);
+}
+.capabilities_groupCopy__ljx_K {
+    color: var(--text-gray);
+}
+.partners_title__PBSU8, .partners_name__ocH6T span {
+    color: var(--background-white);
+}
+
+/* Footer */
+.footer_footer__FiYd5 {
+    background-color: var(--background-light-gray);
+    border-top: 1px solid var(--primary-light-blue);
+}
+.footer_copyright__Y_F8_ {
+    color: var(--text-gray);
+}
+.footer_footer__FiYd5 .footer_link__Tlx14 {
+    color: var(--primary-medium-blue);
+}
+.footer_footer__FiYd5 .footer_link__Tlx14:hover {
+    color: var(--primary-light-blue);
+}
+.footer_socialIcons__2_3_4 a {
+    color: var(--primary-medium-blue);
+}
+.footer_socialIcons__2_3_4 a:hover {
+    color: var(--primary-light-blue);
+}
+
+
+/* Buttons */
+.button-link_link__eTf8F.button-link_white__cMMvJ {
+    color: var(--text-light);
+    background-color: var(--background-light-gray);
+    border-color: var(--background-light-gray);
+}
+.button-link_link__eTf8F.button-link_white__cMMvJ:hover {
+    background: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+    color: var(--text-dark);
+}
+
+/* Drop Zone */
+#drop-zone {
+    color: var(--text-light);
+    border: 3px dashed var(--primary-medium-blue);
+    background-color: rgba(15, 23, 42, 0.5);
+}
+#drop-zone.drag-over {
+    background-color: var(--primary-dark-blue);
+    border-color: var(--accent-cyan);
+}
+
+/* Loader */
+.loader-wrapper {
+    background-color: var(--primary-dark-blue);
+}
+
+/* RTL Specific Layout Adjustments */
+.header_jumpLinks__GASkm {
+    right: -10rem;
+    left: auto;
+}
+.button-more-dropdown_dropdownContainer__s0SG9 {
+    right: 0;
+    left: auto;
+}
+.swiper-lazy-preloader {
+    margin-right: -21px;
+    margin-left: auto;
+}
+
+/* Animation for the partners section */
+.partners_partner__gl06I {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+.partners_partner__gl06I:nth-child(2) { animation-delay: 0.2s; }
+.partners_partner__gl06I:nth-child(3) { animation-delay: 0.4s; }
+.partners_partner__gl06I:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

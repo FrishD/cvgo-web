@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         slidesPerView: 'auto',
         spaceBetween: 20,
+        direction: 'horizontal', // It's horizontal, so RTL matters
+        rtl: true,
     });
 
     capabilitiesTabs.forEach((tab, index) => {
