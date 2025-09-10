@@ -182,14 +182,18 @@ document.addEventListener('DOMContentLoaded', () => {
     accordionItems.forEach(item => {
         const button = item.querySelector('.accordion-button');
         button.addEventListener('click', () => {
-            // Close other open items
+            const isActive = item.classList.contains('active');
+
+            // First, close all items to ensure only one is open at a time
             accordionItems.forEach(otherItem => {
-                if (otherItem !== item) {
-                    otherItem.classList.remove('active');
-                }
+                otherItem.classList.remove('active');
             });
-            // Toggle current item
-            item.classList.toggle('active');
+
+            // If the clicked item was not already active, open it.
+            // This logic prevents multiple items from being open simultaneously.
+            if (!isActive) {
+                item.classList.add('active');
+            }
         });
     });
 

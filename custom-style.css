@@ -133,15 +133,18 @@ body {
 }
 
 .partners_partner__gl06I .typo-flow-megatitle {
-    display: inline-block; /* Necessary for transform to work correctly */
+    display: inline-block;
     opacity: 0;
     transform: scale(0.5);
-    animation: pulseAndFade 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation:
+        pulseAndFade 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards,
+        subtle-glow 4s ease-in-out infinite 1.5s; /* Start after pulseAndFade */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0); /* Initial shadow */
 }
-.partners_list__U3BnC .partners_partner__gl06I:nth-child(2) .typo-flow-megatitle { animation-delay: 0.2s; }
-.partners_list__U3BnC .partners_partner__gl06I:nth-child(3) .typo-flow-megatitle { animation-delay: 0.4s; }
-.partners_list__U3BnC .partners_partner__gl06I:nth-child(4) .typo-flow-megatitle { animation-delay: 0.6s; }
 
+.partners_list__U3BnC .partners_partner__gl06I:nth-child(2) .typo-flow-megatitle { animation-delay: 0.2s, 1.7s; }
+.partners_list__U3BnC .partners_partner__gl06I:nth-child(3) .typo-flow-megatitle { animation-delay: 0.4s, 1.9s; }
+.partners_list__U3BnC .partners_partner__gl06I:nth-child(4) .typo-flow-megatitle { animation-delay: 0.6s, 2.1s; }
 
 @keyframes pulseAndFade {
     0% {
@@ -155,6 +158,19 @@ body {
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@keyframes subtle-glow {
+    0%, 100% {
+        text-shadow:
+            0 0 8px rgba(255, 255, 255, 0.3),
+            0 0 16px rgba(103, 232, 249, 0.2);
+    }
+    50% {
+        text-shadow:
+            0 0 16px rgba(255, 255, 255, 0.5),
+            0 0 32px rgba(103, 232, 249, 0.4);
     }
 }
 
@@ -181,12 +197,40 @@ body {
 }
 
 
-/* Redesigned File Drop Section */
+/* Redesigned File Drop Section with Animated Background */
 #file-drop-section {
     padding: 10rem 2rem;
+    position: relative;
+    overflow: hidden; /* To contain the animated pseudo-element */
     background-color: var(--background-light-gray);
     border-top: 1px solid rgba(54, 124, 255, 0.2);
     border-bottom: 1px solid rgba(54, 124, 255, 0.2);
+}
+
+#file-drop-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        115deg,
+        rgba(10, 25, 47, 0) 40%,
+        rgba(54, 124, 255, 0.1) 50%,
+        rgba(10, 25, 47, 0) 60%
+    );
+    z-index: 0;
+    animation: animated-gradient 12s linear infinite;
+}
+
+@keyframes animated-gradient {
+    0% {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0) translateY(0) rotate(360deg);
+    }
 }
 
 #drop-zone {
@@ -197,64 +241,62 @@ body {
     margin-bottom: 5rem;
 }
 
-/* Accordion Styles (Glassmorphism Redesign) */
+/* Accordion Styles (Modern Redesign) */
 .faq-accordion {
     width: 100%;
     max-width: 900px;
     margin: 4rem auto 0;
     display: flex;
-    gap: 2rem;
+    flex-direction: column; /* Stack items vertically */
+    gap: 1.5rem; /* Adjust gap */
 }
 
 .accordion-item {
-    background: rgba(255, 255, 255, 0.05); /* Glass effect */
-    backdrop-filter: blur(15px); /* Strong blur */
-    -webkit-backdrop-filter: blur(15px);
-    border-radius: 15px; /* Softer radius */
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Drop shadow */
-    flex: 1;
-    transition: background 0.3s; /* Smooth transition on hover */
-    overflow: hidden; /* Needed for border-radius */
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--primary-medium-blue); /* Use theme color for border */
+    transition: background-color 0.3s ease;
+    overflow: hidden;
 }
 
 .accordion-item:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(54, 124, 255, 0.1); /* Subtle hover effect */
 }
 
 .accordion-button {
     width: 100%;
     background-color: transparent;
     border: none;
-    padding: 2rem 1.5rem;
-    font-size: 1.8rem; /* Slightly smaller font */
-    font-weight: 600; /* Bolder */
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
     color: var(--text-light);
     text-align: right;
     cursor: pointer;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .accordion-button::after {
-    content: '+';
-    font-size: 2.4rem;
-    color: var(--accent-cyan);
-    position: absolute;
-    left: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%) rotate(0deg); /* Start rotation at 0 */
-    transition: transform 0.4s ease, color 0.3s ease;
+    content: '';
+    border: solid var(--accent-cyan);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg); /* Pointing down */
+    transition: transform 0.3s ease;
 }
 
 .accordion-item.active .accordion-button::after {
-    transform: translateY(-50%) rotate(45deg); /* Rotate the plus to a cross */
-    color: var(--text-light);
+    transform: rotate(-135deg); /* Pointing up */
 }
 
 .accordion-content-wrapper {
     display: grid;
     grid-template-rows: 0fr; /* Collapsed by default */
-    transition: grid-template-rows 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth animation */
+    transition: grid-template-rows 0.4s ease-in-out;
 }
 
 .accordion-item.active .accordion-content-wrapper {
