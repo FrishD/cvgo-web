@@ -91,12 +91,21 @@ body {
 
 /* Drop Zone */
 #drop-zone {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
     color: var(--text-light);
-    border: 3px dashed var(--primary-medium-blue);
-    background-color: rgba(15, 23, 42, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
-#drop-zone.drag-over {
-    background-color: var(--primary-dark-blue);
+
+#drop-zone:hover, #drop-zone.drag-over {
+    background: rgba(255, 255, 255, 0.2);
     border-color: var(--accent-cyan);
 }
 
@@ -180,12 +189,11 @@ body {
 
 /* Updated Hero Button Styles */
 .hero_cta__osRfk {
-    background-color: rgba(15, 23, 42, 0.3); /* More transparent background */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* thinner border */
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.5));
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Center Hero Content */
@@ -257,35 +265,45 @@ body {
     }
 }
 
-/* New Drag & Drop Zone Design - V3 (Glassmorphism) */
+/* New Drag & Drop Zone Design */
 #drop-zone {
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+    background: linear-gradient(145deg, #0f172a, #0a192f);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 3rem;
+    padding: 3rem 4rem;
+    margin-top: 4rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: var(--text-gray);
     text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
-    color: var(--text-light); /* White text */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-#drop-zone:hover, #drop-zone.drag-over {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: var(--accent-cyan);
+#drop-zone::before {
+    content: '';
+    position: absolute;
+    top: -2px; left: -2px;
+    right: -2px; bottom: -2px;
+    background: linear-gradient(235deg, var(--accent-cyan), var(--primary-medium-blue), var(--accent-cyan));
+    background-size: 200% 200%;
+    border-radius: 22px;
+    z-index: -1;
+    filter: blur(5px);
+    animation: glowing-border 8s linear infinite;
 }
 
-#drop-zone .fa-file-upload {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    display: block;
-    color: var(--accent-cyan);
+@keyframes glowing-border {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#drop-zone:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 #drop-zone p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 500;
     margin: 0;
     color: var(--text-light);
@@ -294,12 +312,13 @@ body {
 /* Accordion Styles (Modern Redesign) */
 .faq-accordion {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 4rem auto 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .accordion-item {
@@ -308,8 +327,9 @@ body {
     border: 1px solid var(--primary-medium-blue);
     transition: background-color 0.3s ease;
     overflow: hidden;
-    flex-basis: 300px; /* Set a base width for each item */
-    flex-grow: 0; /* Prevent items from growing */
+    flex-basis: 300px;
+    flex-grow: 1;
+    max-width: 350px;
 }
 
 .accordion-item:hover {
