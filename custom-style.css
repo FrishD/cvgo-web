@@ -257,20 +257,23 @@ body {
     }
 }
 
-/* New Drag & Drop Zone Design */
+/* New Drag & Drop Zone Design - V3 (Glassmorphism) */
 #drop-zone {
-    background-color: rgba(15, 23, 42, 0.5);
-    border: 2px dashed var(--primary-medium-blue);
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 3rem;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
-    color: var(--text-gray);
+    color: var(--text-light); /* White text */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 #drop-zone:hover, #drop-zone.drag-over {
-    background-color: rgba(54, 124, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     border-color: var(--accent-cyan);
 }
 
@@ -291,13 +294,12 @@ body {
 /* Accordion Styles (Modern Redesign) */
 .faq-accordion {
     width: 100%;
-    max-width: 1200px; /* Increased max-width for row layout */
+    max-width: 800px;
     margin: 4rem auto 0;
     display: flex;
-    flex-direction: row; /* Display items in a row */
-    justify-content: center; /* Center the items */
-    gap: 2rem; /* Adjust gap */
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .accordion-item {
