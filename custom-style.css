@@ -123,6 +123,10 @@ body {
     right: 0;
     left: auto;
 }
+
+.button-more-dropdown_dropdownLink__AHVUX {
+    color: var(--text-light) !important;
+}
 .swiper-lazy-preloader {
     margin-right: -21px;
     margin-left: auto;
@@ -194,6 +198,12 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 769px) {
+    .hero_descriptionAndCta__SI8HO {
+        margin-top: 5rem; /* Adds space between SVG and buttons */
+    }
 }
 
 /* Center Hero Content */
@@ -519,6 +529,17 @@ body {
         font-size: 1.6rem;
         width: 90%;
         max-width: 320px;
+    }
+
+    /* --- Capabilities Section --- */
+    .capabilities_titlesContainer__Y64Dn {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* --- Partners Section --- */
+    .partners_name__ocH6T .typo-flow-megatitle {
+        font-size: 6rem !important;
     }
 }
 

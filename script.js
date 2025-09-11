@@ -97,8 +97,33 @@ document.addEventListener('DOMContentLoaded', () => {
         if (dropdownButton && dropdownMenu) {
             dropdownButton.addEventListener('click', (event) => {
                 event.stopPropagation();
-                const isHidden = dropdownMenu.style.display === 'none';
-                dropdownMenu.style.display = isHidden ? 'flex' : 'none';
+                const isHidden = dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '';
+                if (isHidden) {
+                    dropdownMenu.style.display = 'flex';
+                    // Position calculation
+                    const buttonRect = dropdownButton.getBoundingClientRect();
+                    const menuRect = dropdownMenu.getBoundingClientRect();
+                    // Check if there's enough space on the right. window.innerWidth gives viewport width.
+                    // This is a simplified check. It assumes LTR layout for this logic.
+                    // For RTL, we would check from the right.
+                    if (document.dir === 'rtl') {
+                        // In RTL, rect.right is closer to viewport start (0).
+                         dropdownMenu.style.left = 'auto';
+                         dropdownMenu.style.right = '0';
+                    } else {
+                        if (buttonRect.left + menuRect.width > window.innerWidth) {
+                            // Not enough space on the right, align to the right of the button
+                            dropdownMenu.style.right = '0';
+                            dropdownMenu.style.left = 'auto';
+                        } else {
+                            // Enough space, align to the left
+                            dropdownMenu.style.left = '0';
+                            dropdownMenu.style.right = 'auto';
+                        }
+                    }
+                } else {
+                    dropdownMenu.style.display = 'none';
+                }
             });
 
             // Close dropdown if clicking outside
@@ -182,16 +207,15 @@ document.addEventListener('DOMContentLoaded', () => {
     accordionItems.forEach(item => {
         const button = item.querySelector('.accordion-button');
         button.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
+            const wasActive = item.classList.contains('active');
 
-            // First, close all items to ensure only one is open at a time
+            // Close all items
             accordionItems.forEach(otherItem => {
                 otherItem.classList.remove('active');
             });
 
-            // If the clicked item was not already active, open it.
-            // This logic prevents multiple items from being open simultaneously.
-            if (!isActive) {
+            // If the clicked item wasn't the one already active, open it.
+            if (!wasActive) {
                 item.classList.add('active');
             }
         });

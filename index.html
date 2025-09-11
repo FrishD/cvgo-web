@@ -443,66 +443,6 @@
 </main>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js" defer></script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    // --- JULES'S SCRIPT OVERRIDES ---
-
-    // Override for 3-Dot Menu Logic
-    const dropdownContainer = document.querySelector('.button-more-dropdown_container__hvZkG');
-    if (dropdownContainer) {
-        const dropdownButton = dropdownContainer.querySelector('button');
-        const dropdownMenu = dropdownContainer.querySelector('.button-more-dropdown_dropdownContainer__s0SG9');
-
-        // We need to clone and replace the button to remove any existing event listeners
-        const newButton = dropdownButton.cloneNode(true);
-        dropdownButton.parentNode.replaceChild(newButton, dropdownButton);
-
-        if (newButton && dropdownMenu) {
-            newButton.addEventListener('click', (event) => {
-                event.stopPropagation();
-                const isHidden = dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '';
-                if (isHidden) {
-                    dropdownMenu.style.display = 'flex';
-                    dropdownMenu.style.visibility = 'hidden';
-                    const buttonRect = newButton.getBoundingClientRect();
-                    const menuRect = dropdownMenu.getBoundingClientRect();
-                    dropdownMenu.style.left = 'auto';
-                    dropdownMenu.style.right = 'auto';
-                    if (buttonRect.left < menuRect.width) {
-                        dropdownMenu.style.left = '0';
-                    } else {
-                        dropdownMenu.style.right = '0';
-                    }
-                    dropdownMenu.style.visibility = 'visible';
-                } else {
-                    dropdownMenu.style.display = 'none';
-                }
-            });
-        }
-    }
-
-    // Override for FAQ Accordion Logic
-    const accordionContainer = document.querySelector('.faq-accordion');
-    if(accordionContainer) {
-        const accordionItems = accordionContainer.querySelectorAll('.accordion-item');
-        accordionItems.forEach(item => {
-            const button = item.querySelector('.accordion-button');
-            const newButton = button.cloneNode(true);
-            button.parentNode.replaceChild(newButton, button);
-
-            newButton.addEventListener('click', () => {
-                const wasActive = item.classList.contains('active');
-                accordionItems.forEach(otherItem => {
-                    otherItem.classList.remove('active');
-                });
-                if (!wasActive) {
-                    item.classList.add('active');
-                }
-            });
-        });
-    }
-});
-</script>
 </body>
 
 </html>
