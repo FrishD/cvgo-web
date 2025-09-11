@@ -119,7 +119,7 @@ body {
     right: -10rem;
     left: auto;
 }
-.button-more-dropdown_dropdownContainer__s0SG9 {
+.header_navContainer__6afui .button-more-dropdown_dropdownContainer__s0SG9 {
     right: 0;
     left: auto;
 }
@@ -433,5 +433,192 @@ body {
     100% {
         transform: translateX(1000px) rotate(20deg);
         opacity: 0; /* Fade out */
+    }
+}
+
+/* --- Jules's Visual Redesign --- */
+
+/* 1. Refined Drag & Drop Zone (Apple Glass Style) */
+#drop-zone {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    height: 250px;
+    margin: 4rem auto 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    color: var(--text-light);
+
+    /* Core glassmorphism styles */
+    background: rgba(255, 255, 255, 0.1); /* Lighter, more glassy background */
+    backdrop-filter: blur(16px); /* Increased blur */
+    -webkit-backdrop-filter: blur(16px);
+
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Slightly more visible border */
+
+    /* Softer shadow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+}
+
+#drop-zone:hover,
+#drop-zone.drag-over {
+    transform: translateY(-5px) scale(1.01);
+    background: rgba(255, 255, 255, 0.15); /* Slightly brighter on hover */
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Add a subtle glowing edge for a more premium feel */
+#drop-zone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.3) 100%) border-box;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+
+#drop-zone > * {
+    position: relative;
+    z-index: 2;
+}
+
+#drop-zone i {
+    font-size: 4rem;
+    color: var(--accent-cyan);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 15px rgba(103, 232, 249, 0.3);
+    transition: all 0.3s ease;
+}
+
+#drop-zone:hover i,
+#drop-zone.drag-over i {
+    transform: scale(1.1);
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+#drop-zone p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0;
+    color: var(--text-light);
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+#drop-zone:hover p,
+#drop-zone.drag-over p {
+    opacity: 1;
+}
+
+/* 2. Minimalistic Section Separators */
+
+/* Hide the original border separator */
+.capabilities_topBorder__DhkFv {
+    border: none !important;
+}
+
+/* Add a new, softer separator using a subtle gradient */
+.capabilities_capabilities__YQVQ2 {
+    position: relative;
+    /* Adjust margin to account for the new separator position */
+    margin-top: 6rem;
+    padding-top: 6rem;
+}
+
+.capabilities_capabilities__YQVQ2::before {
+    content: '';
+    position: absolute;
+    top: 0; /* Position at the very top of the section */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Don't span the full width for a more minimal look */
+    height: 1px; /* Make it a thin line */
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(255, 255, 255, 0.15) 50%, /* A faint, soft white color */
+        transparent 100%
+    );
+    -webkit-backdrop-filter: none; /* Remove the blur which might be too "heavy" */
+    backdrop-filter: none;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Fix for Playwright visibility issue */
+.loader-wrapper.hidden {
+    display: none !important;
+}
+
+/* --- Jules's Responsiveness Fixes --- */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    #drop-zone {
+        height: 200px;
+        padding: 1.5rem;
+    }
+
+    #drop-zone i {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    #drop-zone p {
+        font-size: 1.6rem;
+    }
+
+    .faq-accordion {
+        gap: 1.5rem;
+    }
+
+    .accordion-button {
+        padding: 1.2rem 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .accordion-content {
+        font-size: 1.5rem;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    #drop-zone {
+        width: 90%;
+        height: 180px;
+    }
+
+    #drop-zone p {
+        font-size: 1.5rem;
+    }
+
+    .faq-accordion {
+        flex-direction: column;
+    }
+
+    .accordion-item {
+        flex-basis: auto;
     }
 }
