@@ -474,7 +474,14 @@ body {
     }
 }
 
-/* --- Jules's Responsiveness Fixes --- */
+/* --- Jules's Final Responsiveness Fixes --- */
+
+/* On desktop, hide the mobile menu items */
+@media (min-width: 769px) {
+    .mobile-only-menu-item {
+        display: none !important;
+    }
+}
 
 @media (max-width: 768px) {
     /* --- Header Buttons --- */
@@ -485,29 +492,33 @@ body {
         display: flex !important;
     }
 
-    /* --- Hero Section --- */
+    /* --- Hero Section Layout --- */
     .hero_hero__Q3Rx9 .hero_heroContent__RP_uf {
-        padding-top: 10rem;
-        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
     }
+
+    .hero_hero__Q3Rx9 .hero_flowEffect__OYVu0 {
+        order: 1; /* Ensure SVG is first */
+        width: 80%; /* Slightly reduce SVG size on mobile */
+    }
+
     .hero_hero__Q3Rx9 .hero_descriptionAndCta__SI8HO {
+        order: 2; /* Ensure buttons are second */
         flex-direction: column !important;
         gap: 1.5rem;
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
+
     .hero_hero__Q3Rx9 .hero_cta__osRfk {
         padding: 1.2rem 2rem;
         font-size: 1.6rem;
         width: 90%;
         max-width: 320px;
-    }
-}
-
-/* On desktop, hide the mobile menu items */
-@media (min-width: 769px) {
-    .mobile-only-menu-item {
-        display: none !important;
     }
 }
 
