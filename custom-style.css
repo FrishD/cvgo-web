@@ -1,0 +1,437 @@
+/* Custom Styles for Flow Website Redesign */
+
+:root {
+    --primary-dark-blue: #0A192F; /* Richer Navy Blue */
+    --primary-medium-blue: #367CFF; /* Brighter, more vibrant blue */
+    --primary-light-blue: #5691FF; /* A lighter, friendly blue */
+    --background-white: #FFFFFF;
+    --background-light-gray: #0F172A; /* Dark Slate Blue for backgrounds */
+    --text-gray: #94A3B8; /* Lighter gray for text on dark bg */
+    --accent-cyan: #67E8F9; /* A vibrant cyan for accents */
+    --accent-gold: #FACC15;
+    --text-light: #ffffff; /* Main light text color */
+    --text-dark: #0A192F;
+}
+
+html {
+    direction: rtl;
+    text-align: right;
+}
+
+body {
+    background-color: var(--primary-dark-blue);
+    color: var(--text-light);
+    font-family: 'Google Sans', 'Assistant', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Invert Logo for dark background */
+.header_logoLink__HhzOO img {
+    filter: brightness(0) invert(1);
+}
+
+/* General Text Color Changes */
+.typo-flow-subtitle, .typo-flow-text, .typo-flow-description, .typo-flow-title, .typo-flow-megatitle {
+    color: var(--text-light);
+}
+.spacer-text_copy__cK_qp p {
+    color: var(--text-gray);
+}
+.header_jumpLinks__GASkm a {
+    color: var(--text-light);
+    opacity: 0.7;
+}
+.header_jumpLinks__GASkm a:hover {
+    opacity: 1;
+}
+.capabilities_groupTitle__wozkx button {
+    color: var(--text-light);
+}
+.capabilities_groupCopy__ljx_K {
+    color: var(--text-gray);
+}
+.partners_title__PBSU8, .partners_name__ocH6T span {
+    color: var(--background-white);
+    margin: 0.9rem;
+}
+
+/* Footer */
+.footer_footer__FiYd5 {
+    background-color: var(--background-light-gray);
+    border-top: 1px solid var(--primary-light-blue);
+}
+.footer_copyright__Y_F8_ {
+    color: var(--text-gray);
+}
+.footer_footer__FiYd5 .footer_link__Tlx14 {
+    color: var(--primary-medium-blue);
+}
+.footer_footer__FiYd5 .footer_link__Tlx14:hover {
+    color: var(--primary-light-blue);
+}
+.footer_socialIcons__2_3_4 a {
+    color: var(--primary-medium-blue);
+}
+.footer_socialIcons__2_3_4 a:hover {
+    color: var(--primary-light-blue);
+}
+
+
+/* Buttons */
+.button-link_link__eTf8F.button-link_white__cMMvJ {
+    color: var(--text-light);
+    background-color: var(--background-light-gray);
+    border-color: var(--background-light-gray);
+}
+.button-link_link__eTf8F.button-link_white__cMMvJ:hover {
+    background: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+    color: var(--text-dark);
+}
+
+/* Drop Zone */
+#drop-zone {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    color: var(--text-light);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+#drop-zone:hover, #drop-zone.drag-over {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--accent-cyan);
+}
+
+/* Loader */
+.loader-wrapper {
+    background-color: var(--primary-dark-blue);
+}
+
+/* RTL Specific Layout Adjustments */
+.header_jumpLinks__GASkm {
+    right: -10rem;
+    left: auto;
+}
+.button-more-dropdown_dropdownContainer__s0SG9 {
+    right: 0;
+    left: auto;
+}
+.swiper-lazy-preloader {
+    margin-right: -21px;
+    margin-left: auto;
+}
+
+.header_jumpLinks__GASkm {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+}
+
+/* Animation for the partners section */
+.partners_partner__gl06I {
+    /* Base styles for the container */
+    opacity: 1; /* Make sure container is visible */
+}
+
+.partners_partner__gl06I .typo-flow-megatitle {
+    display: inline-block;
+    opacity: 0;
+    transform: scale(0.5);
+    animation:
+        pulseAndFade 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards,
+        subtle-glow 4s ease-in-out infinite 1.5s; /* Start after pulseAndFade */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0); /* Initial shadow */
+}
+
+.partners_list__U3BnC .partners_partner__gl06I:nth-child(2) .typo-flow-megatitle { animation-delay: 0.2s, 1.7s; }
+.partners_list__U3BnC .partners_partner__gl06I:nth-child(3) .typo-flow-megatitle { animation-delay: 0.4s, 1.9s; }
+.partners_list__U3BnC .partners_partner__gl06I:nth-child(4) .typo-flow-megatitle { animation-delay: 0.6s, 2.1s; }
+
+@keyframes pulseAndFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes subtle-glow {
+    0%, 100% {
+        text-shadow:
+            0 0 8px rgba(255, 255, 255, 0.3),
+            0 0 16px rgba(103, 232, 249, 0.2);
+    }
+    50% {
+        text-shadow:
+            0 0 16px rgba(255, 255, 255, 0.5),
+            0 0 32px rgba(103, 232, 249, 0.4);
+    }
+}
+
+.hero_hero__Q3Rx9 .hero_videoBackground__IiktF {
+    display: block;
+}
+
+/* Updated Hero Button Styles */
+.hero_cta__osRfk {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Center Hero Content */
+.hero_hero__Q3Rx9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_heroContent__RP_uf {
+    padding-bottom: 0; /* Remove padding to allow true centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Speed CTA Section */
+#speed-cta {
+    text-align: center;
+    padding: 6rem 2rem;
+    background-color: transparent;
+}
+
+#speed-cta .typo-flow-subtitle {
+    font-size: 3.5rem; /* Larger font size */
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+#speed-cta .typo-flow-text {
+    font-size: 1.8rem;
+    color: var(--text-gray);
+}
+
+
+/* Redesigned File Drop Section with Animated Background */
+#file-drop-section {
+    padding: 8rem 2rem;
+    background-color: #0A192F; /* Match the primary dark blue background */
+    border-top: 1px solid var(--primary-medium-blue);
+    border-bottom: 1px solid var(--primary-medium-blue);
+    position: relative;
+    overflow: hidden; /* To contain the animated pseudo-element */
+}
+
+#file-drop-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        115deg,
+        rgba(10, 25, 47, 0) 40%,
+        rgba(54, 124, 255, 0.1) 50%,
+        rgba(10, 25, 47, 0) 60%
+    );
+    z-index: 0;
+    animation: animated-gradient 12s linear infinite;
+}
+
+@keyframes animated-gradient {
+    0% {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0) translateY(0) rotate(360deg);
+    }
+}
+
+/* New Drag & Drop Zone Design */
+#drop-zone {
+    position: relative;
+    background: linear-gradient(145deg, #0f172a, #0a192f);
+    border-radius: 20px;
+    padding: 3rem 4rem;
+    margin-top: 4rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: var(--text-gray);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#drop-zone::before {
+    content: '';
+    position: absolute;
+    top: -2px; left: -2px;
+    right: -2px; bottom: -2px;
+    background: linear-gradient(235deg, var(--accent-cyan), var(--primary-medium-blue), var(--accent-cyan));
+    background-size: 200% 200%;
+    border-radius: 22px;
+    z-index: -1;
+    filter: blur(5px);
+    animation: glowing-border 8s linear infinite;
+}
+
+@keyframes glowing-border {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#drop-zone:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+#drop-zone p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0;
+    color: var(--text-light);
+}
+
+/* Accordion Styles (Modern Redesign) */
+.faq-accordion {
+    width: 100%;
+    max-width: 1200px;
+    margin: 4rem auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.accordion-item {
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--primary-medium-blue);
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    flex-basis: 300px;
+    flex-grow: 1;
+    max-width: 350px;
+}
+
+.accordion-item:hover {
+    background-color: rgba(54, 124, 255, 0.1); /* Subtle hover effect */
+}
+
+.accordion-button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: right;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-button::after {
+    content: '';
+    border: solid var(--accent-cyan);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg); /* Pointing down */
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-button::after {
+    transform: rotate(-135deg); /* Pointing up */
+}
+
+.accordion-content-wrapper {
+    display: grid;
+    grid-template-rows: 0fr; /* Collapsed by default */
+    transition: grid-template-rows 0.4s ease-in-out;
+}
+
+.accordion-item.active .accordion-content-wrapper {
+    grid-template-rows: 1fr; /* Expanded */
+}
+
+.accordion-content {
+    overflow: hidden; /* This is crucial for the grid animation */
+    padding: 0 1.5rem; /* Add padding here, not on the wrapper */
+    color: var(--text-gray);
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+.accordion-content p {
+    padding-bottom: 2rem;
+}
+
+/* Text Rotator in Hero Section */
+.hero_hero__Q3Rx9 #text-rotator-container {
+    text-align: center;
+    position: relative; /* Needed for absolute positioning of children */
+    height: 100px; /* Give it a fixed height to prevent layout shifts */
+}
+
+.hero_hero__Q3Rx9 .rotating-text-item {
+    transition: opacity 0.8s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.hero_hero__Q3Rx9 .rotating-text-item.active {
+    opacity: 1;
+}
+
+.hero_hero__Q3Rx9 #text-rotator-container .typo-flow-subtitle {
+    font-size: 2.2rem !important; /* Use !important to override base styles if needed */
+    margin-bottom: 0.5rem;
+}
+
+.hero_hero__Q3Rx9 #text-rotator-container .typo-flow-text {
+    font-size: 1.6rem !important;
+    opacity: 0.8;
+}
+
+
+@keyframes movingBlur {
+    0% {
+        transform: translateX(-150px) rotate(-20deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1; /* Fade in */
+    }
+    80% {
+        opacity: 1; /* Hold */
+    }
+    100% {
+        transform: translateX(1000px) rotate(20deg);
+        opacity: 0; /* Fade out */
+    }
+}

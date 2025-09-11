@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         slidesPerView: 'auto',
         spaceBetween: 20,
+        direction: 'horizontal', // It's horizontal, so RTL matters
+        rtl: true,
     });
 
     capabilitiesTabs.forEach((tab, index) => {
@@ -174,6 +176,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+
+    // --- FAQ ACCORDION ---
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    accordionItems.forEach(item => {
+        const button = item.querySelector('.accordion-button');
+        button.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // First, close all items to ensure only one is open at a time
+            accordionItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+            });
+
+            // If the clicked item was not already active, open it.
+            // This logic prevents multiple items from being open simultaneously.
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
 
     // --- LOADER HIDING ---
     const loader = document.querySelector('.loader-wrapper');
