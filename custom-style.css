@@ -18,7 +18,7 @@ html {
     text-align: right;
 }
 
-body {
+html, body {
     background-color: var(--primary-dark-blue);
     color: var(--text-light);
     font-family: 'Google Sans', 'Assistant', sans-serif;

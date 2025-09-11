@@ -39,29 +39,60 @@
             color: var(--text-gray);
         }
         .download-pdf-button {
-            display: block;
-            width: fit-content;
-            margin: 4rem auto;
-            padding: 1rem 2rem;
-            background-color: var(--primary-medium-blue);
-            color: var(--text-light);
-            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin: 4rem 0 0;
+            padding: 0.8rem 1.6rem;
+            background-color: transparent;
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .download-pdf-button:hover {
+            background-color: var(--accent-cyan);
+            color: var(--primary-dark-blue);
         }
     </style>
 </head>
 
 <body>
-    <header class="header_container__X86zB">
-        <div class="header_logo__AAPGq">
-            <a class="header_logoLink__HhzOO typo-flow-caption" aria-label="Home" href="index.html"><img alt="Google Logo" loading="eager" width="128" height="43" decoding="async" data-nimg="1" style="color:transparent" src="about/_next/google_logo5b6f.png" /></a>
-        </div>
-    </header>
+<header class="header_container__X86zB">
+    <div class="header_logo__AAPGq">
+        <a class="header_logoLink__HhzOO typo-flow-caption" aria-label="Refresh Page" href="index.html"><img alt="Google Logo" loading="eager" width="128" height="43" decoding="async" data-nimg="1" style="color:transparent" src="about/_next/google_logo5b6f.png" /></a>
+    </div>
+    <div class="header_jumpLinks__GASkm">
+        <a href="index.html#hero" class="typo-flow-text">בית</a>
+        <a href="index.html#file-drop-section" class="typo-flow-text">הפצת קו״ח</a>
+        <a href="about.html" class="typo-flow-text">סטודנטים</a>
+        <a href="index.html#capabilities" class="typo-flow-text">אודות</a>
+        <a href="index.html#gallery" class="typo-flow-text">עובדים איתנו</a>
+    </div>
+    <div class="header_navContainer__6afui">
+        <ul class="header_nav__G2Gk3">
+        <li class="desktop-only-button"><a href="#" class="button-link_link__eTf8F">התחברות</a></li>
+        <li class="desktop-only-button"><a href="#" class="button-link_link__eTf8F button-link_white__cMMvJ">יאללה מצטרפים !</a></li>
+
+            <li>
+                <div class="button-more-dropdown_container__hvZkG">
+                    <button class="header_triggerButton__2Ei4o" type="button" title="See more options"><span class="icon_icon__XRrd8">more_vert</span></button>
+                    <div class="button-more-dropdown_dropdownContainer__s0SG9" style="display: none;">
+                    <a href="#" class="button-more-dropdown_dropdownLink__AHVUX mobile-only-menu-item"><span>התחברות</span></a>
+                    <a href="#" class="button-more-dropdown_dropdownLink__AHVUX mobile-only-menu-item"><span>יאללה מצטרפים !</span></a>
+                        <a href="#" class="button-more-dropdown_dropdownLink__AHVUX"><span>About</span></a>
+                        <a href="#" class="button-more-dropdown_dropdownLink__AHVUX"><span>Help</span></a>
+                        <a href="#" class="button-more-dropdown_dropdownLink__AHVUX"><span>Send Feedback</span></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
     <main>
         <div class="policy-container">
-            <button class="download-pdf-button" onclick="window.print()">הורד כ-PDF</button>
             <h1>מדיניות השימוש</h1>
 
             <h2>1. קבלת התנאים</h2>
@@ -73,6 +104,7 @@
 
             <h2>3. הגבלות</h2>
             <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            <button class="download-pdf-button" onclick="window.print()"><i class="fas fa-file-pdf"></i> הורד כ-PDF</button>
         </div>
     </main>
     <footer class="footer_footer__FiYd5">
