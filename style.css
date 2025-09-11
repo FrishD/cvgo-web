@@ -5710,7 +5710,7 @@ body::before {
 
 .loader-letter {
     display: inline-block;
-    font-family: 'Google Sans';
+    font-family: 'Google Sans', sans-serif;
     opacity: 0.4;
     transform: translateY(0);
     animation: loader-letter-anim 4s infinite;

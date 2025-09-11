@@ -536,6 +536,10 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .capabilities_groupTitle__wozkx {
+        white-space: normal;
+        text-align: center;
+    }
 
     /* --- Partners Section --- */
     .partners_name__ocH6T .typo-flow-megatitle {
