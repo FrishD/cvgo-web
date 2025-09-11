@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- MORE OPTIONS DROPDOWN (with viewport collision detection) ---
+    // --- MORE OPTIONS DROPDOWN ---
     const dropdownContainer = document.querySelector('.button-more-dropdown_container__hvZkG');
     if (dropdownContainer) {
         const dropdownButton = dropdownContainer.querySelector('button');
@@ -97,38 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (dropdownButton && dropdownMenu) {
             dropdownButton.addEventListener('click', (event) => {
                 event.stopPropagation();
-
-                const isHidden = dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '';
-
-                if (isHidden) {
-                    // First, make it visible to measure it
-                    dropdownMenu.style.display = 'flex';
-                    dropdownMenu.style.visibility = 'hidden'; // Hide it from view but allow measurement
-
-                    const buttonRect = dropdownButton.getBoundingClientRect();
-                    const menuRect = dropdownMenu.getBoundingClientRect();
-                    const viewportWidth = window.innerWidth;
-
-                    // Reset styles before positioning
-                    dropdownMenu.style.left = 'auto';
-                    dropdownMenu.style.right = 'auto';
-
-                    // For a right-aligned button in an RTL layout, the menu opens leftwards by default (right: 0).
-                    // We check if there's enough space on the left side of the button.
-                    if (buttonRect.left < menuRect.width) {
-                        // Not enough space on the left, so anchor to the left edge of the button (opens right)
-                        dropdownMenu.style.left = '0';
-                    } else {
-                        // Enough space, so anchor to the right edge of the button (opens left)
-                        dropdownMenu.style.right = '0';
-                    }
-
-                    // Make it visible now that it's positioned
-                    dropdownMenu.style.visibility = 'visible';
-
-                } else {
-                    dropdownMenu.style.display = 'none';
-                }
+                const isHidden = dropdownMenu.style.display === 'none';
+                dropdownMenu.style.display = isHidden ? 'flex' : 'none';
             });
 
             // Close dropdown if clicking outside
@@ -208,27 +178,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- FAQ ACCORDION ---
-    const accordionItems = document.querySelectorAll('.faq-accordion .accordion-item');
-
+    const accordionItems = document.querySelectorAll('.accordion-item');
     accordionItems.forEach(item => {
         const button = item.querySelector('.accordion-button');
+        button.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
 
-        if (button) {
-            button.addEventListener('click', () => {
-                const wasActive = item.classList.contains('active');
-
-                // First, close all accordion items
-                accordionItems.forEach(otherItem => {
-                    otherItem.classList.remove('active');
-                });
-
-                // Then, if the clicked item was not already active, open it.
-                if (!wasActive) {
-                    item.classList.add('active');
-                }
-                // This logic ensures clicking an open item will close it, and all others.
+            // First, close all items to ensure only one is open at a time
+            accordionItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
             });
-        }
+
+            // If the clicked item was not already active, open it.
+            // This logic prevents multiple items from being open simultaneously.
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
     });
 
     // --- LOADER HIDING ---

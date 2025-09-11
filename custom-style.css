@@ -119,7 +119,7 @@ body {
     right: -10rem;
     left: auto;
 }
-.header_navContainer__6afui .button-more-dropdown_dropdownContainer__s0SG9 {
+.button-more-dropdown_dropdownContainer__s0SG9 {
     right: 0;
     left: auto;
 }
@@ -233,8 +233,6 @@ body {
 #file-drop-section {
     padding: 8rem 2rem;
     background-color: #0A192F; /* Match the primary dark blue background */
-    border-top: 1px solid var(--primary-medium-blue);
-    border-bottom: 1px solid var(--primary-medium-blue);
     position: relative;
     overflow: hidden; /* To contain the animated pseudo-element */
 }
@@ -309,39 +307,37 @@ body {
     color: var(--text-light);
 }
 
-/* Accordion Styles (Modern Redesign) */
+/* Accordion Styles (Minimalist Redesign) */
 .faq-accordion {
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px; /* Adjust max-width for a single column layout */
     margin: 4rem auto 0;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    flex-direction: column; /* Stack items vertically */
+    gap: 0; /* Remove gap as we'll use borders */
 }
 
 .accordion-item {
     background: transparent;
-    border-radius: 10px;
-    border: 1px solid var(--primary-medium-blue);
-    transition: background-color 0.3s ease;
+    border: none; /* Remove the box border */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Subtle line separator */
     overflow: hidden;
-    flex-basis: 300px;
-    flex-grow: 1;
-    max-width: 350px;
+}
+
+.accordion-item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Add a top border to the first item */
 }
 
 .accordion-item:hover {
-    background-color: rgba(54, 124, 255, 0.1); /* Subtle hover effect */
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .accordion-button {
     width: 100%;
     background-color: transparent;
     border: none;
-    padding: 1.5rem 2rem;
-    font-size: 1.7rem;
+    padding: 2rem 1rem; /* Adjust padding */
+    font-size: 1.8rem; /* Slightly larger font */
     font-weight: 500;
     color: var(--text-light);
     text-align: right;
@@ -350,20 +346,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.2s ease;
 }
 
+
 .accordion-button::after {
-    content: '';
-    border: solid var(--accent-cyan);
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 4px;
-    transform: rotate(45deg); /* Pointing down */
+    content: '+'; /* Use a simple plus icon */
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: var(--accent-cyan);
     transition: transform 0.3s ease;
+    transform: rotate(0deg);
 }
 
 .accordion-item.active .accordion-button::after {
-    transform: rotate(-135deg); /* Pointing up */
+    transform: rotate(45deg); /* Turns '+' into 'x' */
 }
 
 .accordion-content-wrapper {
@@ -377,8 +374,8 @@ body {
 }
 
 .accordion-content {
-    overflow: hidden; /* This is crucial for the grid animation */
-    padding: 0 1.5rem; /* Add padding here, not on the wrapper */
+    overflow: hidden;
+    padding: 0 1.5rem;
     color: var(--text-gray);
     font-size: 1.6rem;
     line-height: 1.7;
@@ -436,189 +433,25 @@ body {
     }
 }
 
-/* --- Jules's Visual Redesign --- */
-
-/* 1. Refined Drag & Drop Zone (Apple Glass Style) */
-#drop-zone {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    height: 250px;
-    margin: 4rem auto 0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    color: var(--text-light);
-
-    /* Core glassmorphism styles */
-    background: rgba(255, 255, 255, 0.1); /* Lighter, more glassy background */
-    backdrop-filter: blur(16px); /* Increased blur */
-    -webkit-backdrop-filter: blur(16px);
-
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Slightly more visible border */
-
-    /* Softer shadow */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    overflow: hidden;
-}
-
-#drop-zone:hover,
-#drop-zone.drag-over {
-    transform: translateY(-5px) scale(1.01);
-    background: rgba(255, 255, 255, 0.15); /* Slightly brighter on hover */
-    border-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* Optional: Add a subtle glowing edge for a more premium feel */
-#drop-zone::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 24px;
-    border: 1px solid transparent;
-    background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.3) 100%) border-box;
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
-}
-
-
-#drop-zone > * {
-    position: relative;
-    z-index: 2;
-}
-
-#drop-zone i {
-    font-size: 4rem;
-    color: var(--accent-cyan);
-    margin-bottom: 1.5rem;
-    text-shadow: 0 0 15px rgba(103, 232, 249, 0.3);
-    transition: all 0.3s ease;
-}
-
-#drop-zone:hover i,
-#drop-zone.drag-over i {
-    transform: scale(1.1);
-    color: #fff;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-}
-
-#drop-zone p {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin: 0;
-    color: var(--text-light);
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
-}
-
-#drop-zone:hover p,
-#drop-zone.drag-over p {
-    opacity: 1;
-}
-
-/* 2. Minimalistic Section Separators */
-
-/* Hide the original border separator */
-.capabilities_topBorder__DhkFv {
-    border: none !important;
-}
-
-/* Add a new, softer separator using a subtle gradient */
-.capabilities_capabilities__YQVQ2 {
-    position: relative;
-    /* Adjust margin to account for the new separator position */
-    margin-top: 6rem;
-    padding-top: 6rem;
-}
-
-.capabilities_capabilities__YQVQ2::before {
-    content: '';
-    position: absolute;
-    top: 0; /* Position at the very top of the section */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%; /* Don't span the full width for a more minimal look */
-    height: 1px; /* Make it a thin line */
-    background: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(255, 255, 255, 0.15) 50%, /* A faint, soft white color */
-        transparent 100%
-    );
-    -webkit-backdrop-filter: none; /* Remove the blur which might be too "heavy" */
-    backdrop-filter: none;
-    z-index: 2;
-    pointer-events: none;
-}
-
-/* Fix for Playwright visibility issue */
-.loader-wrapper.hidden {
-    display: none !important;
-}
-
 /* --- Jules's Responsiveness Fixes --- */
 
-/* For tablets and smaller devices */
+/* Fix for Hero Section on Mobile */
 @media (max-width: 768px) {
-    #drop-zone {
-        height: 200px;
-        padding: 1.5rem;
+    .hero_hero__Q3Rx9 .hero_descriptionAndCta__SI8HO {
+        flex-direction: column;
+        gap: 1.5rem; /* Adjust gap for vertical stacking */
+        margin-top: 3rem; /* Add more margin from the element above */
     }
 
-    #drop-zone i {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-
-    #drop-zone p {
-        font-size: 1.6rem;
-    }
-
-    .faq-accordion {
-        gap: 1.5rem;
-    }
-
-    .accordion-button {
-        padding: 1.2rem 1.5rem;
-        font-size: 1.6rem;
-    }
-
-    .accordion-content {
-        font-size: 1.5rem;
+    .hero_hero__Q3Rx9 .hero_cta__osRfk {
+        padding: 1.2rem 3rem; /* Slightly adjust button padding for mobile */
+        font-size: 1.8rem; /* Adjust font size for mobile */
+        width: 80%; /* Make buttons take more width */
+        max-width: 300px;
     }
 }
 
-/* For mobile phones */
-@media (max-width: 480px) {
-    #drop-zone {
-        width: 90%;
-        height: 180px;
-    }
-
-    #drop-zone p {
-        font-size: 1.5rem;
-    }
-
-    .faq-accordion {
-        flex-direction: column;
-    }
-
-    .accordion-item {
-        flex-basis: auto;
-    }
+/* Fix for Playwright visibility issue with the loader */
+.loader-wrapper.hidden {
+    display: none !important;
 }
