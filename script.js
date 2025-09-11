@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- MORE OPTIONS DROPDOWN ---
+    // --- MORE OPTIONS DROPDOWN (with viewport collision detection) ---
     const dropdownContainer = document.querySelector('.button-more-dropdown_container__hvZkG');
     if (dropdownContainer) {
         const dropdownButton = dropdownContainer.querySelector('button');
