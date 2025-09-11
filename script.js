@@ -1,6 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed. Custom script starting.');
 
+    // --- COOKIE CONSENT ---
+    const consentBanner = document.getElementById('cookie-consent-banner');
+    const acceptButton = document.getElementById('cookie-consent-accept');
+
+    if (consentBanner && acceptButton) {
+        // Check if consent was already given
+        if (!document.cookie.split(';').some((item) => item.trim().startsWith('cookie_consent=true'))) {
+            consentBanner.style.display = 'flex';
+        }
+
+        acceptButton.addEventListener('click', () => {
+            // Set cookie to expire in 1 year
+            const d = new Date();
+            d.setTime(d.getTime() + (365*24*60*60*1000));
+            let expires = "expires="+ d.toUTCString();
+            document.cookie = "cookie_consent=true;" + expires + ";path=/";
+
+            consentBanner.style.display = 'none';
+        });
+    }
+
+    // --- LOADER HIDING ---
+    const loader = document.querySelector('.loader-wrapper');
+    window.onload = () => {
+        if (loader) {
+            loader.classList.add('hidden');
+        }
+    };
+
     // --- SMOOTH SCROLLING ---
     const jumpLinks = document.querySelectorAll('a[href^="#"]');
     jumpLinks.forEach(link => {
@@ -228,4 +257,25 @@ document.addEventListener('DOMContentLoaded', () => {
             loader.classList.add('hidden');
         }
     };
+
+    // --- COOKIE CONSENT ---
+    const consentBanner = document.getElementById('cookie-consent-banner');
+    const acceptButton = document.getElementById('cookie-consent-accept');
+
+    if (consentBanner && acceptButton) {
+        // Check if consent was already given
+        if (!document.cookie.split(';').some((item) => item.trim().startsWith('cookie_consent=true'))) {
+            consentBanner.style.display = 'flex';
+        }
+
+        acceptButton.addEventListener('click', () => {
+            // Set cookie to expire in 1 year
+            const d = new Date();
+            d.setTime(d.getTime() + (365*24*60*60*1000));
+            let expires = "expires="+ d.toUTCString();
+            document.cookie = "cookie_consent=true;" + expires + ";path=/";
+
+            consentBanner.style.display = 'none';
+        });
+    }
 });

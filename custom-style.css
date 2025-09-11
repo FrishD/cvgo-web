@@ -551,3 +551,43 @@ body {
 .loader-wrapper.hidden {
     display: none !important;
 }
+
+/* --- Cookie Consent Banner --- */
+#cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-light-gray);
+    color: var(--text-light);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1001;
+    border-top: 1px solid var(--primary-light-blue);
+}
+
+#cookie-consent-banner p {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+#cookie-consent-banner a {
+    color: var(--accent-cyan);
+    text-decoration: underline;
+}
+
+#cookie-consent-banner button {
+    background-color: var(--primary-medium-blue);
+    color: var(--text-light);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cookie-consent-banner button:hover {
+    background-color: var(--primary-light-blue);
+}
